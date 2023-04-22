@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c9d7508-5efd-4834-b0a5-bf5f9df2477e" name="Changes" comment="create-next-app">
+    <list default="true" id="8c9d7508-5efd-4834-b0a5-bf5f9df2477e" name="Changes" comment="Add Lux Bootswatch theme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +26,13 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -25,6 +40,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Oh5VO4BzjtlF3TdXjfB5jSxmD9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,19 +55,24 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "20.0.0",
     "javascript.nodejs.core.library.typings.version": "18.15.12",
-    "last_opened_file_path": "C:/Users/micha/OneDrive - Univerzita Karlova/gimli/michal-topfer",
+    "last_opened_file_path": "C:/Users/micha/OneDrive - Univerzita Karlova/gimli/michal-topfer/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "settings.nodejs",
+    "settings.editor.selected.configurable": "web-ide.project.structure",
     "standardjs.codestyle.accepted": "true",
     "ts.external.directory.path": "C:\\Users\\micha\\OneDrive - Univerzita Karlova\\gimli\\michal-topfer\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\OneDrive - Univerzita Karlova\gimli\michal-topfer\public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,9 +105,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +123,7 @@
       <workItem from="1682000239572" duration="88000" />
       <workItem from="1682000342137" duration="1021000" />
       <workItem from="1682180006058" duration="1740000" />
-      <workItem from="1682182096316" duration="942000" />
+      <workItem from="1682182096316" duration="5514000" />
     </task>
     <task id="LOCAL-00001" summary="create-next-app">
       <created>1682182817742</created>
@@ -109,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682182817742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="static export">
+      <created>1682183318381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682183318381</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Lux Bootswatch theme">
+      <created>1682187676963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682187676963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +165,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create-next-app" />
-    <option name="LAST_COMMIT_MESSAGE" value="create-next-app" />
+    <MESSAGE value="static export" />
+    <MESSAGE value="Add Lux Bootswatch theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Lux Bootswatch theme" />
   </component>
 </project>
