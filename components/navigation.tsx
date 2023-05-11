@@ -53,12 +53,12 @@ const pages: MenuItem[] = [{
 }]
 
 
-function pageToNavItem(page: MenuItem) {
+function pageToNavItem(page: MenuItem, i: Number) {
     if (isTopMenuItem(page))
-        return <DropdownMenuItem {...page} />
+        return <DropdownMenuItem {...page} key={page.label} />
     else if (isSubMenuItem(page))
-        return <LinkMenuItem {...page} />
-    else return <NavDropdown.Divider />
+        return <LinkMenuItem {...page} key={page.href} />
+    else return <NavDropdown.Divider key={String(i)} />
 }
 
 function DropdownMenuItem(page: TopMenuItem) {
