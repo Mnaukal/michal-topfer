@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navigation from "@/components/navigation";
+import Email from "@/components/email";
 
 export default function Index() {
   return (
@@ -28,7 +29,7 @@ export default function Index() {
             <p>
               Organizátor programátorské soutěže <a href="https://kasiopea.matfyz.cz">Kasiopea</a>
             </p>
-            <p><b>E-mail:</b> <a id="mail">jmeno.prijmeni@matfyz.cz</a></p>
+            <p><b>E-mail:</b> <Email/></p>
         </section>
 
         <section className="mt-4">
