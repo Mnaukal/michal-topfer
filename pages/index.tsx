@@ -1,4 +1,5 @@
 import Email from "@/components/email";
+import Link from "next/link";
 
 export default function Index() {
   return (<>
@@ -27,6 +28,10 @@ export default function Index() {
       <h3>2023</h3>
       <ul>
         <li>
+          <a href="https://mnaukal.itch.io/janitor-exorcist">Janitor Exorcist</a> &ndash; hra vytvořená za 48 hodin během <a
+          href="https://itch.io/jam/spring-game-jam-cuni-mff">Spring Game Jam @ Matfyz 2023</a>
+        </li>
+        <li>
           <a href="https://ldjam.com/events/ludum-dare/52/corn-run">Corn Run</a> &ndash; hra vytvořená za 72 hodin během <a
           href="https://ldjam.com/events/ludum-dare/52/">Ludum Dare 52</a>
         </li>
@@ -43,7 +48,7 @@ export default function Index() {
           adaptive component architectures
           <ul>
             <li>
-              <a href="mgr">M. Töpfer: Machine-learning-based self-adaptation of component ensembles</a> (diplomová práce)
+              <Link href="/mgr">M. Töpfer: Machine-learning-based self-adaptation of component ensembles</Link> (diplomová práce)
             </li>
             <li>
               <a href="https://d3s.mff.cuni.cz/publications/topfer_ensemblebased_2022/">M. Töpfer, M. Abdullah, T. Bureš, P.
@@ -88,7 +93,7 @@ export default function Index() {
                 M. Töpfer: IVIS: Highly customizable framework for visualization and processing of IoT data</a>
             </li>
             <li>
-              <a href="bc">M. Töpfer: Components for visualization of correlations for IVIS framework</a> (bakalářská práce)
+              <Link href="/bc">M. Töpfer: Components for visualization of correlations for IVIS framework</Link> (bakalářská práce)
             </li>
           </ul>
         </li>
