@@ -27,14 +27,16 @@ const pages: MenuItem[] = [{
     "label": "Výuka",
     "subpages": [{
         "label": "NPRG062 – Algoritmizace",
-        "href": "/vyuka/2223/NPRG062/",
-    },{
+        "href": "/vyuka/2223/NPRG062/",  // TODO: dynamically select most recent year
+    }, {
         "label": "NPRG030 – Programování 1",
         "href": "/vyuka/2223/NPRG030/",
-    }, {}, {
+    }, {
+    }, {
         "label": "NPRG031 – Programování 2",
         "href": "/vyuka/2223/NPRG031/",
-    }, {}, {
+    }, {
+    }, {
         "label": "Archiv",
         "href": "/vyuka"
     }],
