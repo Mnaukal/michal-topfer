@@ -1,3 +1,16 @@
+# TODO: Michal Töpfer
+
+## TODO: run
+
+## TODO: folder structure
+
+## Navigation
+
+The main navigation is generated using a prebuild script ([`preBuild/navigation.ts`](preBuild/navigation.ts)). The generated structure is stored in [`preBuild/navigation.json`](preBuild/navigation.json). To update the main navigation, change the `pages` variable in [`preBuild/navigation.ts`](preBuild/navigation.ts) and build the website.
+
+*Related resources: [NextJS getStaticProps With Components](https://dev.to/brewhousedigital/nextjs-getstaticprops-with-components-f25), [Use import in .ts files outside module](https://stackoverflow.com/a/71389363)*
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
