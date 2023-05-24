@@ -1,5 +1,6 @@
 import "bootswatch/dist/lux/bootstrap.min.css";
 import '@/styles/globals.css'
+import '@/styles/collapse.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
 import Navigation from "@/components/navigation";
