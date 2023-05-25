@@ -5,10 +5,11 @@ import '@/styles/collapse.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
 import Navigation from "@/components/navigation";
+import { SSRProvider } from "react-bootstrap";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <SSRProvider>
       <Head>
         <title>Michal Töpfer</title>
         <meta name="description" content="Osobní stránka Michala Töpfera" />
@@ -18,6 +19,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <main className="container-xl mb-4 mt-4">
         <Component {...pageProps} />
       </main>
-    </>
+    </SSRProvider>
   )
 }
