@@ -1,6 +1,29 @@
 # TODO: Michal Töpfer
 
-## TODO: run
+## Running the code
+
+### Development
+
+```bash
+yarn dev
+```
+
+### Build
+
+The command
+
+```bash
+yarn build
+```
+
+builds the website and saves it in the [`out`](out) directory.
+
+To serve the website, use for example
+
+```bash
+cd out
+python3 -m http.server
+```
 
 ## TODO: folder structure
 
@@ -24,6 +47,8 @@ yarn dev
 # or
 pnpm dev
 ```
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
