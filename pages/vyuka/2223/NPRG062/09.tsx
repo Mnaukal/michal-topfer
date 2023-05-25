@@ -15,5 +15,7 @@ export default function CourseLab() {
 <p>Můžete použít <a href="http://www.ms.mff.cuni.cz/~topfermi/vyuka/2122/NPRG030/09/binary_tree_avg_depth.py">šablonu</a>.</p>
 <p><img src="../09_prumerna_vyska_stromu.png" alt="Podrobnější zadání" className="img-fluid"/></p>
 
+<p><i>Ukázali jsme si <a href="http://www.ms.mff.cuni.cz/~topfermi/vyuka/2122/NPRG030/09/binary_tree_avg_depth_solution.py">několik řešení</a> pomocí BFS a rekurze (metoda Rozděl a panuj).</i></p>
+
   </>)
 }

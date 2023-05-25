@@ -19,8 +19,7 @@ export default function CourseIndex() {
       <p>Třídy (<code>class</code>) a rozhraní (<code>interface</code>) (<LabPrograms order="3"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
     </Lab>,
     <Lab key="4" order="4" date="10.3.">
-      <p>Třídy a rozhraní &ndash; <code>IEquitable</code>, <code>IComparable</code> (<a href="04/">programy ze
-        cvičení</a> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
+      <p>Třídy a rozhraní &ndash; <code>IEquitable</code>, <code>IComparable</code> (<LabPrograms order="4"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
     </Lab>,
     <Lab key="5" order="5" date="17.3.">
       <p>Dědičnost (<LabPrograms order="5"/> &ndash; Strom aritmetických výrazů).</p>
@@ -55,7 +54,7 @@ export default function CourseIndex() {
       <p>Vývoj her v <a href="https://unity.com/">Unity</a> (<LabPrograms order="13"/>).</p>
     </Lab>,
     <Lab key="14" order="14" date="19.5">
-      <p>Zápočtový test.</p>
+      <p className="text-danger">Zápočtový test.</p>
     </Lab>
   ]
 
