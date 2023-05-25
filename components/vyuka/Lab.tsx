@@ -5,12 +5,16 @@ export type LabProps = {
   order: string;
   date: string;
   title?: string;
+  plan?: boolean,
+  future?: boolean,
 };
 
-function Lab({ date, order, title = "", children }: PropsWithChildren<LabProps>) {
+function Lab({ date, order, title = "", plan = false, future = false, children }: PropsWithChildren<LabProps>) {
   const [open, setOpen] = useState(true);
   const [day, month] = Lab.splitDate(date);
   const id = Lab.id(day, month);
+
+  if (future) return <></>;
 
   return (
     <section id={date} className="co-bylo">
@@ -20,7 +24,7 @@ function Lab({ date, order, title = "", children }: PropsWithChildren<LabProps>)
         </h3>
       </a>
       <Collapse in={open}>
-        <div className="cviko" id={id}>
+        <div className={"cviko " + (plan ? "plan text-muted" : "")} id={id}>
           {children}
         </div>
       </Collapse>

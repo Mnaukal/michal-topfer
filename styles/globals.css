@@ -55,10 +55,10 @@ b {
     color: inherit;
 }
 
-.plan {
+.plan p {
     font-style: italic;
 }
-.plan:before {
+.plan p:before {
     content: "Plán – ";
 }
 
