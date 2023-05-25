@@ -3,6 +3,9 @@ import Link from "next/link";
 
 export default function LabLink(lab: JSX.Element) {
   const props: LabProps = lab.props;
+  if (props.order === null || props.order === undefined)
+    return null;
+
   const [day, month] = Lab.splitDate(props.date);
 
   let className = "me-2";

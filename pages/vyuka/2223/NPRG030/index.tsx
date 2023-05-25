@@ -14,7 +14,7 @@ export default function CourseIndex() {
       <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms order="1"/>).</p>
     </Lab>,
     <Lab key="2" order="2" date="11.10.">
-      <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; .</p>
+      <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Cesty věží na šachovnici, Známky, Vážení kuliček.</p>
       <p>Programování: cykly (<LabPrograms order="2"/>).</p>
     </Lab>,
     <Lab key="3" order="3" date="18.10.">
@@ -36,10 +36,9 @@ export default function CourseIndex() {
     <Lab key="7" order="7" date="15.11.">
       <p>Algoritmizace + Programování: <Link href="NPRG030/07">spojové seznamy</Link> (<LabPrograms order="7"/>).</p>
     </Lab>,
-    /*
-    TODO: 22. 11. CVIČENÍ NEBUDE
-    <p class="text-danger">Cvičení nebude z důvodu konání Dne otevřených dveří.</p>
-    */
+    <Lab key="22.11." date="22.11." title=" CVIČENÍ NEBUDE">
+      <p className="text-danger">Cvičení nebude z důvodu konání Dne otevřených dveří.</p>
+    </Lab>,
     <Lab key="8" order="8" date="29.11.">
       <p>Algoritmizace: rekurze.</p>
       <p>Programování: generátory (<LabPrograms order="8"/>).</p>

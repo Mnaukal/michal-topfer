@@ -44,7 +44,7 @@ export default function CourseIndex() {
     <Lab key="10" order="10" date="21.4.">
       <p>Testy (<LabPrograms order="10"/> &ndash; <code>List&lt;T&gt;</code>).</p>
     </Lab>,
-    <Lab key="11" order="11" date="28.4.">{/*TODO: &ndash; suploval David Šosvald*/}
+    <Lab key="11" order="11" date="28.4." title=" &ndash; suploval David Šosvald">
       <p>WinForms (<LabPrograms order="11"/>).</p>
     </Lab>,
     <Lab key="12" order="12" date="5.5.">

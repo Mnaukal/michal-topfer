@@ -2,14 +2,14 @@ import { PropsWithChildren, useState } from "react";
 import { Collapse } from "react-bootstrap";
 
 export type LabProps = {
-  order: string;
+  order?: string | null;
   date: string;
   title?: string;
   plan?: boolean,
   future?: boolean,
 };
 
-function Lab({ date, order, title = "", plan = false, future = false, children }: PropsWithChildren<LabProps>) {
+function Lab({ date, order = null, title = "", plan = false, future = false, children }: PropsWithChildren<LabProps>) {
   const [open, setOpen] = useState(true);
   const [day, month] = Lab.splitDate(date);
   const id = Lab.id(day, month);
@@ -20,7 +20,7 @@ function Lab({ date, order, title = "", plan = false, future = false, children }
     <section id={date} className="co-bylo">
       <a className="toggle" onClick={() => setOpen(!open)} aria-controls={id} aria-expanded={open}>
         <h3 className="ms-1">
-          {day}. {month}. ({order}. cvičení) {title}
+          {day}. {month}. {order !== null && `(${order}. cvičení)`} {title}
         </h3>
       </a>
       <Collapse in={open}>
