@@ -5,7 +5,7 @@ import type { MenuItem } from "@/types/navigation"
 const getLatestUrl = (courseCode: string): string => {
   const coursePaths = globSync(`vyuka/*/${courseCode}/`, {cwd: "pages", posix: true});
   coursePaths.sort().reverse();
-  return coursePaths[0];
+  return "/" + coursePaths[0];
 }
 
 const pages: MenuItem[] = [{
