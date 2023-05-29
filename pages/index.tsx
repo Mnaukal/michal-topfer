@@ -1,10 +1,11 @@
 import Email from "@/components/email";
 import Link from "next/link";
+import profilovka from "@/public/profilovka_c_s.jpg"
 
 export default function Index() {
   return (<>
     <section className="clearfix">
-      <img src="/profilovka_c_s.jpg" className="rounded float-end profilovka" alt="Mgr. Michal Töpfer" />
+      <img src={profilovka.src} className="rounded float-end profilovka" alt="Mgr. Michal Töpfer" />
       <p>
         Doktorand na <a href="https://d3s.mff.cuni.cz/">Katedře distribuovaných a spolehlivých systémů</a> na <a
         href="https://www.mff.cuni.cz/">Matematicko-fyzikální fakultě Univerzity Karlovy</a>
@@ -103,7 +104,7 @@ export default function Index() {
 
       <h3>2019</h3>
       <ul>
-        <li><a href="http://www.oamb.cz/">Obchodní akademie Mladá Boleslav</a> &ndash; redesign webových stránek</li>
+        <li><a href="https://www.oamb.cz/">Obchodní akademie Mladá Boleslav</a> &ndash; redesign webových stránek</li>
       </ul>
 
       <h3>2018</h3>

@@ -42,6 +42,6 @@ export default function CourseLab() {
       </li>
     </ol>
 
-    <img src="../functions_inside.jpg"/>
+    <img src="../functions_inside.jpg" alt="Functions inside functions meme"/>
   </>)
 }

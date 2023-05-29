@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import alge_settings from "@/public/alge/alge_settings.png"
+import alge_export from "@/public/alge/alge_export.png"
 
 export default function Alge() {
   return (
@@ -35,7 +37,7 @@ export default function Alge() {
       <p>
         V programu OPTIc3NET je potřeba povolit export do XML a nastavit DefaultFileName na <code>&#123;nr&#125;</code>:
         <br />
-        <img src="/alge/alge_settings.png" />
+        <img src={alge_settings.src} alt="Ukázka nastavení programu"/>
       </p>
 
       <h2>Použití</h2>
@@ -51,7 +53,7 @@ export default function Alge() {
 
       <h3>Výsledky</h3>
       <p>
-        V programu OPTIc3NET exportujte výsledky běhu (Export the result list <img src="/alge/alge_export.png" /> v okně Heat
+        V programu OPTIc3NET exportujte výsledky běhu (Export the result list <img src={alge_export.src} alt="" /> v okně Heat
         list) do složky atletické kanceláře. Spusťte <b>vysledky_(kamera-kancl).py</b>. Ten převede soubory <b>[číslo].heatresultxml</b> na <b>[číslo].txt</b>, které umí importovat AK2.
       </p>
     </>
