@@ -1,6 +1,14 @@
 image: node
 
+stages:
+  - build
+  - deploy
+
 before_script:
+  # validate remote host address
+  - cp "$SSH_KNOWN_HOSTS" ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  # install dependencies
   - yarn install
 
 cache:
@@ -10,6 +18,7 @@ cache:
     - .next/cache/
 
 build:
+  stage: build
   script:
     - yarn run build
   artifacts:
@@ -19,5 +28,8 @@ build:
     - master
 
 deploy:
+  stage: deploy
   script:
     - scp -r -i "$SSH_PRIVATE_KEY" out/index.html topfermi@gimli.ms.mff.cuni.cz:WWW
+  only:
+    - master
