@@ -33,6 +33,6 @@ deploy:
     - chmod 644 ~/.ssh/known_hosts
     - chmod 400 "$SSH_PRIVATE_KEY"
     # deploy
-    - scp -r -i "$SSH_PRIVATE_KEY" out/index.html topfermi@gimli.ms.mff.cuni.cz:WWW
+    - scp -r -i "$SSH_PRIVATE_KEY" out/* topfermi@gimli.ms.mff.cuni.cz:WWW
   only:
     - master
