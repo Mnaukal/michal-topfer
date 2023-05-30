@@ -1,0 +1,19 @@
+image: node
+
+before_script:
+  - yarn install
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .next/cache/
+
+pages:
+  script:
+    - yarn run build
+  artifacts:
+    paths:
+      - out
+  only:
+    - master
