@@ -9,7 +9,7 @@ cache:
     - node_modules/
     - .next/cache/
 
-pages:
+build:
   script:
     - yarn run build
   artifacts:
@@ -17,3 +17,7 @@ pages:
       - out
   only:
     - master
+
+deploy:
+  script:
+    - scp -r -i "$SSH_PRIVATE_KEY" out/index.html topfermi@gimli.ms.mff.cuni.cz:WWW
