@@ -29,6 +29,9 @@ export default function Index() {
       <h3>2023</h3>
       <ul>
         <li>
+          <a href="http://michal.topfer.matfyz.cz">michal.topfer.matfyz.cz</a> &ndash; moje webové stránky (tyto stránky) vytvořené pomocí <a href="https://nextjs.org/">Next.js</a>, <a href="https://react.dev/">React</a>, <a href="https://www.typescriptlang.org/">TypeScript</a> a <a href="https://getbootstrap.com/">Bootstrap</a> (téma <a href="https://bootswatch.com/lux/">Lux</a> z <a href="https://bootswatch.com/">Bootswatch</a>); <a href="https://gitlab.mff.cuni.cz/topfermi/michal-topfer/">zdrojový kód</a> je na MFF GitLabu
+        </li>
+        <li>
           <a href="https://mnaukal.itch.io/janitor-exorcist">Janitor Exorcist</a> &ndash; hra vytvořená za 48 hodin během <a
           href="https://itch.io/jam/spring-game-jam-cuni-mff">Spring Game Jam @ Matfyz 2023</a>
         </li>
