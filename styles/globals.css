@@ -1,6 +1,3 @@
-/* Also load the bold version (700) of Nunito font (Lux only loads weights 400 and 600) */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
-
 .navbar {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
