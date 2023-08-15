@@ -92,8 +92,6 @@ export default function CourseIndex() {
         <Link href="#co-bylo" scroll={false}>Co jsme dělali</Link>
         <ul><li>
           {labs.map(LabLink)}
-          <span className="text-muted">
-          </span>
         </li></ul>
       </li>
       <li><Link href="#prednaska">Přednáška</Link></li>
@@ -142,33 +140,32 @@ export default function CourseIndex() {
 
     <p>Zápočtový program vyvíjejte v připraveném repozitáři na <a href="https://gitlab.mff.cuni.cz/">fakultním GitLabu</a> (<code>/teaching/nprg031/2023-summer/student-LOGIN_DO_SISU</code>), případně na podobné službě a pak ho na GitLab nahrajte (<a href="#nahrani-gitlab">návod</a>). S Gitem jste pracovali už na <a href="https://d3s.mff.cuni.cz/teaching/nswi177/">Úvodu do Linuxu (NSWI177)</a>, znalosti získané tam by pro tento účel měly stačit. Pokud si chcete Git připomenout, můžete využít <a href="https://www.youtube.com/watch?v=hwP7WQkmECE">Git ve 100 sekundách, ale nám stačí prvních 60</a> a <a href="https://www.youtube.com/watch?v=HkdAHXoRtos">to samé, ale detailněji</a>. Snažte se dělat commity průběžně (např. vždy když dokončíte nějakou ucelenou část práce), ať si u toho i vyzkoušíte, jak s Gitem pracovat.</p>
 
-    <p>K zápočtovému programu napište jeho dokumentaci. Ta by měla mít tři hlavní části:</p>
-    <ul>
+    <p>Zápočtový program <b>odevzdávejte nejpozději do 31. 8. 2023</b>, abych měl dost času se na něj podívat a vy jste případně měli možnost program doplnit nebo opravit podle mých připomínek před koncem akademického roku (30. 9. 2023 &ndash; po tomto datu už nejde udělovat zápočty v SISu). Součástí odevzdání je i osobní předvedení programu. Až budete mít program hotový (včetně dokumentace), pošlete mi mailem odkaz na repozitář a domluvíme se na termínu předvedení. Předvedení programu bude spočívat v tom, že mi ukážete, že program jde spustit a že dělá to, na čem jsme se domluvili ve specifikaci. Kromě toho od vás budu chtít shrnutí návrhu programu &ndash; high-level rozdělení do tříd/funkcí a jejich účet, prostě takové rychlé shrnutí toho, co dělá která část zdrojového kódu. Pokud chcete, můžete si na předvedení připravit krátkou prezentaci.</p>
 
+    <p>K zápočtovému programu napište jeho <b>dokumentaci</b>. Ta by měla mít tři hlavní části:</p>
+    <ul>
       <li>uživatelská dokumentace (jak se program používá),</li>
       <li>programátorská dokumentace (jak program funguje uvnitř),</li>
       <li>ukázky použití.</li>
     </ul>
 
     <p>
-      <b>Povinnou součástí uživatelské dokumentace je soubor <code>README.md</code>,</b> který by měl obsahovat informace o tom, jak program spustit (v případě C# to nejspíš bude příkaz <code>dotnet run</code>), jak specifikovat jeho parametry, vstupní soubory, atd. a jak program ovládat (např. pokud programujete hru, tak jaké klávesy slouží k čemu). Pokud váš program pracuje s nějakými vstupními soubory, popište v README.md jejich formát (nebo, pokud by takový popis byl příliš dlouhý, odkažte z README.md na soubory s popisem formátu). Pokud je pro spuštění programu potřeba nainstalovat nějaké knihovny nebo nástroje (např. programujete hru v Unity), napište jaké a v jaké verzi (a ideálně doplňte i jak je nainstalovat). Soubor README.md už ve vašem předpřipraveném repozitáři existuje, upravte ho do vhodné podoby.
+      <b>Povinnou součástí uživatelské dokumentace je soubor <code>README.md</code>,</b> který by měl obsahovat informace o tom, jak program spustit (v případě C# to nejspíš bude příkaz <code>dotnet run</code>), jak specifikovat jeho parametry, vstupní soubory, atd. a jak program ovládat (např. pokud programujete hru, tak jaké klávesy slouží k čemu). Pokud váš program pracuje s nějakými vstupními soubory, popište v <code>README.md</code> jejich formát (nebo, pokud by takový popis byl příliš dlouhý, odkažte z <code>README.md</code> na soubory s popisem formátu). Pokud je pro spuštění programu potřeba nainstalovat nějaké knihovny nebo nástroje (např. programujete hru v Unity), napište jaké a v jaké verzi (a ideálně doplňte i jak je nainstalovat). Soubor <code>README.md</code> už ve vašem předpřipraveném repozitáři existuje, upravte ho do vhodné podoby.
     </p>
     <p>
-        V programátorské části dokumentace byste měli vysvětlit hlavní strukturu a koncepty vašeho programu. Když si projekt otevřu já nebo váš spolužák, měli bychom být podle dokumentace schopní program rozšířit a případně vědět, kde v kódu hledat, kdybychom měli opravovat nějakou chybu. Je vhodné jako součást programátorské dokumentace mít popis abstraktního návrhu programu (rozdělení do tříd a co má která třída za úkol) a stručné shrnutí zdrojových souborů (hlavně když jich bude hodně a budou strukturované složek).
+      V programátorské části dokumentace byste měli vysvětlit hlavní strukturu a koncepty vašeho programu. Když si projekt otevřu já nebo váš spolužák, měli bychom být podle dokumentace schopní program rozšířit a případně vědět, kde v kódu hledat, kdybychom měli opravovat nějakou chybu. Je vhodné jako součást programátorské dokumentace mít popis abstraktního návrhu programu (rozdělení do tříd a co má která třída za úkol) a stručné shrnutí zdrojových souborů (hlavně když jich bude hodně a budou strukturované složek).
     </p>
     <p>
-        Součástí dokumentace by také měly být příklady použití. Když program vyžaduje nějaké netriviální vstupy k tomu, aby šel spustit, přidejte příklady takových vstupů do dokumentace. Například pokud váš program kreslí graf na základě dat ze vstupního souboru, dejte do dokumentace ukázkový soubor s daty. Pokud programujete hru nebo jiný interaktivní program, pak nejspíš příklady použití nejsou potřeba.
+      Součástí dokumentace by také měly být příklady použití. Když program vyžaduje nějaké netriviální vstupy k tomu, aby šel spustit, přidejte příklady takových vstupů do dokumentace. Například pokud váš program kreslí graf na základě dat ze vstupního souboru, dejte do dokumentace ukázkový soubor s daty. Pokud programujete hru nebo jiný interaktivní program, pak nejspíš příklady použití nejsou potřeba.
     </p>
     <p>
-        Dobrým způsobem, jak psát dokumentaci, je pořídit si složku <code>documentation</code> (nebo <code>docs</code>) ve vašem repozitáři a v ní mít několik Markdown (<code>.md</code>) souborů a rezcestník <code>README.md</code> s odkazy na ostatní soubory.
-        Výrazně doporučuji dokumentaci psát anglicky, ale pokud si na to nevěříte, můžete ji napsat česky (příp. slovensky).
+      Dobrým způsobem, jak psát dokumentaci, je pořídit si složku <code>documentation</code> (nebo <code>docs</code>) ve vašem repozitáři a v ní mít několik Markdown (<code>.md</code>) souborů a rezcestník <code>README.md</code> s odkazy na ostatní soubory.
+      Výrazně doporučuji dokumentaci psát anglicky, ale pokud si na to nevěříte, můžete ji napsat česky (příp. slovensky).
     </p>
 
     <p>Program by měl být rozumně odladěný. Především by měl jít zkompilovat bez chyb a spustit. Když program budu normálně používat, tak by neměl spadnout. Pokud například program očekává vstup v souboru, tak by neměl spadnout, pokud soubor neexistuje. Měl by místo toho vypsat rozumnou chybovou hlášku pro uživatele.</p>
 
-    <p>Zápočtový program <b>odevzdávejte nejpozději do 31. 8. 2023</b>, abych měl dost času se na něj podívat a vy jste případně měli možnost program doplnit nebo opravit podle mých připomínek před koncem akademického roku (30. 9. 2023 &ndash; po tomto datu už nejde udělovat zápočty v SISu). Součástí odevzdání je i osobní předvedení programu. Až budete mít program hotový (včetně dokumentace), pošlete mi mailem odkaz na repozitář a domluvíme se na termínu předvedení. Předvedení programu bude spočívat v tom, že mi ukážete, že program jde spustit a že dělá to, na čem jsme se domluvili ve specifikaci. Kromě toho od vás budu chtít shrnutí návrhu programu &ndash; high-level rozdělení do tříd/funkcí a jejich účet, prostě takové rychlé shrnutí toho, co dělá která část zdrojového kódu. Pokud chcete, můžete si na předvedení připravit krátkou prezentaci.</p>
-
-    <p>Spoustu užitečných informací o zápočťácích už sepsali jiní, tak nemá smysl je znovu psát. Tady je pár odkazů: Martin Mareš má na <a href="http://mj.ucw.cz/vyuka/2021/p2x/pravidla.html">webu svého cvičení</a> hezky sepsané informace o zápočťácích. Navíc poskytuje i <a href="http://mj.ucw.cz/vyuka/zap/">seznam témat</a> pro inspiraci, takže doporučuji přečíst. Detailní informace včetně nápadů na témata sepsal taky <a href="https://github.com/Jirka-Mayer/NPRG030-062/blob/master/prg/zapoctaky.md">Jirka Mayer</a>. Nakonec, Rudolf Kryl má na webu <a href="https://ksvi.mff.cuni.cz/~kryl/dokumentace.htm">návod na psaní dokumentace k zápočťáku</a>, také doporučuji přečíst.</p>
+    <p>Spoustu užitečných informací o zápočťácích už sepsali jiní, tak nemá smysl je znovu psát. Tady je pár odkazů: Martin Mareš má na <a href="http://mj.ucw.cz/vyuka/2223/p2x/pravidla.html">webu svého cvičení</a> hezky sepsané informace o zápočťácích. Navíc poskytuje i <a href="http://mj.ucw.cz/vyuka/zap/">seznam témat</a> pro inspiraci, takže doporučuji přečíst. Detailní informace včetně nápadů na témata sepsal taky <a href="https://github.com/Jirka-Mayer/NPRG030-062/blob/master/prg/zapoctaky.md">Jirka Mayer</a>. Nakonec, Rudolf Kryl má na webu <a href="https://ksvi.mff.cuni.cz/~kryl/dokumentace.htm">návod na psaní dokumentace k zápočťáku</a>, také doporučuji přečíst.</p>
 
     <h4 id="nahrani-gitlab">Jak snadno nahrát program na GitLab</h4>
 
@@ -233,7 +230,7 @@ export default function CourseIndex() {
 
     <h3 id="recodex">ReCodEx</h3>
 
-    <p>Domácí úkoly z obou cvičení budou zadávány a odevzdávány pomocí systému ReCodEx.</p>
+    <p>Domácí úkoly budou zadávány a odevzdávány pomocí systému ReCodEx.</p>
 
     <p>Jak rozchodit ReCodEx:</p>
     <ul>
@@ -246,7 +243,7 @@ export default function CourseIndex() {
     <h3>Řešil jsem KSPčko</h3>
 
     <p>Pokud jste už zdatnější a myslíte si, že by vás cvičení nebavilo, můžete se zapsat na <a
-      href="https://mj.ucw.cz/vyuka/2021/p2x/">cvičení Martina Mareše pro pokročilé</a>. Můžete také chodit i na obě
+      href="https://mj.ucw.cz/vyuka/2223/p2x/">cvičení Martina Mareše pro pokročilé</a>. Můžete také chodit i na obě
       cvičení současně (v takovém případě si v SISu nechte zapsané moje cvičení).</p>
 
     <h3>Chci se procvičovat doma a nevím jak</h3>
