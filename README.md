@@ -22,9 +22,9 @@ The command
 yarn build
 ```
 
-builds the website and saves it in the [`out`](out) directory.
+builds the website (in the [static export](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports) mode) and saves it in the [`out`](out) directory.
 
-The website is built to be hosted on the `/~topfermi` base URL (<https://gimli.ms.mff.cuni.cz/~topfermi/>) so serving it locally won't work properly.
+The website is built to be hosted on the `/~topfermi` base URL (<https://gimli.ms.mff.cuni.cz/~topfermi/>) so serving it locally won't work properly. If necessary, the `basePath` can be configured in [`next.config.js`](next.config.js).
 
 ## Deployment
 
