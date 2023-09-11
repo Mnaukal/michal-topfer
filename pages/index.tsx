@@ -68,6 +68,10 @@ export default function Index() {
               <Badge type={BadgeType.Paper}/>
               <a href="https://d3s.mff.cuni.cz/publications/topfer_mldeeco_2022/">M. Töpfer, M. Abdullah, M. Kruliš, T. Bureš, P. Hnětynka: ML-DEECo: a Machine-Learning-Enabled Framework for Self-organizing Components</a>
             </li>
+            <li>
+              <Badge type={BadgeType.Paper}/>
+              <a href="https://d3s.mff.cuni.cz/publications/abdullah_introducing_2023/">M. Abdullah, M. Töpfer, T. Bureš, P. Hnětynka, M. Kruliš, F. Plášil: Introducing Estimators&mdash;Abstraction for Easy ML Employment in Self-adaptive Architectures</a>
+            </li>
           </ul>
         </li>
       </ul>
