@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
 import { CardBorderPrimary } from "@/components/cards";
+import { Card } from 'react-bootstrap';
 
 export default function CourseIndex() {
   return (<>
@@ -26,16 +27,44 @@ export default function CourseIndex() {
 
     <h2>Podmínky na zápočet</h2>
 
-
     {/**/}
     <p className="text-danger">Předběžná verze, požadavky se ještě můžou měnit.</p>
     {/**/}
 
-    <p>Pro získání zápočtu z algoritmizace budete muset plnit domácí úkoly. Plánuji zadat 10 úkolů po 10 bodech. Celkem tedy budete moct získat 100 bodů. <b>Zápočet vám udělím, když získáte alespoň 67 bodů (dvě třetiny maxima).</b> Na každý úkol budete mít dva týdny a v tomto čase ho můžete odevzdat i víckrát.</p>
+    <p>Pro získání zápočtu z algoritmizace potřebujete získat alespoň <i>30 bodů</i>. Body dostanete za <b>aktivní účast na cvičeních</b> a plnění <b>domácích úkolů</b>.</p>
 
     <p>Zápočet budete potřebovat k tomu, abyste se mohli přihlásit na zkoušku. Navíc se úkoly budou postupně ztěžovat, proto doporučuji je řešit hned od začátku semestru.</p>
 
-    <p>Některé úkoly budou spíše programovací, jiné spíše teoretické. Pro odevzdávání budeme používat systém <a href="../NPRG030/#recodex">ReCodEx</a>.</p>
+    <h3>Aktivní účast na cvičeních</h3>
+
+    <p>
+      Účast na cvičeních není povinná, ale je <b>silně doporučná</b>.
+      Za každé cvičení, na kterém budete řešit úlohy a aktivně se zapojovat, dostanete <i>1 bod</i>.
+      V průběhu semestru bude 11 cvičení, takže za aktivní účast můžete dostat až <i>11 bodů</i>.
+    </p>
+
+    <h3>Domácí úkoly</h3>
+
+    <p>Plánuji zadat 10 úkolů, každý za <i>3 body</i>. Celkem tedy za domácí úkoly budete moct získat až <i>30 bodů</i>.</p>
+
+    <p>
+      Některé úkoly budou spíše programovací, jiné spíše teoretické.
+      Pro odevzdávání budeme používat systém <a href="../NPRG030/#recodex">ReCodEx</a>.
+      Na každý úkol budete mít <b>dva týdny</b> a v&nbsp;tomto čase ho můžete odevzdat i víckrát.
+    </p>
+
+    <Card border="secondary" className="mb-3">
+      <Card.Header>
+        Příklady, jak získat body na zápočet
+      </Card.Header>
+      <Card.Body>
+        <ul className='card-text'>
+          <li>Splnit všechny domácí úkoly bez chyby.</li>
+          <li>Aktivní účast na 9 cvičeních (<i>9 bodů</i>) + splnit 7 z 10 domácích úkolů bez chyby (<i>21 bodů</i>).</li>
+          <li>&hellip;</li>
+        </ul>
+      </Card.Body>
+    </Card>
 
     <h2>Užitečné informace</h2>
 

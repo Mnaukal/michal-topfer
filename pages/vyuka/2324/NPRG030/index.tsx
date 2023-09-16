@@ -5,6 +5,7 @@ import { CardBorderPrimary, CardDark } from "@/components/cards";
 import Lab from "@/components/vyuka/Lab";
 import LabLink from "@/components/vyuka/LabLink";
 import LabPrograms from "@/components/vyuka/LabPrograms";
+import { Card } from 'react-bootstrap';
 
 
 export default function CourseIndex() {
@@ -100,22 +101,53 @@ export default function CourseIndex() {
     <p className="text-danger">Předběžná verze, požadavky se ještě můžou měnit.</p>
     {/**/}
 
-    <p>Na zápočet je potřeba</p>
+    <p>Pro získání zápočtu z programování je potřeba</p>
     <ul>
-      <li>získat alespoň 2/3 bodů za domácí úkoly (7 úkolů z 10),</li>
-      <li>napsat zápočtový test (bude nejspíš 19. 12.),</li>
-      <li>naprogramovat zápočtový program (viz <a href="#zapoctak">níže</a>).</li>
+      <li>získat alespoň <i>90 bodů</i> za <b>domácí úkoly</b> a <b>aktivní účast na cvičeních</b>,</li>
+      <li>napsat <b>zápočtový test</b> (bude nejspíš 19. 12.),</li>
+      <li>naprogramovat <b>zápočtový program</b> (viz <a href="#zapoctak">níže</a>).</li>
     </ul>
 
     <p>Zkouška bude až v letním semestru, takže zápočet je to jediné, co musíte získat.</p>
 
+    <h3>Aktivní účast na cvičeních</h3>
+
+    <p>
+      Účast na cvičeních není povinná, ale je <b>silně doporučná</b>.
+      Za každé cvičení, na kterém budete řešit úlohy a aktivně se zapojovat, dostanete až <i>3 body</i>.
+      V průběhu semestru bude 11 cvičení (a jedno navíc, na kterém se bude psát zápočtový test), takže za aktivní účast můžete dostat až <i>33 bodů</i>.
+    </p>
+
     <h3>Domácí úkoly</h3>
 
-    <p>Plánuji zadat 10 úkolů po 10 bodech. Celkem tedy budete moct získat 100 bodů. Na zápočet potřebujete aspoň 67 bodů, tedy 7 splněných úkolů. Na každý úkol budete mít dva týdny na odevzdání a v tomto čase můžete úkol odevzdat i víckrát. Pro odevzdávání budeme používat systém <a href="#recodex">ReCodEx</a>.</p>
+    <p>Plánuji zadat celkem 10 úkolů po <i>10 bodech</i>. Celkem tedy za domácí úkoly budete moct získat až <i>100 bodů</i>.</p>
+    
+    <p>U domácích úkolů se bude hodnotit jak <b>funkčnost</b> (jeslti program dělá to, co má), tak <b>kvalita kódu</b> (čitelnost, atd.). Zpravidla bude <i>6 bodů</i> za funkčnost a <i>4 body</i> za kvalitu, ale u některých úloh může být poměr bodů jiný.</p>
+
+    <p>
+      Pro odevzdávání budeme používat systém <a href="#recodex">ReCodEx</a>. 
+      Na každý úkol budete mít <b>dva týdny</b> a v&nbsp;tomto čase ho můžete odevzdat víckrát.
+      Pokud stihnete úkol odevzdat během <b>prvního týdne</b> od zadání, dám vám zpětnou vazbu ohledně kvality kódu a vy budete mít šanci váš program během druhého týdne vylepšit a odevzdat znovu.
+      Pokud úkol v prvním týdnu odevzdat nestihnete, ničemu to nevadí, akorát se tím připravíte o moji zpětnou vazbu a možnost kvalitu kódu vylepšit.
+    </p>
+
+    <Card border="secondary" className="mb-3">
+      <Card.Header>
+        Příklady, jak získat body na zápočet
+      </Card.Header>
+      <Card.Body>
+        <ul className='card-text'>
+          <li>Splnit 9 z 10 domácích úkolů s plným počtem bodů za kvalitu (buď rovnou odevzdáte hezký kód, nebo odevzdáte úkol během prvního týdne a během druhého týdne opravíte všechny moje připomínky).</li>
+          <li>Aktivní účast na 9 cvičeních (až <i>27 bodů</i>) + splnit 8 domácích úkolů (<i>8x6=48 bodů</i>) s aspoň polovinou bodů za kvalitu (<i>8x2=16 bodů</i>).</li>
+          <li>Aktivní účast na 10 cvičeních (až <i>30 bodů</i>) + splnit všechny domácí úkoly (<i>10x6=60 bodů</i>) bez ohledu na kvalitu.</li>
+          <li>&hellip;</li>
+        </ul>
+      </Card.Body>
+    </Card>
 
     <h3>Zápočtový test</h3>
 
-    <p>Test se bude psát nejspíš na cvičení 19. 12. a bude zadán přes ReCodEx (takže ho budete řešit jako domácí úkoly, akorát s časem omezeným délkou cvičení). Další termíny budou vypsány podle potřeby během zkouškového období &ndash; celkem máte na test tři pokusy.</p>
+    <p>Test se bude psát nejspíš na cvičení 19. 12. Test je praktický &ndash; vaším úkolem bude naprogramovat a odladit řešení úlohy &ndash; a bude zadán přes ReCodEx (takže ho budete řešit jako domácí úkoly, akorát s časem omezeným délkou cvičení). Další termíny budou vypsány podle potřeby během zkouškového období &ndash; celkem máte na test tři pokusy.</p>
 
     <h3 id="zapoctak">Zápočtový program</h3>
 
@@ -199,7 +231,7 @@ export default function CourseIndex() {
       <li>Jděte na <a href="https://recodex.mff.cuni.cz/login">https://recodex.mff.cuni.cz/login</a>.</li>
       <li>V sekci <em>Přihlásit se pomocí externí služby</em> klikněte na <em>Ověřit uživatele</em>.</li>
       <li>Přihlaste se pomocí Centrální Autentizační Služby (CAS CUNI). Jméno a heslo jsou stejné jako do SISu.</li>
-      <li>V menu vlevo dole je položka <em>SIS Integrace</em>. Tam se přidejte do skupin <em>Algoritmizace</em> a <em>Programování 1</em>.</li>
+      <li>V menu vlevo dole je položka <em>SIS Integrace</em>. Tam se přidejte do skupin <em>Algoritmizace</em> a <em>Programování 1</em> (programování má dvě skupiny &ndash; jednu na domácí úkoly a jednu na práci na cvičeních).</li>
     </ul>
 
     <h3>Řešil(a) jsem KSPčko</h3>
