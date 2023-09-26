@@ -31,21 +31,19 @@ export default function CourseIndex() {
     <p className="text-danger">Předběžná verze, požadavky se ještě můžou měnit.</p>
     {/**/}
 
-    <p>Pro získání zápočtu z algoritmizace potřebujete získat alespoň <i>30 bodů</i>. Body dostanete za <b>aktivní účast na cvičeních</b> a plnění <b>domácích úkolů</b>.</p>
+    <p>Pro získání zápočtu z algoritmizace je potřeba</p>
+    <ul>
+      <li>získat alespoň <i>70 % bodů</i> za <b>domácí úkoly</b> (za účast na cvičeních získáte bonusové body),</li>
+      <li><b>aktivně se účastnit cvičení</b> &ndash; prezentovat řešení domácího úkolu (případně úlohy ze cvičení).</li>
+    </ul>
 
     <p>Zápočet budete potřebovat k tomu, abyste se mohli přihlásit na zkoušku. Navíc se úkoly budou postupně ztěžovat, proto doporučuji je řešit hned od začátku semestru.</p>
 
-    <h3>Aktivní účast na cvičeních</h3>
-
-    <p>
-      Účast na cvičeních není povinná, ale je <b>silně doporučná</b>.
-      Za každé cvičení, na kterém budete řešit úlohy a aktivně se zapojovat, dostanete <i>1 bod</i>.
-      V průběhu semestru bude 11 cvičení, takže za aktivní účast můžete dostat až <i>11 bodů</i>.
-    </p>
-
     <h3>Domácí úkoly</h3>
 
-    <p>Plánuji zadat 10 úkolů, každý za <i>3 body</i>. Celkem tedy za domácí úkoly budete moct získat až <i>30 bodů</i>.</p>
+    <p>Plánuji zadat 8 úkolů, každý za <i>8 bodů</i>. Celkem tedy za domácí úkoly budete moct získat až <i>64 bodů</i>, takže na zápočet bude potřeba <i>45 bodů</i>.</p>
+
+    <p>Za účast na cvičení můžete získat bonusové body, konkrétně <i>1 bod</i> za každé cvičení. V průběhu semestru bude 11 cvičení (a jedno navíc na zápočtový test z programování), takže můžete získat až <i>11 bonusových bodů</i>.</p>
 
     <p>
       Některé úkoly budou spíše programovací, jiné spíše teoretické.
@@ -53,18 +51,14 @@ export default function CourseIndex() {
       Na každý úkol budete mít <b>dva týdny</b> a v&nbsp;tomto čase ho můžete odevzdat i víckrát.
     </p>
 
-    <Card border="secondary" className="mb-3">
-      <Card.Header>
-        Příklady, jak získat body na zápočet
-      </Card.Header>
-      <Card.Body>
-        <ul className='card-text'>
-          <li>Splnit všechny domácí úkoly bez chyby.</li>
-          <li>Aktivní účast na 9 cvičeních (<i>9 bodů</i>) + splnit 7 z 10 domácích úkolů bez chyby (<i>21 bodů</i>).</li>
-          <li>&hellip;</li>
-        </ul>
-      </Card.Body>
-    </Card>
+    <h3>Aktivní účast na cvičeních &ndash; prezentace řešení úlohy</h3>
+
+    <p>
+      Účast na cvičeních není povinná, ale je <b>silně doporučná</b>.
+      Nicméně pro získání zápočtu musíte alespoň jednou za semestr <b>prezentovat řešení úlohy</b> (buď domácího úkolu nebo úlohy ze cvičení) pro ostatní studenty na cvičení. Vždy na začátku cvičení dostane několik studentů prostor ukázat své řešení zrovna končícího domácího úkolu. Kromě domácích úkolů můžete také prezentovat řešení některých vybraných úloh zadaných na cvičení.
+    </p>
+
+    <p>Od vámi prezentovaného řešení očekávám, že bude správně a že bude pochopitelné pro ostatní studenty na cvičení (případně budete schopni odpovídat na jejich otázky k řešení).</p>
 
     <h2>Užitečné informace</h2>
 
