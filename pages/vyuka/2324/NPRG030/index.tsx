@@ -119,11 +119,13 @@ export default function CourseIndex() {
     <p>U domácích úkolů se bude hodnotit jak <b>funkčnost</b> (jeslti program dělá to, co má), tak <b>kvalita kódu</b> (čitelnost, atd.). Zpravidla bude <i>6 bodů</i> za funkčnost a <i>4 body</i> za kvalitu, ale u některých úloh může být poměr bodů jiný.</p>
 
     <p>
-      Pro odevzdávání budeme používat systém <a href="#recodex">ReCodEx</a>. 
       Na každý úkol budete mít <b>dva týdny</b> a v&nbsp;tomto čase ho můžete odevzdat víckrát.
       Pokud stihnete úkol odevzdat během <b>prvního týdne</b> od zadání, dám vám zpětnou vazbu ohledně kvality kódu a vy budete mít šanci váš program během druhého týdne vylepšit a odevzdat znovu.
       Pokud úkol v prvním týdnu odevzdat nestihnete, ničemu to nevadí, akorát se tím připravíte o moji zpětnou vazbu a možnost kvalitu kódu vylepšit.
+      Pro odevzdávání budeme používat systém <a href="#recodex">ReCodEx</a>.
     </p>
+
+    <p>Jako řešení domácích úkolů odevzdávejte pouze vaše výtvory, nikoli kód napsaný někým jiným (opsaný od spolužáka/spolužačky, zkopírovaný z internetu, vygenerovaný pomocí ChatGPT, &hellip;). Rozhodně není zakázáno hledat na internetu nebo konzultovat se spolužáky, jak se naprogramuje nějaká dílčí část úkolu, ale je zakázáno kopírovat řešení celé úlohy. Podobně pro LLMs (ChatGPT a další) &ndash; můžete se ptát, jak se udělá nějaká konkrétní věc v Pythonu, ale nevydávejte vygenerovaný kód za své řešení (v tomto kontextu bych zmínil <a href='https://www.mff.cuni.cz/cs/verejnost/aktuality/stanovisko-mff-uk-k-vyuzivani-umele-inteligence-ve-vyuce'>Stanovisko MFF UK k využívání umělé inteligence ve výuce</a>, zejména bod <i>Buďte transparentní</i>).</p>
 
     <h3>Zápočtový test</h3>
 
