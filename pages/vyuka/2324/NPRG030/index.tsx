@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
 import { InlineMath } from 'react-katex';
-import { CardBorderPrimary, CardDark } from "@/components/cards";
+import { CardBorderDanger, CardBorderPrimary, CardDark } from "@/components/cards";
 import Lab from "@/components/vyuka/Lab";
 import LabLink from "@/components/vyuka/LabLink";
 import LabPrograms from "@/components/vyuka/LabPrograms";
@@ -98,7 +98,7 @@ export default function CourseIndex() {
     <h2 id="zapocet">Podmínky na zápočet</h2>
 
     {/**/}
-    <p className="text-danger">Předběžná verze, požadavky se ještě můžou měnit.</p>
+    <CardBorderDanger>Předběžná verze, požadavky se ještě můžou měnit.</CardBorderDanger>
     {/**/}
 
     <p>Pro získání zápočtu z programování je potřeba</p>

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from "next/link";
-import { CardBorderPrimary } from "@/components/cards";
+import { CardBorderDanger, CardBorderPrimary } from "@/components/cards";
 import { Card } from 'react-bootstrap';
 
 export default function CourseIndex() {
@@ -28,7 +28,7 @@ export default function CourseIndex() {
     <h2>Podmínky na zápočet</h2>
 
     {/**/}
-    <p className="text-danger">Předběžná verze, požadavky se ještě můžou měnit.</p>
+    <CardBorderDanger>Předběžná verze, požadavky se ještě můžou měnit.</CardBorderDanger>
     {/**/}
 
     <p>Pro získání zápočtu z algoritmizace je potřeba</p>
