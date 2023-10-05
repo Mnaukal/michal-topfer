@@ -12,7 +12,7 @@ export default function CourseIndex() {
   const labs = [
     <Lab key="1" order="1" date="3.10.">
       <p>Algoritmizace: <Link href="NPRG062/01">úložky</Link> &ndash; Kuličky, Hra s mincemi, Známky.</p>
-      <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="lab" order="1"/>).</p>
+      <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="lab" order="1"/>), <Link href="NPRG030/01">úlohy na procvičení</Link>.</p>
     </Lab>,
     <Lab key="2" order="2" date="10.10." plan>
       <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Cesty věží na šachovnici, Vážení kuliček.</p>
