@@ -11,7 +11,7 @@ export default function CourseIndex() {
   const labs = [
     <Lab key="1" order="1" date="4.10.">
       <p>Algoritmizace: <Link href="NPRG062/01">úložky</Link> &ndash; Největší číslo, Kuličky, Cesty věží na šachovnici, Známky.</p>
-      <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms order="1"/>).</p>
+      <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="web" order="1"/>).</p>
     </Lab>,
     <Lab key="2" order="2" date="11.10.">
       <p>Algoritmizace: <Link href="NPRG062/02">úložky, <InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
@@ -19,42 +19,42 @@ export default function CourseIndex() {
     </Lab>,
     <Lab key="3" order="3" date="18.10.">
       <p>Algoritmizace: <Link href="NPRG062/03">Vážení kuliček</Link>.</p>
-      <p>Programování: cykly, funkce, seznamy, textové řetězce (<LabPrograms order="3"/>).</p>
+      <p>Programování: cykly, funkce, seznamy, textové řetězce (<LabPrograms source="web" order="3"/>).</p>
     </Lab>,
     <Lab key="4" order="4" date="25.10.">
       <p>Algoritmizace: binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>), zásobník.</p>
-      <p>Programování: seznamy (comprehensions), slovník (dict), objekty (<LabPrograms order="4"/>).</p>
+      <p>Programování: seznamy (comprehensions), slovník (dict), objekty (<LabPrograms source="web" order="4"/>).</p>
     </Lab>,
     <Lab key="5" order="5" date="1.11.">
       <p>Algoritmizace: halda (str. 84 v <a href="https://pruvodce.ucw.cz/">Průvodci labyrintem algoritmů</a>).</p>
-      <p>Programování: dodělávky z minula, práce se soubory (<LabPrograms order="5"/>).</p>
+      <p>Programování: dodělávky z minula, práce se soubory (<LabPrograms source="web" order="5"/>).</p>
     </Lab>,
     <Lab key="6" order="6" date="8.11.">
       <p>Algoritmizace: <Link href="NPRG062/06">úlohy s posloupnostmi</Link>.</p>
-      <p>Programování: spojové seznamy (<LabPrograms order="6"/>).</p>
+      <p>Programování: spojové seznamy (<LabPrograms source="web" order="6"/>).</p>
     </Lab>,
     <Lab key="7" order="7" date="15.11.">
-      <p>Algoritmizace: rekurze (<LabPrograms order="7"/>).</p>
+      <p>Algoritmizace: rekurze (<LabPrograms source="web" order="7"/>).</p>
       <p>Programování: <Link href="NPRG030/07">spojové seznamy</Link> (<a href="07/linked_lists.py">moje řešení</a>).</p>{/*TODO*/}
     </Lab>,
     <Lab key="8" order="8" date="22.11.">
       <p>Algoritmizace: binární vyhledávací stromy.</p>
-      <p>Programování: PyGame (instalace: <code>py -3 -m pip install -U pygame --user</code>, <LabPrograms order="8"/>).</p>
+      <p>Programování: PyGame (instalace: <code>py -3 -m pip install -U pygame --user</code>, <LabPrograms source="web" order="8"/>).</p>
     </Lab>,
     <Lab key="9" order="9" date="29.11.">
       <p>Algoritmizace: <Link href="NPRG062/09">zkoušková úloha na stromy</Link>.</p>
-      <p>Programování: dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>, <code>doctest</code>), operátory (<LabPrograms order="9"/>).</p>
+      <p>Programování: dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>, <code>doctest</code>), operátory (<LabPrograms source="web" order="9"/>).</p>
     </Lab>,
     <Lab key="10" order="10" date="6.12.">
       <p>Algoritmizace: <i>nic, jen programování</i>.</p>
-      <p>Programování: dědičnost, <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>, <Link href="NPRG030/10">Buďte lepší než Spotify</Link> (<LabPrograms order="10"/>).</p>
+      <p>Programování: dědičnost, <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>, <Link href="NPRG030/10">Buďte lepší než Spotify</Link> (<LabPrograms source="web" order="10"/>).</p>
     </Lab>,
     <Lab key="11" order="11" date="13.12.">
       <p>Algoritmizace: dynamické programování.</p>
-      <p>Programování: <a href="https://jupyter.org/"><code>Jupyter</code></a>, <a href="https://numpy.org/"><code>NumPy</code></a>, <a href="https://matplotlib.org/"><code>Matplotlib</code></a>, <a href="https://pandas.pydata.org/"><code>Pandas</code></a> (<LabPrograms order="11"/>).</p>
+      <p>Programování: <a href="https://jupyter.org/"><code>Jupyter</code></a>, <a href="https://numpy.org/"><code>NumPy</code></a>, <a href="https://matplotlib.org/"><code>Matplotlib</code></a>, <a href="https://pandas.pydata.org/"><code>Pandas</code></a> (<LabPrograms source="web" order="11"/>).</p>
     </Lab>,
     <Lab key="12" order="12" date="20.12.">
-      <p>Algoritmizace + programování: základní grafové algoritmy &ndash; BFS, DFS, (navíc Dijkstra, A*), Cesta králem po šachovnici (<LabPrograms order="12"/>).</p>
+      <p>Algoritmizace + programování: základní grafové algoritmy &ndash; BFS, DFS, (navíc Dijkstra, A*), Cesta králem po šachovnici (<LabPrograms source="web" order="12"/>).</p>
     </Lab>,
     <Lab key="13" order="13" date="3.1.">
       <p>Programování: zápočtový test.</p>

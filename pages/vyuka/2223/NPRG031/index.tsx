@@ -10,28 +10,28 @@ import LabPrograms from "@/components/vyuka/LabPrograms";
 export default function CourseIndex() {
   const labs = [
     <Lab key="1" order="1" date="13.2.">
-       <p>Základy C#: proměnné, podmínky, cykly &ndash; <Link href="NPRG031/01">úlohy na procvičení</Link> (<LabPrograms afs order="1"/>).</p>
+       <p>Základy C#: proměnné, podmínky, cykly &ndash; <Link href="NPRG031/01">úlohy na procvičení</Link> (<LabPrograms source="web" order="1"/>).</p>
     </Lab>,
     <Lab key="2" order="2" date="20.2." title=" &ndash; suploval Jirka Mayer">
-      <p>Základní datové struktury v C# (<code>List</code>, <code>Dictionary</code>, <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples"><code>tuple</code></a>, ...), <a href="https://github.com/ReCodEx/utils/blob/master/runners/cs/Reader.cs">ReCodEx Reader</a> &ndash; <Link href="NPRG031/02">úlohy na procvičení</Link> (<LabPrograms afs order="2"/>).</p>
+      <p>Základní datové struktury v C# (<code>List</code>, <code>Dictionary</code>, <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples"><code>tuple</code></a>, ...), <a href="https://github.com/ReCodEx/utils/blob/master/runners/cs/Reader.cs">ReCodEx Reader</a> &ndash; <Link href="NPRG031/02">úlohy na procvičení</Link> (<LabPrograms source="web" order="2"/>).</p>
     </Lab>,
     <Lab key="3" order="3" date="27.2.">
-      <p>Třídy (<code>class</code>) a rozhraní (<code>interface</code>) (<LabPrograms afs order="3"/> &ndash; <code>Counter</code>, <code>Temperature</code>, <code>IGameObject</code>).</p>
+      <p>Třídy (<code>class</code>) a rozhraní (<code>interface</code>) (<LabPrograms source="web" order="3"/> &ndash; <code>Counter</code>, <code>Temperature</code>, <code>IGameObject</code>).</p>
     </Lab>,
     <Lab key="4" order="4" date="6.3.">
-      <p>Třídy a rozhraní &ndash; <code>IEquitable</code>, <code>IComparable</code> (<LabPrograms afs order="4"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
+      <p>Třídy a rozhraní &ndash; <code>IEquitable</code>, <code>IComparable</code> (<LabPrograms source="web" order="4"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
     </Lab>,
     <Lab key="5" order="5" date="13.3." title=" &ndash; suploval Jirka Mayer">
-      <p>Soubory, dědičnost (<LabPrograms afs order="5"/> &ndash; Strom aritmetických výrazů).</p>
+      <p>Soubory, dědičnost (<LabPrograms source="web" order="5"/> &ndash; Strom aritmetických výrazů).</p>
     </Lab>,
     <Lab key="6" order="6" date="20.3." title=" &ndash; suploval David Šosvald">
-      <p>Diskrétní simulace (<LabPrograms afs order="6"/> &ndash; Pošta).</p>
+      <p>Diskrétní simulace (<LabPrograms source="web" order="6"/> &ndash; Pošta).</p>
     </Lab>,
     <Lab key="7" order="7" date="27.3.">
-      <p>Generické programování (typové parametry), funkcionální programování, enumerátory &ndash; <Link href="NPRG031/07">úlohy na procvičení</Link> (<LabPrograms afs order="7"/>).</p>
+      <p>Generické programování (typové parametry), funkcionální programování, enumerátory &ndash; <Link href="NPRG031/07">úlohy na procvičení</Link> (<LabPrograms source="web" order="7"/>).</p>
     </Lab>,
     <Lab key="8" order="8" date="3.4.">
-      <p>Dynamické programování (<LabPrograms afs order="8"/>).</p>
+      <p>Dynamické programování (<LabPrograms source="web" order="8"/>).</p>
       <ul>
           <li>Počet cest v DAGu</li>
           <li>Nejdelší rostoucí podposloupnost</li>
@@ -42,10 +42,10 @@ export default function CourseIndex() {
       <p className="text-danger">Cvičení nebude, protože je státní svátek.</p>
     </Lab>,
     <Lab key="9" order="9" date="17.4.">
-      <p>WinForms (<LabPrograms afs order="9"/>).</p>
+      <p>WinForms (<LabPrograms source="web" order="9"/>).</p>
     </Lab>,
     <Lab key="10" order="10" date="24.4.">
-      <p>Unit testy (<LabPrograms afs order="10"/> &ndash; <code>List&lt;T&gt;</code>).</p>
+      <p>Unit testy (<LabPrograms source="web" order="10"/> &ndash; <code>List&lt;T&gt;</code>).</p>
       <p>Jak založit projekt s testy:</p>
       <ol>
         <li>Vytvořit solution: <code>dotnet new sln</code></li>

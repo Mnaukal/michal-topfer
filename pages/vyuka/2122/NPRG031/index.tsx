@@ -10,28 +10,28 @@ import LabPrograms from "@/components/vyuka/LabPrograms";
 export default function CourseIndex() {
   const labs = [
     <Lab key="1" order="1" date="17.2.">
-       <p>Základy C#: proměnné, podmínky, cykly &ndash; <Link href="NPRG031/01">úlohy na procvičení</Link> (<LabPrograms order="1"/>).</p>
+       <p>Základy C#: proměnné, podmínky, cykly &ndash; <Link href="NPRG031/01">úlohy na procvičení</Link> (<LabPrograms source="web" order="1"/>).</p>
     </Lab>,
     <Lab key="2" order="2" date="24.2.">
-      <p>Základní datové struktury v C# (<code>List</code>, <code>Dictionary</code>, <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples"><code>tuple</code></a>, ...), <a href="https://github.com/ReCodEx/utils/blob/master/runners/cs/Reader.cs">ReCodEx Reader</a> &ndash; <Link href="NPRG031/02">úlohy na procvičení</Link> (<LabPrograms order="2"/>).</p>
+      <p>Základní datové struktury v C# (<code>List</code>, <code>Dictionary</code>, <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-tuples"><code>tuple</code></a>, ...), <a href="https://github.com/ReCodEx/utils/blob/master/runners/cs/Reader.cs">ReCodEx Reader</a> &ndash; <Link href="NPRG031/02">úlohy na procvičení</Link> (<LabPrograms source="web" order="2"/>).</p>
     </Lab>,
     <Lab key="3" order="3" date="3.3.">
-      <p>Třídy (<code>class</code>) a rozhraní (<code>interface</code>) (<LabPrograms order="3"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
+      <p>Třídy (<code>class</code>) a rozhraní (<code>interface</code>) (<LabPrograms source="web" order="3"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
     </Lab>,
     <Lab key="4" order="4" date="10.3.">
-      <p>Třídy a rozhraní &ndash; <code>IEquitable</code>, <code>IComparable</code> (<LabPrograms order="4"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
+      <p>Třídy a rozhraní &ndash; <code>IEquitable</code>, <code>IComparable</code> (<LabPrograms source="web" order="4"/> &ndash; <InlineMath math="\mathbb{Z}_7"/>).</p>
     </Lab>,
     <Lab key="5" order="5" date="17.3.">
-      <p>Dědičnost (<LabPrograms order="5"/> &ndash; Strom aritmetických výrazů).</p>
+      <p>Dědičnost (<LabPrograms source="web" order="5"/> &ndash; Strom aritmetických výrazů).</p>
     </Lab>,
     <Lab key="6" order="6" date="24.3.">
-      <p>Soubory (<LabPrograms order="6"/> &ndash; Synchronizace titulků).</p>
+      <p>Soubory (<LabPrograms source="web" order="6"/> &ndash; Synchronizace titulků).</p>
     </Lab>,
     <Lab key="7" order="7" date="31.3.">
-      <p>Diskrétní simulace (<LabPrograms order="7"/> &ndash; Pošta).</p>
+      <p>Diskrétní simulace (<LabPrograms source="web" order="7"/> &ndash; Pošta).</p>
     </Lab>,
     <Lab key="8" order="8" date="7.4.">
-      <p>Dynamické programování (<LabPrograms order="8"/>).</p>
+      <p>Dynamické programování (<LabPrograms source="web" order="8"/>).</p>
       <ul>
           <li>Počet cest v DAGu</li>
           <li>Nejdelší rostoucí podposloupnost</li>
@@ -39,19 +39,19 @@ export default function CourseIndex() {
       </ul>
     </Lab>,
     <Lab key="9" order="9" date="14.4.">
-      <p>Generické programování, funkcionální programování, enumerátory &ndash; <Link href="NPRG031/09">úlohy na procvičení</Link> (<LabPrograms order="9"/>).</p>
+      <p>Generické programování, funkcionální programování, enumerátory &ndash; <Link href="NPRG031/09">úlohy na procvičení</Link> (<LabPrograms source="web" order="9"/>).</p>
     </Lab>,
     <Lab key="10" order="10" date="21.4.">
-      <p>Testy (<LabPrograms order="10"/> &ndash; <code>List&lt;T&gt;</code>).</p>
+      <p>Testy (<LabPrograms source="web" order="10"/> &ndash; <code>List&lt;T&gt;</code>).</p>
     </Lab>,
     <Lab key="11" order="11" date="28.4." title=" &ndash; suploval David Šosvald">
-      <p>WinForms (<LabPrograms order="11"/>).</p>
+      <p>WinForms (<LabPrograms source="web" order="11"/>).</p>
     </Lab>,
     <Lab key="12" order="12" date="5.5.">
       <p>Ukázková zkoušková úloha <a href="210614_zk_koncerty.pdf">Koncerty</a>.</p>
     </Lab>,
     <Lab key="13" order="13" date="12.5.">
-      <p>Vývoj her v <a href="https://unity.com/">Unity</a> (<LabPrograms order="13"/>).</p>
+      <p>Vývoj her v <a href="https://unity.com/">Unity</a> (<LabPrograms source="web" order="13"/>).</p>
     </Lab>,
     <Lab key="14" order="14" date="19.5">
       <p className="text-danger">Zápočtový test.</p>

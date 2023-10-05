@@ -11,51 +11,51 @@ export default function CourseIndex() {
   const labs = [
     <Lab key="1" order="1" date="4.10.">
       <p>Algoritmizace: <Link href="NPRG062/01">úložky</Link> &ndash; Největší číslo, Kuličky, Hra s mincemi.</p>
-      <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms order="1"/>).</p>
+      <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="web" order="1"/>).</p>
     </Lab>,
     <Lab key="2" order="2" date="11.10.">
       <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Cesty věží na šachovnici, Známky, Vážení kuliček.</p>
-      <p>Programování: cykly (<LabPrograms order="2"/>).</p>
+      <p>Programování: cykly (<LabPrograms source="web" order="2"/>).</p>
     </Lab>,
     <Lab key="3" order="3" date="18.10.">
       <p>Algoritmizace: <Link href="NPRG062/03"><InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
-      <p>Programování: <Link href="NPRG030/03">funkce, seznamy, textové řetězce</Link> (<LabPrograms order="3"/>).</p>
+      <p>Programování: <Link href="NPRG030/03">funkce, seznamy, textové řetězce</Link> (<LabPrograms source="web" order="3"/>).</p>
     </Lab>,
     <Lab key="4" order="4" date="25.10.">
       <p>Algoritmizace: pokračování <InlineMath math="\mathcal{O}"/> (složitost), binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>).</p>
-      <p>Programování: seznamy (comprehensions), keř, strom a les v ReCodExu (<LabPrograms order="4"/>).</p>
+      <p>Programování: seznamy (comprehensions), keř, strom a les v ReCodExu (<LabPrograms source="web" order="4"/>).</p>
     </Lab>,
     <Lab key="5" order="5" date="1.11.">
       <p>Algoritmizace: <Link href="NPRG062/05">úlohy s posloupnostmi</Link>.</p>
-      <p>Programování: slovník (<code>dict</code>), práce se soubory (<LabPrograms order="5"/>).</p>
+      <p>Programování: slovník (<code>dict</code>), práce se soubory (<LabPrograms source="web" order="5"/>).</p>
     </Lab>,
     <Lab key="6" order="6" date="8.11.">
       <p>Algoritmizace: zásobník.</p>
-      <p>Programování: soubory (pokračování), objekty (<LabPrograms order="6"/>).</p>
+      <p>Programování: soubory (pokračování), objekty (<LabPrograms source="web" order="6"/>).</p>
     </Lab>,
     <Lab key="7" order="7" date="15.11.">
-      <p>Algoritmizace + Programování: <Link href="NPRG030/07">spojové seznamy</Link> (<LabPrograms order="7"/>).</p>
+      <p>Algoritmizace + Programování: <Link href="NPRG030/07">spojové seznamy</Link> (<LabPrograms source="web" order="7"/>).</p>
     </Lab>,
     <Lab key="22.11." date="22.11." title=" CVIČENÍ NEBUDE">
       <p className="text-danger">Cvičení nebude z důvodu konání Dne otevřených dveří.</p>
     </Lab>,
     <Lab key="8" order="8" date="29.11.">
       <p>Algoritmizace: rekurze.</p>
-      <p>Programování: generátory (<LabPrograms order="8"/>).</p>
+      <p>Programování: generátory (<LabPrograms source="web" order="8"/>).</p>
     </Lab>,
     <Lab key="9" order="9" date="6.12.">
       <p>Algoritmizace: <Link href="NPRG062/09">zkoušková úloha na stromy</Link>.</p>
-      <p>Programování: přetěžování operátorů, dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>) (<LabPrograms order="9"/>).</p>
+      <p>Programování: přetěžování operátorů, dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>) (<LabPrograms source="web" order="9"/>).</p>
     </Lab>,
     <Lab key="10" order="10" date="13.12.">
       <p>Algoritmizace: <i>nic, jen programování</i>.</p>
-      <p>Programování: <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>, <code>pygame</code>, dědičnost (<LabPrograms order="10"/>).</p>
+      <p>Programování: <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>, <code>pygame</code>, dědičnost (<LabPrograms source="web" order="10"/>).</p>
     </Lab>,
     <Lab key="11" order="11" date="20.12.">
       <p>Programování: <span className="text-danger">zápočtový test</span>.</p>
     </Lab>,
     <Lab key="12" order="12" date="3.1.">
-      <p>Algoritmizace + programování: základní grafové algoritmy &ndash; BFS, DFS, (navíc Dijkstra, A*), Cesta králem po šachovnici (<LabPrograms order="12"/>).</p>
+      <p>Algoritmizace + programování: základní grafové algoritmy &ndash; BFS, DFS, (navíc Dijkstra, A*), Cesta králem po šachovnici (<LabPrograms source="web" order="12"/>).</p>
     </Lab>,
   ]
 

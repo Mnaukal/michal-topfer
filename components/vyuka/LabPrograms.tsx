@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export type ProgramsProps = {
   order: string;
-  afs?: boolean;
+  source: "lab" | "web";
 };
 
-export default function LabPrograms({ order, afs = false }: ProgramsProps) {
+export default function LabPrograms({ order, source }: ProgramsProps) {
   const router = useRouter();
-  const url = afs
+  const url = source == "lab"
     ? "https://www.ms.mff.cuni.cz/~topfermi/vyuka/materialy"
     : router.pathname.replace("vyuka", "programy");
 
