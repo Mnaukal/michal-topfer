@@ -17,7 +17,7 @@ export default function CourseLab() {
 <p><em>Poznámka:</em> Pozor na to, že ReCodEx vyhodnocuje správnost vašeho řešení tak, že ho porovná se vzorovým výsledkem. Porovnávání probíhá znak po znaku, takže text, který váš program vypíše, musí úplně přesně odpovídat vzorovému výstupu (nesmí v něm být ani žádný znak navíc).</p>
 <h3 id="další-nápady-na-vyzkoušení">Další nápady na vyzkoušení</h3>
 <ul>
-<li>Jak se chová <code>//</code> (celočíselné dělení) a <code>%</code> (modulo) k záporným číslům?</li>
+<li>Jak se chová <code>{'//'}</code> (celočíselné dělení) a <code>%</code> (modulo) k záporným číslům?</li>
 <li>Napište program, který spočítá věk uživatele. Uživatel zadá rok narození a program vypíše jeho věk. Pro jednoduchost ignorujte datum narození a věk počítejte jen jako <code>aktuální_rok - rok_narození</code>. Až to budete mít, můžete zkusit doplnit a práci s datem narození (uživatel zadá den, měsíc a rok narození a program spočítá jeho věk).</li>
 </ul>
 
