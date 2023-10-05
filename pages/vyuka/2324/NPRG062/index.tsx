@@ -27,7 +27,7 @@ export default function CourseIndex() {
 
     <h2>Podmínky na zápočet</h2>
 
-    {/**/}
+    {/*/}
     <CardBorderDanger>Předběžná verze, požadavky se ještě můžou měnit.</CardBorderDanger>
     {/**/}
 

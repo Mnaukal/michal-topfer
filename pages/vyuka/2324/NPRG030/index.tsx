@@ -10,12 +10,12 @@ import { Card } from 'react-bootstrap';
 
 export default function CourseIndex() {
   const labs = [
-    <Lab key="1" order="1" date="3.10." plan>
+    <Lab key="1" order="1" date="3.10.">
       <p>Algoritmizace: <Link href="NPRG062/01">úložky</Link> &ndash; Kuličky, Hra s mincemi, Známky.</p>
       <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="lab" order="1"/>).</p>
     </Lab>,
-    <Lab key="2" order="2" date="10.10." future>
-      <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Cesty věží na šachovnici, Známky, Vážení kuliček.</p>
+    <Lab key="2" order="2" date="10.10." plan>
+      <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Cesty věží na šachovnici, Vážení kuliček.</p>
       <p>Programování: cykly (<LabPrograms source="lab" order="2"/>).</p>
     </Lab>,
     <Lab key="3" order="3" date="17.10." future>
@@ -97,7 +97,7 @@ export default function CourseIndex() {
 
     <h2 id="zapocet">Podmínky na zápočet</h2>
 
-    {/**/}
+    {/*/}
     <CardBorderDanger>Předběžná verze, požadavky se ještě můžou měnit.</CardBorderDanger>
     {/**/}
 
