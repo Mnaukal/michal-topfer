@@ -18,11 +18,11 @@ function Lab({ date, order = null, title = "", plan = false, future = false, chi
 
   return (
     <section id={date} className="co-bylo">
-      <a className="toggle" onClick={() => setOpen(!open)} aria-controls={id} aria-expanded={open}>
-        <h3 className="ms-1">
+      <h3 className="ms-1">
+        <a className="toggle" onClick={() => setOpen(!open)} aria-controls={id} aria-expanded={open}>
           {day}. {month}. {order !== null && `(${order}. cvičení)`} {title}
-        </h3>
-      </a>
+        </a>
+      </h3>
       <Collapse in={open}>
         <div className={"cviko " + (plan ? "plan text-muted" : "")} id={id}>
           {children}
