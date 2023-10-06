@@ -15,8 +15,8 @@ export default function CourseIndex() {
       <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="lab" order="1"/>), <Link href="NPRG030/01">úlohy na procvičení</Link>.</p>
     </Lab>,
     <Lab key="2" order="2" date="10.10." plan>
-      <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Cesty věží na šachovnici, Vážení kuliček.</p>
-      <p>Programování: cykly (<LabPrograms source="lab" order="2"/>).</p>
+      <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Nejtěžší mince, Cesty věží na šachovnici, Vážení kuliček.</p>
+      <p>Programování: cykly (<LabPrograms source="lab" order="2"/>), <Link href="NPRG030/02">úlohy na procvičení</Link>.</p>
     </Lab>,
     <Lab key="3" order="3" date="17.10." future>
       <p>Algoritmizace: <Link href="NPRG062/03"><InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
