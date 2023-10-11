@@ -9,7 +9,7 @@ export default function CourseLab() {
     <h1>Programování 1 &ndash; 2. cvičení</h1>
 
 <h2 id="úlohy-na-procvičení">Úlohy na procvičení</h2>
-<h3 id="for-cyklus"><code>for</code> cyklus</h3>
+<h3 id="for-cyklus"><code style={{textTransform: "none"}}>for</code> cyklus</h3>
 <ul>
 <li><p>Vypište sudá čísla od 1 do <code>N</code>.</p></li>
 <li><p>Vypište čísla od 1 do <code>N</code>, která nejsou dělitelná 3.</p></li>
@@ -21,7 +21,7 @@ Příklad výstupu pro <code>animals = [&quot;zebra&quot;, &quot;lev&quot;, &quo
 3. slon`}</code></pre></li>
 </ul>
 
-<h3 id="while-cyklus"><code>while</code> cyklus</h3>
+<h3 id="while-cyklus"><code style={{textTransform: "none"}}>while</code> cyklus</h3>
 <ul>
 <li><a href="https://recodex.mff.cuni.cz/app/assignment/4ffafbf3-2723-4e8b-b205-7312121950a3">Maximum</a></li>
 <li><a href="https://recodex.mff.cuni.cz/app/assignment/a0f7718f-af5b-4cce-96b2-78970a032546">Druhé největší číslo</a></li>

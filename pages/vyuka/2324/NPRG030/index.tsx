@@ -14,13 +14,13 @@ export default function CourseIndex() {
       <p>Algoritmizace: <Link href="NPRG062/01">úložky</Link> &ndash; Kuličky, Hra s mincemi, Známky.</p>
       <p>Programování: základy &ndash; operátory, proměnné, vstup, výstup, podmínky (<LabPrograms source="lab" order="1"/>), <Link href="NPRG030/01">úlohy na procvičení</Link>.</p>
     </Lab>,
-    <Lab key="2" order="2" date="10.10." plan>
+    <Lab key="2" order="2" date="10.10.">
       <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Nejtěžší mince, Cesty věží na šachovnici, Vážení kuliček.</p>
-      <p>Programování: cykly (<LabPrograms source="lab" order="2"/>), <Link href="NPRG030/02">úlohy na procvičení</Link>.</p>
+      <p>Programování: seznamy, textové řetězce, cykly (<LabPrograms source="lab" order="2"/>), <Link href="NPRG030/02">úlohy na procvičení</Link>.</p>
     </Lab>,
-    <Lab key="3" order="3" date="17.10." future>
+    <Lab key="3" order="3" date="17.10." plan>
       <p>Algoritmizace: <Link href="NPRG062/03"><InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
-      <p>Programování: <Link href="NPRG030/03">funkce, seznamy, textové řetězce</Link> (<LabPrograms source="lab" order="3"/>).</p>
+      <p>Programování: funkce, DRY (Don&apos;t Repeat Yourself), refaktorování (<LabPrograms source="lab" order="3"/>), <Link href="NPRG030/03">úlohy na procvičení</Link> &ndash; funkce, Odhad <InlineMath math="\pi"/> Metodou Monte Carlo, refaktorování, funkce pro textové řetězce.</p>
     </Lab>,
     <Lab key="4" order="4" date="24.10." future>
       <p>Algoritmizace: pokračování <InlineMath math="\mathcal{O}"/> (složitost), binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>).</p>
