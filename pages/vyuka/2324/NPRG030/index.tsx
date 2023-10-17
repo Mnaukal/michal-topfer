@@ -18,13 +18,13 @@ export default function CourseIndex() {
       <p>Algoritmizace: <Link href="NPRG062/02">úložky</Link> &ndash; Nejtěžší mince, Cesty věží na šachovnici, Vážení kuliček.</p>
       <p>Programování: seznamy, textové řetězce, cykly (<LabPrograms source="lab" order="2"/>), <Link href="NPRG030/02">úlohy na procvičení</Link>.</p>
     </Lab>,
-    <Lab key="3" order="3" date="17.10." plan>
+    <Lab key="3" order="3" date="17.10.">
       <p>Algoritmizace: <Link href="NPRG062/03"><InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
-      <p>Programování: funkce, DRY (Don&apos;t Repeat Yourself), refaktorování (<LabPrograms source="lab" order="3"/>), <Link href="NPRG030/03">úlohy na procvičení</Link> &ndash; funkce, Odhad <InlineMath math="\pi"/> Metodou Monte Carlo, refaktorování, funkce pro textové řetězce.</p>
+      <p>Programování: funkce (<LabPrograms source="lab" order="3"/>), <Link href="NPRG030/03">úlohy na procvičení</Link> &ndash; funkce, Odhad <InlineMath math="\pi"/> Metodou Monte Carlo.</p>
     </Lab>,
-    <Lab key="4" order="4" date="24.10." future>
-      <p>Algoritmizace: pokračování <InlineMath math="\mathcal{O}"/> (složitost), binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>).</p>
-      <p>Programování: seznamy (comprehensions), keř, strom a les v ReCodExu (<LabPrograms source="lab" order="4"/>).</p>
+    <Lab key="4" order="4" date="24.10." plan>
+      <p>Algoritmizace: pokračování <Link href="NPRG062/04"><InlineMath math="\mathcal{O}"/> (složitost)</Link>{/*, binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>)*/}.</p>
+      <p>Programování: DRY (Don&apos;t Repeat Yourself), refaktorování, list comprehensions (<LabPrograms source="lab" order="4"/>), <Link href="NPRG030/04">úlohy na procvičení</Link> &ndash; refaktorování, funkce pro textové řetězce, keř a strom v ReCodExu.</p>
     </Lab>,
     <Lab key="5" order="5" date="31.10." future>
       <p>Algoritmizace: <Link href="NPRG062/05">úlohy s posloupnostmi</Link>.</p>

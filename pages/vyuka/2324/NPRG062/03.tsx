@@ -13,8 +13,8 @@ export default function CourseLab() {
 <h3 id="definice">Definice</h3>
 <p>Nechť <InlineMath math="f, g: \mathbb{N} \to \mathbb{R}^+"/>.</p>
 <ul>
-<li><InlineMath math="f \in \mathcal{O}(g) \iff \exists c &gt; 0, \exists n_0: \forall n &gt; n_0: f(n) \leq c \cdot g(n)"/>.</li>
-<li><InlineMath math="f \in \mathcal{\Omega}(g) \iff \exists c &gt; 0, \exists n_0: \forall n &gt; n_0: f(n) \geq c \cdot g(n)"/>.</li>
+<li><InlineMath math="f \in \mathcal{O}(g) \iff \exists c &gt; 0, \exists n_0 \in \mathbb{N}: \forall n &gt; n_0: f(n) \leq c \cdot g(n)"/>.</li>
+<li><InlineMath math="f \in \mathcal{\Omega}(g) \iff \exists d &gt; 0, \exists m_0 \in \mathbb{N}: \forall m &gt; m_0: f(m) \geq d \cdot g(m)"/>.</li>
 <li><InlineMath math="f \in \mathcal{\Theta}(g) \iff f \in \mathcal{O}(g) \wedge f \in \mathcal{\Omega}(g)"/>.</li>
 </ul>
 <h3 id="úlohy">Úlohy</h3>
@@ -27,7 +27,7 @@ export default function CourseLab() {
 <li><InlineMath math="f \in \mathcal{O}(g) \vee g \in \mathcal{O}(f)"/>.</li>
 </ol>
 
-{/* <p><a href="../slozitost.pdf">Vzorová řešení</a>.</p> */}
+<p><a href="../slozitost.pdf">Vzorová řešení</a>.</p>
 
   </>)
 }
