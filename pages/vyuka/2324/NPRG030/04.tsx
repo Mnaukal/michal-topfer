@@ -53,7 +53,9 @@ False`}}></code></pre></li>
 </ol>
 <p>Umíte předchozí úkoly vyřešit efektivněji, pokud víte, ze všechna zadaná čísla leží od <InlineMath math="1"/> do <InlineMath math="100"/>?</p>
 
-<h2>Keř a Strom v <a href="https://recodex.mff.cuni.cz">ReCodExu</a></h2>
+<h2 id="bludiste">Bludiště</h2>
+
+V souboru <a href="../maze_broken.py"><code>maze_broken.py</code></a> je kód jednoduché hry, ve které se hráč pohybuje bludištěm. Kód ale obsahuje celou řadu chyb. Najděte je a opravte.
 
     </>
   );

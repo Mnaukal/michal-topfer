@@ -24,7 +24,7 @@ export default function CourseIndex() {
     </Lab>,
     <Lab key="4" order="4" date="24.10." plan>
       <p>Algoritmizace: pokračování <Link href="NPRG062/04"><InlineMath math="\mathcal{O}"/> (složitost)</Link>{/*, binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>)*/}.</p>
-      <p>Programování: DRY (Don&apos;t Repeat Yourself), refaktorování, list comprehensions (<LabPrograms source="lab" order="4"/>), <Link href="NPRG030/04">úlohy na procvičení</Link> &ndash; refaktorování, funkce pro textové řetězce, keř a strom v ReCodExu.</p>
+      <p>Programování: DRY (Don&apos;t Repeat Yourself), refaktorování, list comprehensions (<LabPrograms source="lab" order="4"/>), <Link href="NPRG030/04">úlohy na procvičení</Link> &ndash; refaktorování, funkce pro textové řetězce, bludiště.</p>
     </Lab>,
     <Lab key="5" order="5" date="31.10." future>
       <p>Algoritmizace: <Link href="NPRG062/05">úlohy s posloupnostmi</Link>.</p>
