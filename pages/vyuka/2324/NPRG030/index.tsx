@@ -22,13 +22,13 @@ export default function CourseIndex() {
       <p>Algoritmizace: <Link href="NPRG062/03"><InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
       <p>Programování: funkce (<LabPrograms source="lab" order="3"/>), <Link href="NPRG030/03">úlohy na procvičení</Link> &ndash; funkce, Odhad <InlineMath math="\pi"/> Metodou Monte Carlo.</p>
     </Lab>,
-    <Lab key="4" order="4" date="24.10." plan>
+    <Lab key="4" order="4" date="24.10.">
       <p>Algoritmizace: pokračování <Link href="NPRG062/04"><InlineMath math="\mathcal{O}"/> (složitost)</Link>{/*, binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>)*/}.</p>
       <p>Programování: DRY (Don&apos;t Repeat Yourself), refaktorování, list comprehensions (<LabPrograms source="lab" order="4"/>), <Link href="NPRG030/04">úlohy na procvičení</Link> &ndash; refaktorování, funkce pro textové řetězce, bludiště.</p>
     </Lab>,
-    <Lab key="5" order="5" date="31.10." future>
-      <p>Algoritmizace: <Link href="NPRG062/05">úlohy s posloupnostmi</Link>.</p>
-      <p>Programování: slovník (<code>dict</code>), práce se soubory (<LabPrograms source="lab" order="5"/>).</p>
+    <Lab key="5" order="5" date="31.10." plan>
+      <p>Algoritmizace: <Link href="NPRG062/05">algoritmy teorie čísel</Link> &ndash; rychlejší Eratosthenovo síto, číselné soustavy.</p>
+      <p>Programování: slovník (<code>dict</code>), práce se soubory (<LabPrograms source="lab" order="5"/>), <Link href="NPRG030/05">úlohy na procvičení</Link> &ndash; frekvenční analýza, soubory.</p>
     </Lab>,
     <Lab key="6" order="6" date="7.11." future>
       <p>Algoritmizace: zásobník.</p>
