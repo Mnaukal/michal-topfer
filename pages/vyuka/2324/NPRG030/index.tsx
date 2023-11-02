@@ -26,13 +26,13 @@ export default function CourseIndex() {
       <p>Algoritmizace: pokračování <Link href="NPRG062/04"><InlineMath math="\mathcal{O}"/> (složitost)</Link>{/*, binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>)*/}.</p>
       <p>Programování: DRY (Don&apos;t Repeat Yourself), refaktorování, list comprehensions (<LabPrograms source="lab" order="4"/>), <Link href="NPRG030/04">úlohy na procvičení</Link> &ndash; refaktorování, funkce pro textové řetězce, bludiště.</p>
     </Lab>,
-    <Lab key="5" order="5" date="31.10." plan>
+    <Lab key="5" order="5" date="31.10.">
       <p>Algoritmizace: <Link href="NPRG062/05">algoritmy teorie čísel</Link> &ndash; rychlejší Eratosthenovo síto, číselné soustavy.</p>
       <p>Programování: slovník (<code>dict</code>), práce se soubory (<LabPrograms source="lab" order="5"/>), <Link href="NPRG030/05">úlohy na procvičení</Link> &ndash; frekvenční analýza, soubory.</p>
     </Lab>,
-    <Lab key="6" order="6" date="7.11." future>
-      <p>Algoritmizace: zásobník.</p>
-      <p>Programování: soubory (pokračování), objekty (<LabPrograms source="lab" order="6"/>).</p>
+    <Lab key="6" order="6" date="7.11." plan>
+      <p>Algoritmizace: binární vyhledávání (<Link href="NPRG062/06">Házení vajíček z mrakodrapu</Link>).</p>
+      <p>Programování: <Link href="NPRG030/06">přehled knihoven v Pythonu</Link> (<code>sys</code>, <code>os</code>, <code>enum</code>, <code>logging</code>, <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>), <a href="https://recodex.mff.cuni.cz/app/assignment/c63f2160-9093-43ee-93aa-07cc1b4bd838">Keř</a> a <a href="https://recodex.mff.cuni.cz/app/assignment/9b363cb2-c95d-4672-8c18-c96a6ad9d7a1">Strom</a> (<LabPrograms source="lab" order="6"/>).</p>
     </Lab>,
     <Lab key="7" order="7" date="14.11." future>
       <p>Algoritmizace + Programování: <Link href="NPRG030/07">spojové seznamy</Link> (<LabPrograms source="lab" order="7"/>).</p>
@@ -50,7 +50,7 @@ export default function CourseIndex() {
     </Lab>,
     <Lab key="10" order="10" date="12.12." future>
       <p>Algoritmizace: <i>nic, jen programování</i>.</p>
-      <p>Programování: <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>, <code>pygame</code>, dědičnost (<LabPrograms source="lab" order="10"/>).</p>
+      <p>Programování: , dědičnost (<LabPrograms source="lab" order="10"/>).</p>
     </Lab>,
     <Lab key="11" order="11" date="19.12." future>
       <p>Programování: <span className="text-danger">zápočtový test</span>.</p>
