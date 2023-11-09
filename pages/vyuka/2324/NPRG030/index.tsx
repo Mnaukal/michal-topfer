@@ -30,14 +30,15 @@ export default function CourseIndex() {
       <p>Algoritmizace: <Link href="NPRG062/05">algoritmy teorie čísel</Link> &ndash; rychlejší Eratosthenovo síto, číselné soustavy.</p>
       <p>Programování: slovník (<code>dict</code>), práce se soubory (<LabPrograms source="lab" order="5"/>), <Link href="NPRG030/05">úlohy na procvičení</Link> &ndash; frekvenční analýza, soubory.</p>
     </Lab>,
-    <Lab key="6" order="6" date="7.11." plan>
+    <Lab key="6" order="6" date="7.11.">
       <p>Algoritmizace: binární vyhledávání (<Link href="NPRG062/06">Házení vajíček z mrakodrapu</Link>).</p>
       <p>Programování: <Link href="NPRG030/06">přehled knihoven v Pythonu</Link> (<code>sys</code>, <code>os</code>, <code>enum</code>, <code>logging</code>, <code>random</code>, <code>argparse</code>, <code>json</code>, <code>csv</code>), <a href="https://recodex.mff.cuni.cz/app/assignment/c63f2160-9093-43ee-93aa-07cc1b4bd838">Keř</a> a <a href="https://recodex.mff.cuni.cz/app/assignment/9b363cb2-c95d-4672-8c18-c96a6ad9d7a1">Strom</a> (<LabPrograms source="lab" order="6"/>).</p>
     </Lab>,
-    <Lab key="7" order="7" date="14.11." future>
-      <p>Algoritmizace + Programování: <Link href="NPRG030/07">spojové seznamy</Link> (<LabPrograms source="lab" order="7"/>).</p>
+    <Lab key="7" order="7" date="14.11." plan>
+      <p>Algoritmizace: spojové seznamy.</p>
+      <p>Programování: objekty, spojové seznamy, linting (<LabPrograms source="lab" order="7"/>), <Link href="NPRG030/07">úlohy na procvičení</Link>.</p>
     </Lab>,
-    <Lab key="21.11." date="21.11." title=" CVIČENÍ NEBUDE" future>
+    <Lab key="21.11." date="21.11." title=" CVIČENÍ NEBUDE">
       <p className="text-danger">Cvičení nebude z důvodu konání Dne otevřených dveří.</p>
     </Lab>,
     <Lab key="8" order="8" date="28.11." future>
