@@ -204,9 +204,11 @@ export default function CourseIndex() {
 
     <p>Pokud by někdo chtěl něco dovysvětlit nebo se mu nedařilo a chtěl by probrat cokoliv jiného, napište mi email a domluvíme se na termínu konzultace.</p>
 
+    {/*/}
     <h4>MFF Discord</h4>
 
     <p>Kanál pro tohle cvičení: <a href="https://discord.com/channels/625428723302137876/893480125016981514">#alg-prg-cv-mtopfer</a>. Není povinné tam být, ale je to další místo, kde se můžete ptát na otázky a bavit se se mnou i se spolužáky.</p>
+    {/**/}
 
     <h3>V čem budeme programovat a jak to nainstaluju</h3>
 
