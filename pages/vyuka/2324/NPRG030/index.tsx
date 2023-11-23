@@ -41,17 +41,17 @@ export default function CourseIndex() {
     <Lab key="21.11." date="21.11." title=" CVIČENÍ NEBUDE">
       <p className="text-danger">Cvičení nebude z důvodu konání Dne otevřených dveří.</p>
     </Lab>,
-    <Lab key="8" order="8" date="28.11." future>
-      <p>Algoritmizace: rekurze.</p>
-      <p>Programování: generátory (<LabPrograms source="lab" order="8"/>).</p>
+    <Lab key="8" order="8" date="28.11." plan>
+      <p>Algoritmizace: zásobník, fronta, halda &ndash; <Link href="NPRG062/08#cyklicka-fronta-v-poli">cyklická fronta v poli</Link>, <Link href="NPRG062/08#operace-nad-haldou">operace nad haldou</Link>.</p>
+      <p>Programování: podrobnosti k zápočtovým programům (též <a href="#zapoctak">níže</a>), <a href="https://git-scm.com/">Git</a> (<a href="https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf">tahák</a>) a <a href="https://gitlab.mff.cuni.cz/">GitLab</a>, <Link href="NPRG030/08">dědičnost a kompozice</Link> (<LabPrograms source="lab" order="8"/>).</p>
     </Lab>,
     <Lab key="9" order="9" date="5.12." future>
-      <p>Algoritmizace: <Link href="NPRG062/09">zkoušková úloha na stromy</Link>.</p>
-      <p>Programování: přetěžování operátorů, dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>) (<LabPrograms source="lab" order="9"/>).</p>
+      <p>Algoritmizace: rekurze.</p>
+      <p>Programování: generátory (<LabPrograms source="lab" order="9"/>).</p>
     </Lab>,
     <Lab key="10" order="10" date="12.12." future>
-      <p>Algoritmizace: <i>nic, jen programování</i>.</p>
-      <p>Programování: , dědičnost (<LabPrograms source="lab" order="10"/>).</p>
+      <p>Algoritmizace: <Link href="NPRG062/09">zkoušková úloha na stromy</Link>.</p>
+      <p>Programování: přetěžování operátorů, dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>) (<LabPrograms source="lab" order="10"/>).</p>
     </Lab>,
     <Lab key="11" order="11" date="19.12." future>
       <p>Programování: <span className="text-danger">zápočtový test</span>.</p>
