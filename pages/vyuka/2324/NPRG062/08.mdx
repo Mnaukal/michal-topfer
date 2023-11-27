@@ -1,0 +1,40 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace – 8. cvičení
+
+
+## Cyklická fronta v poli
+
+Na přednášce jste viděli implementaci cyklické fronty v poli ([`fronta.py`](../fronta.py)).
+Pokud dojde k přeplnění kapacity fronty, implementace z přednášky vyvolá výjimku.
+Tento problém lze řešit alokací většího pole a (případným) kopírováním uložených hodnot.
+
+Upravte odpovídajícím způsobem implementaci.
+
+
+## Operace nad haldou
+
+Na přednášce jste viděli datovou strukturu *minimová binární halda*, která měla následující operace:
+
+* `insert` &ndash; přidat prvek do haldy,
+* `min` &ndash; vrátit minimální prvek (ale nechat ho v haldě),
+* `extract_min` &ndash; odebrat minimální prvek.
+
+Při implementaci v poli měly operace `insert` a `extract_min` časovou složitost $\mathcal{O}(\log n)$, kde $n$ je počet prvků v haldě. Zjištění minima trvalo jen konstantní čas.
+
+Rozmyslete, jak přidat ještě operace:
+
+* `decrase` &ndash; zmenšení hodnoty prvku v haldě,
+* `delete` &ndash; odstranění libovolného prvku.
+
+U obou operací předpokládejte, že máte index daného prvku (tedy jeho pozici v poli, ve kterém je halda uložena) a nemusíte prvek hledat.
+
+Zvládnete obě operace v čase $\mathcal{O}(\log n)$?
+
+### Nápověda
+
+Vzpomeňte si, že při implementaci haldy v poli jsme používali ještě dvě pomocné operace. Při vkládání to bylo `bubble_up` (dokud daný prvek porušuje haldové uspořádání, prohazuj ho s jeho rodičem), při odebírání minima `bubble_down` (dokud daný prvek porušuje haldové uspořádání, prohazuj ho s menším z jeho synů).
