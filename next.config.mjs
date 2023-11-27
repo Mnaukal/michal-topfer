@@ -1,4 +1,5 @@
 import createMDX from '@next/mdx'
+import rehypeHighlight from 'rehype-highlight'
 import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import remarkMath from 'remark-math'
@@ -19,7 +20,7 @@ const withMDX = createMDX({
   // Add markdown plugins here, as desired
   options: {
     remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex, rehypeSlug],
+    rehypePlugins: [rehypeKatex, rehypeSlug, rehypeHighlight],
   },
 })
  

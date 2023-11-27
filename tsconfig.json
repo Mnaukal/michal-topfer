@@ -22,8 +22,7 @@
   "exclude": ["node_modules"],
   "mdx": {
     "plugins": [
-      "remark-math",
-      "rehype-slug",
+      "remark-math"
     ]
   }
 }

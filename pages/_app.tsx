@@ -1,5 +1,6 @@
 import "bootswatch/dist/lux/bootstrap.min.css";
 import 'katex/dist/katex.min.css';
+import 'highlight.js/styles/default.css';
 import '@/styles/globals.css'
 import '@/styles/collapse.css'
 import type { AppProps } from 'next/app'

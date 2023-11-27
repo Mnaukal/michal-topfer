@@ -1,0 +1,32 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Programování 1 &ndash; 8. cvičení
+
+## Stream
+
+Představte si, že chcete společné rozhraní pro vstupně-výstupní komunikaci (pro jednoduchost pouze textovou) &ndash; tedy pro objekty, ze kterých jde číst (metoda `read`) a jde do nich zapisovat (metoda `write`). Příklady takových objektů jsou třeba soubory (čtení/psaní z/do souboru) nebo síťová komunikace přes TCP/IP (přijímání/posílání zpráv po síti). Společné rozhraní nazveme `Stream`.
+
+Zkuste tento příklad zapsat v Pythonu za pomoci abstraktní třídy `Stream` s metodami `read` (přečte a vrátí textový řetězec) a `write` (dostane textový řetězec a zapíše ho). Vytvořte několik tříd dědících od `Stream`, například:
+
+* `MemoryStream` &ndash; stream uložený v paměti,
+* `FileStream` &ndash; čte/píše z/do souboru (cestu nastavíme v konstruktoru),
+* `NetworkStream` &ndash; přijímá/posílá zprávy po síti.
+
+**Cílem příkladu je jen vyzkoušet si zapsat definice tříd a dědičnosti. Místo skutečné implementace metod `read` a `write` v nich jen udělejte `print` (a vraťte hodnotu správného typu).**
+
+Výhodou společného rozhraní pro streamy je, že zbytek programu nemusí vůbec řešit, jestli data dostává od uživatele nebo ze souboru nebo po síti. Zkuste si pak zavolat následující metodu s různými streamy:
+
+```py
+write_data(stream: Stream):
+    stream.write("data")
+```
+
+Struktura tříd je znázorněna také na následujícím UML diagramu:
+
+![Struktura tříd pro Stream](../inheritance_stream.drawio.png)
+
+*Pozn.: Příklad vychází ze třídy [`Stream`](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream) v implementaci .NET.*
