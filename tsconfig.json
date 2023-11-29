@@ -22,7 +22,8 @@
   "exclude": ["node_modules"],
   "mdx": {
     "plugins": [
-      "remark-math"
+      "remark-math",
+      "remark-gfm"
     ]
   }
 }

@@ -6,6 +6,50 @@ import Head from 'next/head'
 
 # Programování 1 &ndash; 8. cvičení
 
+## Git
+
+### Instalace
+
+*Poznámka: na labových počítačích je Git už nainstalovaný.*
+
+Jděte na https://git-scm.com/downloads a vyberte si váš operační systém.
+
+Instalace na Windows má grafické rozhraní, kde si můžete vybrat některá nastavení. Moje doporučení je brát výchozí hodnoty kromě:
+
+* *Choosing the default editor used by Git*: vyberte si editor, který vám vyhovuje, např. VS Code. Pokud byste editor později chtěli změnit, [jde to](https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git).
+* *Choosing the SSH executable*: pokud už máte SSH klient (což zjistíte třeba příkazem `ssh -V`), zvolte *Use external OpenSSH*.
+
+Po instalaci možná bude potřeba zavřít a znovu otevřít váš terminál (případně textový editor), aby v něm začal fungovat příkaz `git -v`.
+
+### Prvotní nastavení
+
+Aby Git mohl zaznamenávat, kdo udělal kterou změnu, musíte si nastavit svoji identitu pomocí příkazů:
+
+* `git config --global user.name "Vaše Jméno"`
+* `git config --global user.email "your_email_address@example.com"`
+
+### Přihlášení do MFF GitLabu
+
+MFF GitLab najdete na adrese https://gitlab.mff.cuni.cz/. Pro přihlášení do *Username* zadejte vaše přihlašovací jméno do SISu (např. `topfermi`; ne vaše číslo) a *Password* je vaše heslo do SISu.
+
+### Vytvoření projektu
+
+Po přihlášení do [GitLabu](https://gitlab.mff.cuni.cz/) si můžete vytvořit nový projekt (modré tlačítko *New Project* vpravo nahoře). Zvolte *Create blank project* a na další stránce ho pojmenujte a vyberte, kam se má uložit: v *Project URL* zvolte vaše uživatelské jméno (v sekci *Users*).
+
+### Stažení projektu (<span style={{textTransform: "none"}}>`clone`</span>)
+
+Jsou dvě možnosti, jak přistupovat ke GitLabu a stáhnout si odtamtud váš projekt (a později tam taky nahrát změny, které uděláte):
+
+* *HTTPS* &ndash; přihlášení pomocí jména a hesla (případně tokenu). Pro každou operaci (stažení, nahrání) se musíte znovu přihlásit. Naštěstí má Git zabudovaný Credentials Manager, který si vaše jméno a heslo umí pamatovat, takže ho nemusíte pokaždé zadávat. Tuhle možnost si ukážeme na cvičení.
+  * Pokud do Credentials Manageru nechcete ukládat svoje heslo, můžete místo hesla použít *access token*, u kterého jde nastavit, jak dlouho bude platit. Ten jde vygenerovat buď pro jeden konkrétní projekt (otevřete si projekt, v levém menu zvolte *Settings*, *Access Tokens*, pak *Add new token*, *Select a role* nastavte na *Maintainer* a v *Select scopes* vyberte *write_repository*) nebo pro celý váš účet (klikněte na váš obrázek vlevo nahoře, *Preferences*, *Access Tokens*, pak *Add new token* a v *Select scopes* vyberte *write_repository*). Více informací je v [dokumentaci](https://gitlab.mff.cuni.cz/help/gitlab-basics/start-using-git.md#clone-using-a-token).
+* *SSH* &ndash; přihlášení pomocí klíče ([návod na nastavení](https://gitlab.mff.cuni.cz/help/user/ssh.md)).
+
+*Poznámka: na labovém počítači mi nefungovalo stažení projektu na síťový disk (např. `Z:`). Nicméně na lokálním disku `D:` mi to fungovalo bez problémů.*
+
+### Ignorování souborů
+
+Některé soubory nechceme ukládat na server (třeba zkompilované programy, pomocné soubory našeho editoru, ...). Nejjednodušší způsob, jak to udělat, je pomocí souboru `.gitignore`. Pro Python si stáhněte soubor [`Python.gitignore`](https://github.com/github/gitignore/blob/main/Python.gitignore) (pro další jazyky jsou doporučené soubory [tady](https://github.com/github/gitignore)). Po stažení ho přesuňte do kořenové složky vašeho projektu a přejmenujte na `.gitignore`.
+
 ## Stream
 
 Představte si, že chcete společné rozhraní pro vstupně-výstupní komunikaci (pro jednoduchost pouze textovou) &ndash; tedy pro objekty, ze kterých jde číst (metoda `read`) a jde do nich zapisovat (metoda `write`). Příklady takových objektů jsou třeba soubory (čtení/psaní z/do souboru) nebo síťová komunikace přes TCP/IP (přijímání/posílání zpráv po síti). Společné rozhraní nazveme `Stream`.
