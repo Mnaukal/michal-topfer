@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { CardWarning } from "@/components/cards"
 
 <Head>
   <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
@@ -32,6 +33,8 @@ Aby Git mohl zaznamenávat, kdo udělal kterou změnu, musíte si nastavit svoji
 
 MFF GitLab najdete na adrese https://gitlab.mff.cuni.cz/. Pro přihlášení do *Username* zadejte vaše přihlašovací jméno do SISu (např. `topfermi`; ne vaše číslo) a *Password* je vaše heslo do SISu.
 
+*Poznámka: používáme [MFF GitLab](https://gitlab.mff.cuni.cz/), což je něco jiného než [GitLab.com](https://gitlab.com).*
+
 ### Vytvoření projektu
 
 Po přihlášení do [GitLabu](https://gitlab.mff.cuni.cz/) si můžete vytvořit nový projekt (modré tlačítko *New Project* vpravo nahoře). Zvolte *Create blank project* a na další stránce ho pojmenujte a vyberte, kam se má uložit: v *Project URL* zvolte vaše uživatelské jméno (v sekci *Users*).
@@ -40,15 +43,46 @@ Po přihlášení do [GitLabu](https://gitlab.mff.cuni.cz/) si můžete vytvoři
 
 Jsou dvě možnosti, jak přistupovat ke GitLabu a stáhnout si odtamtud váš projekt (a později tam taky nahrát změny, které uděláte):
 
-* *HTTPS* &ndash; přihlášení pomocí jména a hesla (případně tokenu). Pro každou operaci (stažení, nahrání) se musíte znovu přihlásit. Naštěstí má Git zabudovaný Credentials Manager, který si vaše jméno a heslo umí pamatovat, takže ho nemusíte pokaždé zadávat. Tuhle možnost si ukážeme na cvičení.
-  * Pokud do Credentials Manageru nechcete ukládat svoje heslo, můžete místo hesla použít *access token*, u kterého jde nastavit, jak dlouho bude platit. Ten jde vygenerovat buď pro jeden konkrétní projekt (otevřete si projekt, v levém menu zvolte *Settings*, *Access Tokens*, pak *Add new token*, *Select a role* nastavte na *Maintainer* a v *Select scopes* vyberte *write_repository*) nebo pro celý váš účet (klikněte na váš obrázek vlevo nahoře, *Preferences*, *Access Tokens*, pak *Add new token* a v *Select scopes* vyberte *write_repository*). Více informací je v [dokumentaci](https://gitlab.mff.cuni.cz/help/gitlab-basics/start-using-git.md#clone-using-a-token).
+* *HTTPS* &ndash; přihlášení pomocí jména a hesla (případně speciálního *access tokenu*). Pro každou operaci (stažení, nahrání) se musíte znovu přihlásit. Naštěstí má Git zabudovaný Credential Manager, který si vaše jméno a heslo umí pamatovat, takže ho nemusíte pokaždé zadávat. Tuhle možnost si ukážeme na cvičení.
+
+<CardWarning>
+Credential Manager automaticky ukládá vaše heslo, což není bezpečné, pokud počítač používá více lidí (jako třeba ten v labu). Proto je lepší místo hesla používat *access token*. Navíc u něj jde nastavit, že má platit je po omezenou dobu.
+Token jde vytvořit buď
+
+* pro jeden konkrétní projekt (otevřete si projekt, v levém menu zvolte *Settings*, *Access Tokens*, pak *Add new token*, *Select a role* nastavte na *Maintainer* a v *Select scopes* vyberte *write_repository*; pokud byste chtěli víc podrobností, jděte do [dokumentace](https://gitlab.mff.cuni.cz/help/user/project/settings/project_access_tokens.md)), nebo
+* pro celý váš účet (klikněte na váš obrázek vlevo nahoře, *Preferences*, *Access Tokens*, pak *Add new token* a v *Select scopes* vyberte *write_repository*; [dokumentace](https://gitlab.mff.cuni.cz/help/user/profile/personal_access_tokens.md)).
+
+Pokud byste potřebovali vymazat vaše přihlašovací údaje, tak na počítačích s Windows (tedy třeba v labu) jděte do *Ovládací panely* (*Control Panel*) / *Uživatelské účty* (*User Accounts*) / *Spravovat přihlašovací údaje* (*Credential Manager*) / *Přihlašovací údaje systému Windows* (*Windows Credentials*) / *Obecné přihlašovací údaje* (*Generic Credentials*) a tam najděte `git:https://gitlab.mff.cuni.cz` a smažte.
+</CardWarning>
+
 * *SSH* &ndash; přihlášení pomocí klíče ([návod na nastavení](https://gitlab.mff.cuni.cz/help/user/ssh.md)).
+
+Pro stažení projektu z GitLabu na stránce projektu klikněte na modré tlačítko *Clone* a zkopírujte si adresu z *Clone with HTTPS*. V terminálu si otevřete složku, kam projekt chcete uložit, a spusťte příkaz `git clone ADRESA` (např. `git clone https://gitlab.mff.cuni.cz/topfermi/zasobnik.git`). Mělo by se vám otevřít okno, kam zadáte jméno a access token (nebo heslo) a pak by se váš projekt měl stáhnout do nové složky. Pokud se vám nedaří přihlásit, můžete použít access token přímo v adrese: `git clone https://USERNAME:TOKEN@gitlab.mff.cuni.cz/topfermi/zasobnik.git` ([dokumentace](https://gitlab.mff.cuni.cz/help/gitlab-basics/start-using-git.md#clone-using-a-token)).
+
+Pokud se vám nechce pracovat s terminálem, můžete po kliknutí na *Clone* zvolit *Visual Studio Code (HTTPS)*, což vám dovolí vybrat, kam se projekt uloží, z grafického rozhraní.
 
 *Poznámka: na labovém počítači mi nefungovalo stažení projektu na síťový disk (např. `Z:`). Nicméně na lokálním disku `D:` mi to fungovalo bez problémů.*
 
 ### Ignorování souborů
 
 Některé soubory nechceme ukládat na server (třeba zkompilované programy, pomocné soubory našeho editoru, ...). Nejjednodušší způsob, jak to udělat, je pomocí souboru `.gitignore`. Pro Python si stáhněte soubor [`Python.gitignore`](https://github.com/github/gitignore/blob/main/Python.gitignore) (pro další jazyky jsou doporučené soubory [tady](https://github.com/github/gitignore)). Po stažení ho přesuňte do kořenové složky vašeho projektu a přejmenujte na `.gitignore`.
+
+### Uložení změn
+
+Ve VS Code můžete s Gitem snadno pracovat ze záložky *Source Control* (levé menu). Pomocí tlačítka *+* (*Stage changes*) vyberte soubory, které chcete uložit. Pak do *Message* napište popis změn a klikněte na *Commit*, čímž se aktuální změny uloží jako nová verze projektu. Následně pomocí tlačítka *Sync changes* nahrajete tyto změny i na GitLab.
+
+Pokud by vám nějaké z tlačítek nefungovalo nebo byste potřebovali operace udělat ručně, odpovídající příkazy jsou:
+
+* `git status`: přehled nových změn, které zatím nejsou uložené,
+* `git add .`: připraví všechny změněné soubory k uložení (případně `git add SOUBOR`, pokud chcete jako novou verzi uložit změny jen v některých souborech),
+* `git commit -m "Popis změn"`: uloží připravené změny jako novou verzi,
+* `git push`: nahraje novou verzi na GitLab.
+
+Další užitečné příkazy případně najdete v [taháku](https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf") nebo se je dozvíte v LS na [Úvodu do Linuxu](https://d3s.mff.cuni.cz/cz/teaching/nswi177/).
+
+## Cvičení na Git
+
+Nainstalujte si Git a vyzkoušejte si, že vám z vašeho počítače jde stáhnout a nahrát projekt na GitLab. Budete to potřebovat, až budete pracovat na svém zápočtovém programu. Podrobnější instrukce jsou v [ReCodExu](https://recodex.mff.cuni.cz/app/assignment/86959be4-6aaa-4786-a59c-15b120ddc68a).
 
 ## Stream
 

@@ -30,3 +30,14 @@ export function CardBorderDanger({ children }: { children: ReactNode }) {
     </Card>
   );
 }
+
+export function CardWarning({ children }: { children: ReactNode }) {
+  return (
+    <Card bg="warning" className="mb-3">
+      <Card.Header className="text-primary">VAROVÁNÍ</Card.Header>
+      <Card.Body className="text-primary pb-0">
+        {children}
+      </Card.Body>
+    </Card>
+  );
+}

@@ -7,6 +7,12 @@
         "latex",
         "plaintext",
         "html",
-        "typescriptreact"
-    ]
+        "typescriptreact",
+        "mdx"
+    ],
+    "spellright.parserByClass": {
+        "mdx": {
+            "parser": "markdown"
+        }
+    }
 }

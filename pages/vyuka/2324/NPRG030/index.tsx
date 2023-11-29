@@ -41,9 +41,9 @@ export default function CourseIndex() {
     <Lab key="21.11." date="21.11." title=" CVIČENÍ NEBUDE">
       <p className="text-danger">Cvičení nebude z důvodu konání Dne otevřených dveří.</p>
     </Lab>,
-    <Lab key="8" order="8" date="28.11." plan>
+    <Lab key="8" order="8" date="28.11.">
       <p>Algoritmizace: zásobník, fronta, halda &ndash; <Link href="NPRG062/08#cyklická-fronta-v-poli">cyklická fronta v poli</Link>, <Link href="NPRG062/08#operace-nad-haldou">operace nad haldou</Link>.</p>
-      <p>Programování: podrobnosti k zápočtovým programům (též <a href="#zapoctak">níže</a>), <Link href="NPRG030/08/#git">Git</Link> (<a href="https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf">tahák</a>) a <a href="https://gitlab.mff.cuni.cz/">GitLab</a>, <Link href="NPRG030/08/#stream">dědičnost a kompozice</Link> (<LabPrograms source="lab" order="8"/>).</p>
+      <p>Programování: podrobnosti k zápočtovým programům (též <a href="#zapoctak">níže</a>), <Link href="NPRG030/08/#git">Git</Link> (<a href="https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf">tahák</a>) a <a href="https://gitlab.mff.cuni.cz/">MFF GitLab</a>, <Link href="NPRG030/08/#stream">dědičnost a kompozice</Link> (<LabPrograms source="lab" order="8"/>).</p>
     </Lab>,
     <Lab key="9" order="9" date="5.12." future>
       <p>Algoritmizace: rekurze.</p>
@@ -138,7 +138,7 @@ export default function CourseIndex() {
       <h4 className='mt-0'>Shrnutí požadavků</h4>
       <ul className='mb-0'>
         <li>Specifikaci (téma) mi pošlete mailem do 12. 1. 2024.</li>
-        <li>Program se odevzdává přes <a href="https://gitlab.mff.cuni.cz/">GitLab</a> do 18. 2. 2024.</li>
+        <li>Program se odevzdává přes <a href="https://gitlab.mff.cuni.cz/">MFF GitLab</a> do 18. 2. 2024.</li>
         <li>Součástí programu je dokumentace, ukázky použití a <code>README.md</code>.</li>
         <li>Vytvořte rozumnou strukturu projektu (složky pro zdrojové kódy a dokumentaci).</li>
       </ul>
@@ -153,7 +153,7 @@ export default function CourseIndex() {
 
     <p>Zápočtový program může a nemusí být napsaný v Pythonu &ndash; použijte jazyk, který umíte nebo který nejlépe sedí na doménu problému. Na druhou stranu, já bych měl být schopný kód vašeho programu přečíst a pochopit, takže pokud chcete použít nějaký jiný jazyk než Python, domluvte se na tom se mnou už ve specifikaci programu.</p>
 
-    <p>Zápočtový program byste měli <b>odevzdat nejpozději do konce zkouškového (18. 2. 2024)</b>, poté už za něj zápočet neudělím. Program se odevzdává prostřednictvím MFF <a href="https://gitlab.mff.cuni.cz/">GitLabu</a>. Repozitář pro odevzdávání vám bude vytvořen (<code>/teaching/nprg030/2024-winter/student-LOGIN_DO_SISU</code>). Naklonujte si ho do svého počítače a vyvíjejte program v něm za použití Gitu (jak jsme si ukázali během cvičení). <b>Až budete mít hotovo, pošlete mi mail</b> s odkazem na váš repozitář a já program ohodnotím.</p>
+    <p>Zápočtový program byste měli <b>odevzdat nejpozději do konce zkouškového (18. 2. 2024)</b>, poté už za něj zápočet neudělím. Program se odevzdává prostřednictvím <a href="https://gitlab.mff.cuni.cz/">MFF GitLabu</a>. Repozitář pro odevzdávání vám bude vytvořen (<code>/teaching/nprg030/2024-winter/student-LOGIN_DO_SISU</code>). Naklonujte si ho do svého počítače a vyvíjejte program v něm za použití Gitu (jak jsme si ukázali během cvičení). <b>Až budete mít hotovo, pošlete mi mail</b> s odkazem na váš repozitář a já program ohodnotím.</p>
 
     <p>Snažte se dělat commity průběžně (např. vždy když dokončíte nějakou ucelenou část práce), ať si u toho i vyzkoušíte, jak s Gitem pracovat. Nezapomeňte, že některé soubory do Gitu nepatří (třeba <code>.exe</code> soubory a další produkty build systému), používejte proto vhodný soubor <code>.gitignore</code> (např. pro Python je vhodný <a href="https://github.com/github/gitignore/blob/main/Python.gitignore">tento</a> &ndash; uložte si ho do kořenového adresáře repozitáře a přejmenujte na <code>.gitignore</code>). Pokud si potřebujete Git připomenout, můžete využít třeba <a href="https://naucse.python.cz/course/pyladies/git/basics/">tenhle návod</a>, <a href="https://www.youtube.com/watch?v=hwP7WQkmECE">Git ve 100 sekundách, ale nám stačí prvních 60</a>, nebo <a href="https://www.youtube.com/watch?v=HkdAHXoRtos">to samé, ale detailněji</a>.</p>
 
