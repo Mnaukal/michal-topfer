@@ -1,0 +1,67 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace – 9. cvičení
+
+## Fibonacci
+
+Napište funkci pro výpočet $n$-tého prvku Fibonacciho posloupnosti (definici si můžete připomenout na [Wikipedii](https://cs.wikipedia.org/wiki/Fibonacciho_posloupnost)):
+
+Zkuste navrhnou dvě různá řešení:
+
+* rekurzivní,
+* iterativní (bez rekurze).
+
+Společně si pak porovnáme jejich efektivitu.
+
+### 🦉 *Bonus:* Cache pro mezivýsledky
+
+U rekurzivního řešení si ukládejte už spočítané hodnoty, abyste je nemuseli počítat znovu.
+
+## Hanojské věže
+
+Dle legendy existuje v Asii chrám, v němž každý den v poledne mniši slavnostně přemístí jeden z 64 zlatých kotoučů. Jakmile bude přemístěna celá "věž", nastane konec světa. Spočítejte, za jak dlouho k tomu může dojít.
+
+Jinými slovy, spočítejte kolik tahů potřebuje náš (rekurzivní) algoritmus na přemístění $n$ kotoučů?
+
+Algoritmus z přednášky:
+
+```py
+def hanoj(pocet, odkud, kam, rezervni):
+    if pocet == 1:
+        print(f"Presuň kotouč z věže {odkud} na věž {kam}")
+    else:
+        hanoj(pocet - 1, odkud, rezervni, kam)
+        hanoj(1, odkud, kam, rezervni)
+        hanoj(pocet - 1, rezervni, kam, odkud)
+```
+
+### Nápověda
+
+Označte počet tahů pro $n$ kotoučů třeba $T(n)$. To odpovídá časové složitosti volání funkce `hanoj(n, ...)`.
+Rozmyslete si, kolikrát rekurzivně voláte funkci `hanoj` a s jakým počtem kotoučů. Vztah pro $T(n)$ se dá na základě toho vyjádřit jako součet několika hodnot $T$ pro čísla menší než $n$. Samozřejmě nesmíte zapomenout počítat hodnotu $T(1)$ zvlášť (ukončení rekurze).
+
+Pak můžete zkusit dopočítat hodnotu $T(n)$ pro malá $n$ a zkusit odhadnout, jak to vyjde obecně.
+
+## Generování permutací
+
+Napište funkci, která dostane seznam a vygeneruje všechny permutace prvků v tomto seznamu. Předpokládejte, že v zadaném seznamu se prvky neopakují.
+
+Například volání `permutations([1, 2, 3])` vrátí 6 možných permutací: `[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]`. Je na vás, jestli funkce bude vracet seznam všech permutací (tedy seznam seznamů) nebo ji napíšete jako generátor.
+
+## Generování podmnožin
+
+Napište funkci, která dostane seznam a vygeneruje všechny podmnožiny tohoto seznamu. Předpokládejte, že v zadaném seznamu se prvky neopakují.
+
+Například volání `subsets([0, 1])` vrátí 4 možné podmnožiny: `[], [0], [1], [0, 1]`. Je na vás, jestli funkce bude vracet seznam všech podmnožin (tedy seznam seznamů) nebo ji napíšete jako generátor.
+
+### Nápověda
+
+Uvědomte si, že podmnožina vznikne tak, že do ní každý prvek z původní množiny buď dáme, nebo nedáme. Podmnožiny seznamu s $n$ prvky tedy odpovídají všem $n$-prvkovým posloupnostem `True` a `False`, tedy i všem $n$-ciferným číslům ve dvojkové soustavě (nevadí nuly na začátku).
+
+### 🦉 *Bonus:* Rostoucí posloupnosti
+
+Rozmyslete si, jak se dá generování podmnožin využít pro generování všech rostoucích posloupností tvořených z čísel $1, 2, \dots, N$.
