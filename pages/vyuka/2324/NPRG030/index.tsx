@@ -45,13 +45,13 @@ export default function CourseIndex() {
       <p>Algoritmizace: zásobník, fronta, halda &ndash; <Link href="NPRG062/08#cyklická-fronta-v-poli">cyklická fronta v poli</Link>, <Link href="NPRG062/08#operace-nad-haldou">operace nad haldou</Link>.</p>
       <p>Programování: podrobnosti k zápočtovým programům (též <a href="#zapoctak">níže</a>), <Link href="NPRG030/08/#git">Git</Link> (<a href="https://pyvec.github.io/cheatsheets/basic-git/basic-git-cs.pdf">tahák</a>) a <a href="https://gitlab.mff.cuni.cz/">MFF GitLab</a>, <Link href="NPRG030/08/#stream">dědičnost a kompozice</Link> (<LabPrograms source="lab" order="8"/>).</p>
     </Lab>,
-    <Lab key="9" order="9" date="5.12." plan>
+    <Lab key="9" order="9" date="5.12.">
       <p>Algoritmizace: <Link href="NPRG062/09/">rekurze</Link> &ndash; Fibonacciho posloupnost, Hanojské věže, Generování permutací, Generování podmnožin.</p>
       <p>Programování: rekurze, generátory (<LabPrograms source="lab" order="9"/>).</p>
     </Lab>,
-    <Lab key="10" order="10" date="12.12." future>
-      <p>Algoritmizace: <Link href="NPRG062/09">zkoušková úloha na stromy</Link>.</p>
-      <p>Programování: přetěžování operátorů, dokumentace (<a href="https://numpydoc.readthedocs.io/en/latest/format.html"><code>numpydoc</code></a>) (<LabPrograms source="lab" order="10"/>).</p>
+    <Lab key="10" order="10" date="12.12." plan>
+      <p>Algoritmizace: <Link href="NPRG062/10#alfa-beta-prořezávání">alfa-beta prořezávání</Link>, <Link href="NPRG062/10#průměrná-výška-stromu">zkoušková úloha na stromy</Link>.</p>
+      <p>Programování: <Link href="NPRG030/10">virtuální prostředí</Link> (<code>venv</code>), unit testy (<LabPrograms source="lab" order="10"/>).</p>
     </Lab>,
     <Lab key="11" order="11" date="19.12." future>
       <p>Programování: <span className="text-danger">zápočtový test</span>.</p>
@@ -188,7 +188,7 @@ export default function CourseIndex() {
 
     <p>Program by měl být rozumně odladěný. Především by měl jít spustit bez chyb. Když program budu normálně používat, tak by neměl spadnout. Pokud například program očekává vstup v souboru, tak by neměl spadnout, pokud soubor neexistuje. Měl by místo toho vypsat rozumnou chybovou hlášku pro uživatele.</p>
 
-    <p>Spoustu užitečných informací o zápočťácích už sepsali jiní, tak nemá smysl je znovu psát. Tady je pár odkazů: Martin Mareš má na <a href="http://mj.ucw.cz/vyuka/2324/p1x/pravidla.html">webu svého cvičení</a> hezky sepsané informace o zápočťácích. Navíc poskytuje i <a href="http://mj.ucw.cz/vyuka/zap/">seznam témat</a> pro inspiraci, takže doporučuji přečíst. Detailní informace včetně nápadů na témata sepsal taky <a href="https://github.com/Jirka-Mayer/NPRG030-062/blob/master/prg/zapoctaky.md">Jirka Mayer</a>. Nakonec, Rudolf Kryl má na webu <a href="https://ksvi.mff.cuni.cz/~kryl/dokumentace.htm">návod na psaní dokumentace k zápočťáku</a>, také doporučuji přečíst.</p>
+    <p>Spoustu užitečných informací o zápočťácích už sepsali jiní, tak nemá smysl je znovu psát. Tady je pár odkazů: Martin Mareš má na <a href="http://mj.ucw.cz/vyuka/2324/p1x/pravidla.html">webu svého cvičení</a> hezky sepsané informace o zápočťácích. Navíc poskytuje i <a href="http://mj.ucw.cz/vyuka/zap/">seznam témat</a> pro inspiraci (pro ZS je vhodná obtížnost 3 a vyšší), takže doporučuji přečíst. Detailní informace včetně nápadů na témata sepsal taky <a href="https://github.com/Jirka-Mayer/NPRG030-062/blob/master/prg/zapoctaky.md">Jirka Mayer</a>. Nakonec, Rudolf Kryl má na webu <a href="https://ksvi.mff.cuni.cz/~kryl/dokumentace.htm">návod na psaní dokumentace k zápočťáku</a>, také doporučuji přečíst.</p>
 
     {/* konec "text-muted" /}
     </div>

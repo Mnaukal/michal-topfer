@@ -1,0 +1,39 @@
+import Head from 'next/head'
+import Link from 'next/link'
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Programování 1 &ndash; 10. cvičení
+
+## Virtuální prostředí
+
+Modul `venv`: [dokumentace](https://docs.python.org/3/library/venv.html), [podrobnější návod](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
+
+### Vytvoření virtuálního prostředí
+
+Windows: `py -m venv .venv`  
+Linux/macOS: `python3 -m venv .venv`
+
+Vytvoří se složka `.venv`.
+
+*Poznámka: je vhodné složku `.venv` <Link href="./08/#ignorování-souborů">ignorovat v Gitu</Link> (doporučený `.gitignore` to dělá).*
+
+### Spuštění virtuálního prostředí
+
+Windows CMD: `.venv\Scripts\Activate.bat`  
+Windows PowerShell: `&powershell -ExecutionPolicy bypass`, pak `.venv/Scripts/Activate.ps1`  
+Linux/macOS: `source .venv/bin/activate`
+
+Když je virtuální prostředí aktivní, objevuje se na začátku řádku terminálu: `(.venv)`.
+
+Když ho budu potřebovat vypnout, tak `deactivate`.
+
+### Instalace modulu <span style={{textTransform: "none"}}>`pytest`</span>
+
+(ve virtuálním prostředí): `python -m pip install pytest`
+
+## Římská čísla
+
+Napište testy pro funkci na převod čísel na římská čísla. Podrobnější zadání je v [ReCodExu](https://recodex.mff.cuni.cz/app/assignment/f654f47e-ba11-45c8-ad8b-74df199a639d).

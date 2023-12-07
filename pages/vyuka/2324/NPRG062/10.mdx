@@ -1,0 +1,33 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG062 – Algoritmizace – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace – 10. cvičení
+
+## Alfa-beta prořezávání
+
+Odkrokujte si algoritmus minimax s alfa-beta prořezáváním a určete, které vrcholy v následujícím stromu hry zůstanou neprozkoumané (při průchodu zleva doprava).
+
+<img src="../alfa-beta.png" alt="Strom hry" className="img-fluid"/>
+
+## Cvičení na binární vyhledávací stromy
+
+Pro binární vyhledávací strom implementujte následující operace (jako metody třídy `BinarySearchTree` ze cvičení):
+
+1. Najděte nejmenší hodnotu uloženou v binárním stromě.
+2. Určete výšku binárního stromu (délku nejdelší větvě z kořene do listu).
+3. Určete počet vrcholů ve stromě.
+4. Smažte prvek se zadanou hodnotou ze stromu.
+
+Můžete se zamyslet nad různými způsoby řešení takových úloh (do hloubky nebo do šířky,
+pomocí rekurze nebo bez rekurze apod.), nicméně doporučuji si nejdřív rozmyslet řešení teoreticky (zkusit si ho nakreslit na papír) a pak teprve začít implementovat.
+
+## Průměrná výška stromu
+
+Navrhněte efektivní algoritmus, která zjistí průměrnou výšku stromu definovanou jako `součet_délek_všech_cest_z_kořene_do_listu / počet_listů`. Délka cesty je počet hran.
+
+Můžete použít <a href="../binary_tree_avg_depth.py">šablonu</a> (pro ukázkový strom v šabloně byste měli dostat výsledek `3.2`).
+
+<img src="../09_prumerna_vyska_stromu.png" alt="Podrobnější zadání" className="img-fluid"/>
