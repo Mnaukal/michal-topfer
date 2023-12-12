@@ -49,11 +49,11 @@ export default function CourseIndex() {
       <p>Algoritmizace: <Link href="NPRG062/09/">rekurze</Link> &ndash; Fibonacciho posloupnost, Hanojské věže, Generování permutací, Generování podmnožin.</p>
       <p>Programování: rekurze, generátory (<LabPrograms source="lab" order="9"/>).</p>
     </Lab>,
-    <Lab key="10" order="10" date="12.12." plan>
+    <Lab key="10" order="10" date="12.12.">
       <p>Algoritmizace: <Link href="NPRG062/10#alfa-beta-prořezávání">alfa-beta prořezávání</Link>, <Link href="NPRG062/10#průměrná-výška-stromu">zkoušková úloha na stromy</Link>.</p>
       <p>Programování: <Link href="NPRG030/10">virtuální prostředí</Link> (<code>venv</code>), unit testy (<LabPrograms source="lab" order="10"/>).</p>
     </Lab>,
-    <Lab key="11" order="11" date="19.12." future>
+    <Lab key="11" order="11" date="19.12.">
       <p>Programování: <span className="text-danger">zápočtový test</span>.</p>
     </Lab>,
     <Lab key="12" order="12" date="9.1." future>
