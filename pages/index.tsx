@@ -31,6 +31,10 @@ export default function Index() {
       <ul>
         <li>
           <Badge type={BadgeType.Paper}/>
+          <a href="https://d3s.mff.cuni.cz/publications/topfer_machinelearning_2023/">M. Töpfer, M. Abdullah, T. Bureš, P. Hnětynka, M. Kruliš: Machine-learning abstractions for component-based self-optimizing systems</a>
+        </li>
+        <li>
+          <Badge type={BadgeType.Paper}/>
           <a href="https://d3s.mff.cuni.cz/publications/topfer_online_2023/">M. Töpfer, F. Plášil, T. Bureš, P. Hnětynka, M. Kruliš, D. Weyns: Online ML Self-adaptation in Face of Traps</a>
         </li>
         <li>
