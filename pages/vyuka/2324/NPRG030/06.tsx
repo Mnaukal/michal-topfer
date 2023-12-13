@@ -9,11 +9,11 @@ export default function CourseLab() {
     <h1>Programování 1 &ndash; 6. cvičení</h1>
 
     <h2 id="přehled-základních-knihoven-v-pythonu">Přehled základních knihoven v Pythonu</h2>
-<p>Přehled všech standardních knihoven je <a href="https://docs.python.org/3/library/index.html">v dokumentaci Pythonu</a>. My si ukážeme jen několik z nich:</p>
+    <p>Přehled všech standardních knihoven je <a href="https://docs.python.org/3/library/index.html">v dokumentaci Pythonu</a>. My si ukážeme jen několik z nich:</p>
 <ul>
 <li><code>sys</code>
 <ul>
-<li>Přístup k interpretu Pythonu (např. čtení argumentů z příkazové řádky, vypisování na chybový výstup)</li>
+<li>Přístup k interpretu Pythonu (např. čtení argumentů z příkazové řádky, vypisování na chybový výstup).</li>
 <li><a href="https://docs.python.org/3/library/sys.html">dokumentace</a></li>
 <li><a href="../sys_.py">příklad použití</a></li>
 </ul></li>
@@ -29,9 +29,15 @@ export default function CourseLab() {
 <li><a href="https://docs.python.org/3/library/logging.html">dokumentace</a></li>
 <li><a href="../logging_.py">příklad použití</a></li>
 </ul></li>
+<li><code>argparse</code>
+<ul>
+<li>Zpracování argumentů z příkazové řádky.</li>
+<li><a href="https://docs.python.org/3/library/argparse.html">dokumentace</a></li>
+<li><a href="../argparse_.py">příklad použití</a></li>
+</ul></li>
 <li><code>os</code>
 <ul>
-<li>Rozhraní k operačnímu systému (např. vytváření složek, přesouvání souborů, spouštění příkazů)</li>
+<li>Rozhraní k operačnímu systému (např. vytváření složek, přesouvání souborů, spouštění příkazů).</li>
 <li><a href="https://docs.python.org/3/library/os.html">dokumentace</a></li>
 <li><a href="../os_.py">příklad použití</a></li>
 </ul></li>

@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 
-parser = ArgumentParser(prog="argparse_test.py", description='Sample argument parsing program.')
+parser = ArgumentParser(prog="argparse_.py", description='Sample argument parsing program.')
 
 # Add positional argument
 parser.add_argument("foo", type=str,
