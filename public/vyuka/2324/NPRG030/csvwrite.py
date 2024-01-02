@@ -16,7 +16,7 @@ with open(file_path, "w", newline="", encoding="utf8") as file:  # csv.writer ad
     # Attach writer to file
     writer = csv.writer(file, delimiter=",")
 
-    # Write header
+    # Write header (column names)
     writer.writerow(["number", "second power"])
 
     # Write data
