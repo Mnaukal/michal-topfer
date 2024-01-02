@@ -74,6 +74,10 @@ export default function CourseIndex() {
       Cvičení probíhá v jednom bloku s cvičením z Algoritmizace od <b>9:00</b>. Předměty Algoritmizace a Programování 1 jsou úzce spojené, takže je reálně budeme chápat jako jedno dlouhé cvičení. Další podrobnosti najdete také na stránce <Link href="NPRG062">Cvičení NPRG062 &ndash; Algoritmizace</Link>.
     </CardBorderPrimary>
 
+    <CardDark>
+      Zápočtový test proběhl 19. 12. <b>Pokud máte zájem o další termín, napište mi mail.</b>
+    </CardDark>
+
     <h2>Obsah stránky</h2>
 
     <ul className="text-secondary">
@@ -104,14 +108,14 @@ export default function CourseIndex() {
 
     <p>Pro získání zápočtu z programování je potřeba</p>
     <ul>
-      <li>získat alespoň <i>75 % bodů</i> za <b>domácí úkoly</b> (za aktivní účast na cvičeních získáte bonusové body),</li>
-      <li>napsat <b>zápočtový test</b> (bude nejspíš 19. 12.),</li>
-      <li>naprogramovat <b>zápočtový program</b> (viz <a href="#zapoctak">níže</a>).</li>
+      <li>získat alespoň <i>75 % bodů</i> za <a href="#ukoly"><b>domácí úkoly</b></a> (za aktivní účast na cvičeních získáte bonusové body),</li>
+      <li>napsat <a href="#test"><b>zápočtový test</b></a> (bude nejspíš 19. 12.),</li>
+      <li>naprogramovat <a href="#zapoctak"><b>zápočtový program</b></a>.</li>
     </ul>
 
     <p>Zkouška bude až v letním semestru, takže zápočet je to jediné, co musíte získat.</p>
 
-    <h3>Domácí úkoly</h3>
+    <h3 id="ukoly">Domácí úkoly</h3>
 
     <p>Plánuji zadat celkem 10 úkolů po <i>10 bodech</i>. Celkem tedy za domácí úkoly budete moct získat až <i>100 bodů</i>, takže na zápočet bude potřeba <i>75 bodů</i>.</p>
 
@@ -128,11 +132,18 @@ export default function CourseIndex() {
 
     <p>Jako řešení domácích úkolů odevzdávejte pouze vaše výtvory, nikoli kód napsaný někým jiným (opsaný od spolužáka/spolužačky, zkopírovaný z internetu, vygenerovaný pomocí ChatGPT, &hellip;). Rozhodně není zakázáno hledat na internetu nebo konzultovat se spolužáky, jak se naprogramuje nějaká dílčí část úkolu, ale je zakázáno kopírovat řešení celé úlohy. Podobně pro LLMs (ChatGPT a další) &ndash; můžete se ptát, jak se udělá nějaká konkrétní věc v Pythonu, ale nevydávejte vygenerovaný kód za své řešení (v tomto kontextu bych zmínil <a href='https://www.mff.cuni.cz/cs/verejnost/aktuality/stanovisko-mff-uk-k-vyuzivani-umele-inteligence-ve-vyuce'>Stanovisko MFF UK k využívání umělé inteligence ve výuce</a>, zejména bod <i>Buďte transparentní</i>).</p>
 
-    <h3>Zápočtový test</h3>
+    <h3 id="test">Zápočtový test</h3>
 
     <p>Test se bude psát nejspíš na cvičení 19. 12. Test je praktický &ndash; vaším úkolem bude naprogramovat a odladit řešení úlohy &ndash; a bude zadán přes ReCodEx (takže ho budete řešit jako domácí úkoly, akorát s časem omezeným délkou cvičení). Další termíny budou vypsány podle potřeby během zkouškového období &ndash; celkem máte na test tři pokusy.</p>
 
     <h3 id="zapoctak">Zápočtový program</h3>
+
+    <p>Zápočtový program je větší kus software, který budete programovat doma během semestru (případně během zkouškového období).</p>
+
+    {/*/}
+    <p><em>Pokud budete mít během čtení zbytku této sekce pocit, že zatím neumíte programovat dost dobře na to, abyste vyrobili větší funkční software, nelekejte se. Je to úplně normální. Každý větší projekt vypadá zezačátku děsivě. Možná je lepší to zatím nečíst a vrátit se k tomu třeba koncem listopadu, až budete mít víc zkušeností s programováním.</em></p>
+    <div className="text-muted">
+    {/**/}
 
     <CardBorderPrimary cardText={false}>
       <h4 className='mt-0'>Shrnutí požadavků</h4>
@@ -144,24 +155,29 @@ export default function CourseIndex() {
       </ul>
     </CardBorderPrimary>
 
-    <p>Zápočtový program je větší kus software, který budete programovat doma během semestru. <b>Nejpozději do konce výuky v ZS (12. 1. 2024) si vyberete téma a zašlete mi mailem specifikaci programu</b> (zhruba jeden odstavec popisu toho, co program bude dělat). Doporučuji vybrat si téma už před Vánoci, protože vánoční prázdniny můžou být dobrý termín, kdy na programu pracovat. Až bude program hotový (včetně uživatelské a programátorské dokumentace), pošlete mi mail a já ho ohodnotím.</p>
+    <h4>Výběr tématu</h4>
 
-    {/*/}
-    <p><em>Pokud budete mít během čtení zbytku této sekce pocit, že zatím neumíte programovat dost dobře na to, abyste vyrobili větší funkční software, nelekejte se. Je to úplně normální. Každý větší projekt vypadá zezačátku děsivě. Možná je lepší to zatím nečíst a vrátit se k tomu třeba koncem listopadu, až budete mít víc zkušeností s programováním.</em></p>
-    <div className="text-muted">
-    {/**/}
+    <p>Téma zápočtového programu navrhujete vy. <b>Nejpozději do konce výuky v ZS (12. 1. 2024) si vyberte téma a zašlete mi mailem specifikaci programu</b> (zhruba jeden odstavec popisu toho, co program bude dělat). Já se s vámi domluvím, jestli je téma vhodné a případně ho společně upravíme. Doporučuji vybrat si téma už před Vánoci, protože vánoční prázdniny můžou být dobrý termín, kdy na programu pracovat. Pokud vás žádné téma nenapadá, podívejte se <a href="#temata">níže</a>.</p>
 
     <p>Zápočtový program může a nemusí být napsaný v Pythonu &ndash; použijte jazyk, který umíte nebo který nejlépe sedí na doménu problému. Na druhou stranu, já bych měl být schopný kód vašeho programu přečíst a pochopit, takže pokud chcete použít nějaký jiný jazyk než Python, domluvte se na tom se mnou už ve specifikaci programu.</p>
 
-    <p>Zápočtový program byste měli <b>odevzdat nejpozději do konce zkouškového (18. 2. 2024)</b>, poté už za něj zápočet neudělím. Program se odevzdává prostřednictvím <a href="https://gitlab.mff.cuni.cz/">MFF GitLabu</a>. Repozitář pro odevzdávání vám bude vytvořen (<code>/teaching/nprg030/2024-winter/student-LOGIN_DO_SISU</code>). Naklonujte si ho do svého počítače a vyvíjejte program v něm za použití Gitu (jak jsme si ukázali během cvičení). <b>Až budete mít hotovo, pošlete mi mail</b> s odkazem na váš repozitář a já program ohodnotím.</p>
+    <h4>Odevzdání</h4>
 
-    <p>Snažte se dělat commity průběžně (např. vždy když dokončíte nějakou ucelenou část práce), ať si u toho i vyzkoušíte, jak s Gitem pracovat. Nezapomeňte, že některé soubory do Gitu nepatří (třeba <code>.exe</code> soubory a další produkty build systému), používejte proto vhodný soubor <code>.gitignore</code> (např. pro Python je vhodný <a href="https://github.com/github/gitignore/blob/main/Python.gitignore">tento</a> &ndash; uložte si ho do kořenového adresáře repozitáře a přejmenujte na <code>.gitignore</code>). Pokud si potřebujete Git připomenout, můžete využít třeba <a href="https://naucse.python.cz/course/pyladies/git/basics/">tenhle návod</a>, <a href="https://www.youtube.com/watch?v=hwP7WQkmECE">Git ve 100 sekundách, ale nám stačí prvních 60</a>, nebo <a href="https://www.youtube.com/watch?v=HkdAHXoRtos">to samé, ale detailněji</a>.</p>
+    <p>Zápočtový program byste měli <b>odevzdat nejpozději do konce zkouškového (18. 2. 2024)</b>, poté už za něj zápočet neudělím. Program se odevzdává prostřednictvím <b><a href="https://gitlab.mff.cuni.cz/">MFF GitLabu</a></b>. Repozitář pro odevzdávání vám bude vytvořen (<code>/teaching/nprg030/2024-winter/student-LOGIN_DO_SISU</code>). Naklonujte si ho do svého počítače a vyvíjejte program v něm za použití Gitu (jak jsme si ukázali během cvičení). <b>Až budete mít hotovo (včetně uživatelské a programátorské dokumentace), pošlete mi mail</b> s odkazem na váš repozitář a já program ohodnotím.</p>
 
     <p>V repozitáži si vytvořte vhodnou strukturu projektu &ndash; minimálně vytvořte složky pro zdrojové kódy programu (zdrojové kódy nepatří do kořenového adresáře projektu) a pro dokumentaci. Taky upravte soubor <code>README.md</code>, aby obsahoval základní informace o vašem programu a odkaz na dokumentaci.</p>
+
+    <p>Odevzdávaný program by měl být rozumně odladěný. Především by měl jít spustit bez chyb. Když program budu normálně používat, tak by neměl spadnout. Pokud například program očekává vstup v souboru, tak by neměl spadnout, pokud soubor neexistuje. Měl by místo toho vypsat rozumnou chybovou hlášku pro uživatele.</p>
 
     {/*/}
     <p>Součástí odevzdání je i osobní předvedení programu. Až budete mít program hotový, pošlete mi ho mailem (včetně dokumentace a zdrojových kódů) a domluvíme se na termínu předvedení. Předvedení programu bude spočívat v tom, že mi ukážete, že program jde spustit a že dělá to, na čem jsme se domluvili ve specifikaci. Kromě toho od vás budu chtít shrnutí návrhu programu &ndash; high-level rozdělení do tříd/funkcí a jejich účet, prostě takové rychlé shrnutí toho, co dělá která část zdrojového kódu.</p>
     {/**/}
+
+    <h4>Použití Gitu</h4>
+
+    <p>Během vývoje programu používejte Git (jak jsme si ukázali během cvičení). Snažte se dělat commity průběžně (např. vždy když dokončíte nějakou ucelenou část práce), ať si u toho i vyzkoušíte, jak s Gitem pracovat. Nezapomeňte, že některé soubory do Gitu nepatří (třeba <code>.exe</code> soubory a další produkty build systému), používejte proto vhodný soubor <code>.gitignore</code> (např. pro Python je vhodný <a href="https://github.com/github/gitignore/blob/main/Python.gitignore">tento</a> &ndash; uložte si ho do kořenového adresáře repozitáře a přejmenujte na <code>.gitignore</code>). Pokud si potřebujete Git připomenout, můžete využít třeba <a href="https://naucse.python.cz/course/pyladies/git/basics/">tenhle návod</a>, <a href="https://www.youtube.com/watch?v=hwP7WQkmECE">Git ve 100 sekundách, ale nám stačí prvních 60</a>, nebo <a href="https://www.youtube.com/watch?v=HkdAHXoRtos">to samé, ale detailněji</a>.</p>
+
+    <h4>Dokumentace</h4>
 
     <p>K zápočtovému programu napište jeho <b>dokumentaci</b>. Ta by měla mít tři hlavní části:</p>
     <ul>
@@ -174,10 +190,10 @@ export default function CourseIndex() {
       <b>Povinnou součástí uživatelské dokumentace je informace o tom, jak program spustit</b> (pokud má víc <code>.py</code> souborů, tak který se má spouštět), jak specifikovat jeho parametry, vstupní soubory, atd. a jak program ovládat (např. pokud programujete hru, tak jaké klávesy slouží k čemu). Pokud váš program pracuje s nějakými vstupními soubory, popište jejich formát. Pokud je pro spuštění programu potřeba nainstalovat nějaké knihovny nebo nástroje (např. programujete hru v Pygame), napište jaké a v jaké verzi (a ideálně doplňte i jak je nainstalovat).
     </p>
     <p>
-      V programátorské části dokumentace byste měli vysvětlit hlavní strukturu a koncepty vašeho programu. Když si projekt otevřu já nebo váš spolužák, měli bychom být podle dokumentace schopní program rozšířit a případně vědět, kde v kódu hledat, kdybychom měli opravovat nějakou chybu. Je vhodné jako součást programátorské dokumentace mít popis abstraktního návrhu programu (rozdělení do tříd a co má která třída za úkol) a stručné shrnutí zdrojových souborů (hlavně když jich bude hodně a budou strukturované složek). Taky je fajn psát dokumentační komentáře k funkcím a třídám (aspoň k těm nejdůležitějším).
+      V <b>programátorské části dokumentace</b> byste měli vysvětlit hlavní strukturu a koncepty vašeho programu. Když si projekt otevřu já nebo váš spolužák, měli bychom být podle dokumentace schopní program rozšířit a případně vědět, kde v kódu hledat, kdybychom měli opravovat nějakou chybu. Je vhodné jako součást programátorské dokumentace mít popis abstraktního návrhu programu (rozdělení do tříd a co má která třída za úkol) a stručné shrnutí zdrojových souborů (hlavně když jich bude hodně a budou strukturované složek). Taky je fajn psát dokumentační komentáře k funkcím a třídám (aspoň k těm nejdůležitějším).
     </p>
     <p>
-      Součástí dokumentace by také měly být příklady použití. Když program vyžaduje nějaké netriviální vstupy k tomu, aby šel spustit, přidejte příklady takových vstupů do dokumentace. Například pokud váš program kreslí graf na základě dat ze vstupního souboru, dejte do dokumentace ukázkový soubor s daty. Pokud programujete hru nebo jiný interaktivní program, pak nejspíš příklady použití nejsou potřeba.
+      Součástí dokumentace by také měly být <b>příklady použití</b>. Když program vyžaduje nějaké netriviální vstupy k tomu, aby šel spustit, přidejte příklady takových vstupů do dokumentace. Například pokud váš program kreslí graf na základě dat ze vstupního souboru, dejte do dokumentace ukázkový soubor s daty. Pokud programujete hru nebo jiný interaktivní program, pak nejspíš příklady použití nejsou potřeba.
     </p>
     <p>
       Výrazně doporučuji dokumentaci psát anglicky, ale pokud si na to nevěříte, můžete ji napsat česky (příp. slovensky).
@@ -186,7 +202,7 @@ export default function CourseIndex() {
       Dobrým způsobem, jak psát dokumentaci, je pořídit si složku <code>documentation</code> (nebo <code>docs</code>) ve vašem repozitáři a v ní mít několik Markdown (<code>.md</code>) souborů a rezcestník <code>README.md</code> s odkazy na ostatní soubory.
     </p>
 
-    <p>Program by měl být rozumně odladěný. Především by měl jít spustit bez chyb. Když program budu normálně používat, tak by neměl spadnout. Pokud například program očekává vstup v souboru, tak by neměl spadnout, pokud soubor neexistuje. Měl by místo toho vypsat rozumnou chybovou hlášku pro uživatele.</p>
+    <h4 id="temata">Další informace a nápady na témata</h4>
 
     <p>Spoustu užitečných informací o zápočťácích už sepsali jiní, tak nemá smysl je znovu psát. Tady je pár odkazů: Martin Mareš má na <a href="http://mj.ucw.cz/vyuka/2324/p1x/pravidla.html">webu svého cvičení</a> hezky sepsané informace o zápočťácích. Navíc poskytuje i <a href="http://mj.ucw.cz/vyuka/zap/">seznam témat</a> pro inspiraci (pro ZS je vhodná obtížnost 3 a vyšší), takže doporučuji přečíst. Detailní informace včetně nápadů na témata sepsal taky <a href="https://github.com/Jirka-Mayer/NPRG030-062/blob/master/prg/zapoctaky.md">Jirka Mayer</a>. Nakonec, Rudolf Kryl má na webu <a href="https://ksvi.mff.cuni.cz/~kryl/dokumentace.htm">návod na psaní dokumentace k zápočťáku</a>, také doporučuji přečíst.</p>
 
