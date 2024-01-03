@@ -4,6 +4,7 @@ import rehypeKatex from 'rehype-katex'
 import rehypeSlug from 'rehype-slug'
 import remarkMath from 'remark-math'
 import remarkGfm from 'remark-gfm'
+import remarkHeadingId from 'remark-heading-id'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,7 +21,7 @@ const nextConfig = {
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
   options: {
-    remarkPlugins: [remarkMath, remarkGfm],
+    remarkPlugins: [remarkMath, remarkGfm, remarkHeadingId],
     rehypePlugins: [rehypeKatex, rehypeSlug, rehypeHighlight],
   },
 })

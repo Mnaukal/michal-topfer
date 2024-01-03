@@ -23,7 +23,8 @@
   "mdx": {
     "plugins": [
       "remark-math",
-      "remark-gfm"
+      "remark-gfm",
+      "remark-heading-id",
     ]
   }
 }
