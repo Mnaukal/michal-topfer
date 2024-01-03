@@ -23,7 +23,7 @@ export default function CourseIndex() {
       <p>Programování: funkce (<LabPrograms source="lab" order="3"/>), <Link href="NPRG030/03">úlohy na procvičení</Link> &ndash; funkce, Odhad <InlineMath math="\pi"/> Metodou Monte Carlo.</p>
     </Lab>,
     <Lab key="4" order="4" date="24.10.">
-      <p>Algoritmizace: pokračování <Link href="NPRG062/04"><InlineMath math="\mathcal{O}"/> (složitost)</Link>{/*, binární vyhledávání (<Link href="NPRG062/04">Házení vajíček</Link>)*/}.</p>
+      <p>Algoritmizace: pokračování <Link href="NPRG062/04"><InlineMath math="\mathcal{O}"/> (složitost)</Link>.</p>
       <p>Programování: DRY (Don&apos;t Repeat Yourself), refaktorování, list comprehensions (<LabPrograms source="lab" order="4"/>), <Link href="NPRG030/04">úlohy na procvičení</Link> &ndash; refaktorování, funkce pro textové řetězce, bludiště.</p>
     </Lab>,
     <Lab key="5" order="5" date="31.10.">
@@ -119,9 +119,9 @@ export default function CourseIndex() {
 
     <p>Plánuji zadat celkem 10 úkolů po <i>10 bodech</i>. Celkem tedy za domácí úkoly budete moct získat až <i>100 bodů</i>, takže na zápočet bude potřeba <i>75 bodů</i>.</p>
 
-    <p>Za aktivní účast na cvičeních můžete získat bonusové body, konkrétně až <i>2 bod</i> za každé cvičení. V průběhu semestru bude 11 cvičení (a jedno navíc na zápočtový test), takže můžete získat až <i>22 bonusových bodů</i>. Účast na cvičeních tedy není povinná, ale je <b>silně doporučná</b>.</p>
+    <p>Za aktivní účast na cvičeních můžete získat bonusové body, konkrétně až <i>2 bod</i> za každé cvičení. V průběhu semestru bude 11 cvičení (a jedno navíc na zápočtový test), takže můžete získat až <i>22 bonusových bodů</i>. Účast na cvičeních tedy není povinná, ale je <b>silně doporučená</b>.</p>
     
-    <p>U domácích úkolů se bude hodnotit jak <b>funkčnost</b> (jeslti program dělá to, co má), tak <b>kvalita kódu</b> (čitelnost, atd.). Zpravidla bude <i>6 bodů</i> za funkčnost a <i>4 body</i> za kvalitu, ale u některých úloh může být poměr bodů jiný.</p>
+    <p>U domácích úkolů se bude hodnotit jak <b>funkčnost</b> (jestli program dělá to, co má), tak <b>kvalita kódu</b> (čitelnost, atd.). Zpravidla bude <i>6 bodů</i> za funkčnost a <i>4 body</i> za kvalitu, ale u některých úloh může být poměr bodů jiný.</p>
 
     <p>
       Na každý úkol budete mít <b>dva týdny</b> a v&nbsp;tomto čase ho můžete odevzdat víckrát.
@@ -165,7 +165,7 @@ export default function CourseIndex() {
 
     <p>Zápočtový program byste měli <b>odevzdat nejpozději do konce zkouškového (18. 2. 2024)</b>, poté už za něj zápočet neudělím. Program se odevzdává prostřednictvím <b><a href="https://gitlab.mff.cuni.cz/">MFF GitLabu</a></b>. Repozitář pro odevzdávání vám bude vytvořen (<code>/teaching/nprg030/2024-winter/student-LOGIN_DO_SISU</code>). Naklonujte si ho do svého počítače a vyvíjejte program v něm za použití Gitu (jak jsme si ukázali během cvičení). <b>Až budete mít hotovo (včetně uživatelské a programátorské dokumentace), pošlete mi mail</b> s odkazem na váš repozitář a já program ohodnotím.</p>
 
-    <p>V repozitáži si vytvořte vhodnou strukturu projektu &ndash; minimálně vytvořte složky pro zdrojové kódy programu (zdrojové kódy nepatří do kořenového adresáře projektu) a pro dokumentaci. Taky upravte soubor <code>README.md</code>, aby obsahoval základní informace o vašem programu a odkaz na dokumentaci.</p>
+    <p>V repozitáři si vytvořte vhodnou strukturu projektu &ndash; minimálně vytvořte složky pro zdrojové kódy programu (zdrojové kódy nepatří do kořenového adresáře projektu) a pro dokumentaci. Taky upravte soubor <code>README.md</code>, aby obsahoval základní informace o vašem programu a odkaz na dokumentaci.</p>
 
     <p>Odevzdávaný program by měl být rozumně odladěný. Především by měl jít spustit bez chyb. Když program budu normálně používat, tak by neměl spadnout. Pokud například program očekává vstup v souboru, tak by neměl spadnout, pokud soubor neexistuje. Měl by místo toho vypsat rozumnou chybovou hlášku pro uživatele.</p>
 
@@ -199,7 +199,7 @@ export default function CourseIndex() {
       Výrazně doporučuji dokumentaci psát anglicky, ale pokud si na to nevěříte, můžete ji napsat česky (příp. slovensky).
     </p>
     <p>
-      Dobrým způsobem, jak psát dokumentaci, je pořídit si složku <code>documentation</code> (nebo <code>docs</code>) ve vašem repozitáři a v ní mít několik Markdown (<code>.md</code>) souborů a rezcestník <code>README.md</code> s odkazy na ostatní soubory.
+      Dobrým způsobem, jak psát dokumentaci, je pořídit si složku <code>documentation</code> (nebo <code>docs</code>) ve vašem repozitáři a v ní mít několik Markdown (<code>.md</code>) souborů a rozcestník <code>README.md</code> s odkazy na ostatní soubory.
     </p>
 
     <h4 id="temata">Další informace a nápady na témata</h4>

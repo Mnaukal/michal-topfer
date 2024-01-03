@@ -19,7 +19,7 @@ function Lab({ date, order = null, title = "", plan = false, future = false, chi
   return (
     <section id={date} className="co-bylo">
       <h3 className="ms-1">
-        <a className="toggle" onClick={() => setOpen(!open)} aria-controls={id} aria-expanded={open}>
+        <a className="toggle" onClick={() => setOpen(!open)} aria-controls={id} aria-expanded={open} role="button">
           {day}. {month}. {order !== null && `(${order}. cvičení)`} {title}
         </a>
       </h3>
