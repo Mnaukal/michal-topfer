@@ -1,0 +1,65 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Programování 1 &ndash; 7. cvičení
+
+## Linting
+
+[Rozšíření pro VS Code](https://code.visualstudio.com/docs/python/linting) (`pylint`, `flake8`).
+
+Ruční instalace: `python -m pip install pylint` (pokud vám to píše, že nemáte dostatečná práva, přidejte ještě `--user`), spuštění: `python -m pylint jmeno_souboru.py`.
+
+Pokud nechcete dostávat všechna varování, jde některá vypnout. Třeba tahle se vypnou varování ohledně chybějících docstringů: `python -m pylint --disable=C0114 --disable=C0115 --disable=C0116 jmeno_souboru.py`. Argumenty jdou nastavit i pro rozšíření ve VS Code (vyhledávejte "pylint" v nastavení).
+
+
+## Spojové seznamy
+
+Cílem všech úkolů je procvičit si práci se spojovými seznamy. Pro jejich vyřešení tedy nepoužívejte jiné datové struktury (seznamy, apod.). Můžete úpravy provádět destruktivně, tedy přímo měnit prvky původního seznamu.
+
+Pokud není uvedeno jinak, jako jeden ze vstupních parametrů dostanete první prvek seznamu a máte vrátit první prvek upraveného seznamu.
+
+### Vkládání do setřízeného seznamu
+
+Do setřízeného seznamu vložte prvek s hodnotou $x$.
+
+### Otočení seznamu
+
+Otočte spojový seznam.
+
+### Mazání prvního výskytu
+
+Ze seznamu vymaže prvek s hodnotou $x$ (první výskyt), pokud tam je.
+
+### Mazání všech výskytů
+
+Ze seznamu vymaže všechny prvky s hodnotou $x$.
+
+### Slévání (merge)
+
+Dostanete dva setřízené spojové seznamy. Vraťte seznam, kde jsou všechny prvky obou seznamů a jsou setřízené. (Jako operace *merge* v merge sortu.)
+
+### Sudé a liché
+
+Rozdělte seznam na dva seznamy. V prvním budou pouze sudé prvky, v druhém pouze liché. Například seznam `5, 6, 10, 12, 15, 16, 25` rozdělte na `6, 10, 12, 16` a `5, 15, 25`.
+
+### Deque
+
+Implementujte oboustrannou frontu (deque) pomocí obousměrného spojového seznamu. Operace na oboustranné frontě jsou
+
+* `push_back` - přidání prvku na konec,
+* `push_front` - přidání prvku na začátek,
+* `pop_back` - odebrání prvku z konce,
+* `pop_front` - odebrání prvku ze začátku,
+
+a všechny chceme provádět s konstantní časovou složitostí.
+
+*K zamyšlení: Proč nám nestačí jednosměrný seznam?*
+
+{/*
+<h3 id="reseni">Řešení některých úloh</h3>
+
+<p>Řešení: [`linked_lists.py`](../linked_lists.py).</p>
+*/}

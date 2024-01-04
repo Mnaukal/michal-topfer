@@ -1,0 +1,36 @@
+import Head from "next/head";
+import { NoTextTransform } from "@/components/text-transform";
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Programování 1 &ndash; 3. cvičení
+
+## Funkce – cvičení
+
+Napište následující funkce. Zkuste doplnit i typové anotace parametrů a návratové hodnoty.
+
+* Napište funkci `compare(a, b)`, která vrací `1` pro `a > b`, `0` pro `a == b` a `-1` pro `a < b`.
+* Napište funkci `is_even(number)`, která přijme celé číslo jako argument a vrací `True`, je-li číslo sudé, a `False`, je-li liché.
+* Nyní napište funkci `is_odd(number)`, která vrací `True`, je-li `n` liché a `False`, je-li sudé. Využijte funkci `is_even`.
+* Napište funkci, která počítá ciferný součet čísla.
+
+
+## Odhad <NoTextTransform>$\pi$</NoTextTransform> Metodou Monte Carlo
+
+Vytvořte program, který odhadne hodnotu $\pi$ pomocí metody Monte Carlo.
+
+Mějme čtverec s vrcholy $(0, 0), (0, 1), (1, 1), (1, 0)$ a v něm čtvrt kruhu se středem $(0, 0)$ a poloměrem $1$.
+Obsah čtvrtkruhu je $S_1 = \frac{\pi \cdot 1^2}{4} = \frac{\pi}{4}$, obsah čtverce je $S_2 = 1^2 = 1$.
+Z poměru obsahů vyjádříme $\pi = 4 \cdot \frac{S_1}{S_2}$.
+
+Nyní využijeme metodu Monte Carlo k odhadu obsahů. Budeme náhodně generovat body ve čtverci a počítat, kolik z nich padne dovnitř čtvrtkruhu. Počet bodů ve čtvrtkruhu dělený celkovým počtem vygenerovaných bodů nám dá odhad poměru obsahů $\frac{S_1}{S_2}$.
+
+*Nápovědy:*
+
+* Pro vygenerování náhodného čísla z rozsahu $[0, 1]$ použijte `random.uniform(0, 1)` (na začátek souboru musíte napsat `import random`, abyste knihovnu `random` mohli používat).
+* Pro výpočet vygenerujte $100\,000$ bodů.
+* Pro zjištění, jestli je bod uvnitř kruhu, můžete pomocí Pythagorovy věty spočítat jeho vzdálenost od středu kruhu a porovnat ji s poloměrem.
+
+Více o metodě Monte Carlo najdete třeba na [Wikipedii](https://cs.wikipedia.org/wiki/Metoda_Monte_Carlo#Buffonova_jehla_a_v%C3%BDpo%C4%8Det_hodnoty_%CF%80) (je tam i řešení v Pythonu, tak na něj zkuste nekoukat a psát kód sami).

@@ -1,0 +1,68 @@
+import Head from "next/head";
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Programování 1 &ndash; 4. cvičení
+
+## Refaktoring
+
+Soubor [`refaktoring.py`](../refaktoring.py) obsahuje kód funkce, která provádí několik operací.
+Vaším úkolem je refaktorovat (upravit) tento kód tak, aby byl lépe čitelný a organizovaný.
+
+* Vhodně pojmenujte proměnné.
+* Rozdělte program na funkce, abyste dodrželi princip jedné odpovědnosti (funkce by měla dělat jen jednu věc).
+* Doplňte type hints.
+* Doplňte vhodný dokumentační komentář.
+
+Dále zobecněte kód tak, aby pracoval s libovolnou velikostí vstupního argumentu
+
+
+## Funkce pro textové řetězce
+
+1. Napište funkci `contains`, která pro zadaný text `text` a znak `char` zjistí, jestli `text` obsahuje znak `char`.  
+   *Ručně napište cyklus, který bude procházet přes znaky textu, nepoužívejte operátor `in` (pokud ho znáte).*
+
+    ```python
+    >>> contains("banana", "n")
+    True
+    >>> contains("banana", "z")
+    False
+    ```
+
+2. Napište funkci `count`, která pro zadaný text `text` a znak `char` spočítá, kolikrát se znak `char` vyskytuje v `text`u.  
+   *Nepoužívejte metodu [`str.count`](https://docs.python.org/3/library/stdtypes.html#str.count) ze standardní knihovny.*
+
+    ```python
+    >>> count("banana", "n")
+    2
+    ```
+
+3. Napište funkci `find`, která pro zadaný text `text` a znak `char` zjistí, na jaké pozici se znak `char` poprvé vyskytuje v `text`u. Pokud se `char` v `text`u nevyskytuje, vraťte `-1`.  
+   *Nepoužívejte metodu [`str.find`](https://docs.python.org/3/library/stdtypes.html#str.find) ani [`str.index`](https://docs.python.org/3/library/stdtypes.html#str.index) ze standardní knihovny.*
+
+    ```python
+    >>> find("banana", "b")
+    0
+    >>> find("banana", "n")
+    2
+    >>> find("banana", "z")
+    -1
+    ```
+
+
+## Cvičení na seznamy
+
+Je dána posloupnost čísel...
+
+1. zjistěte, jestli jsou všechna navzájem různá.
+2. vypište všechna opakující se čísla (ale každé jen jednou).
+3. najděte dvojici s co nejmenším rozdílem.
+
+Umíte předchozí úkoly vyřešit efektivněji, pokud víte, ze všechna zadaná čísla leží od $1$ do $100$?
+
+
+## Bludiště
+
+V souboru [`maze_broken.py`](../maze_broken.py) je kód jednoduché hry, ve které se hráč pohybuje bludištěm. Kód ale obsahuje celou řadu chyb. Najděte je a opravte.

@@ -1,0 +1,159 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG030 – Programování 1 – Michal Töpfer</title>
+</Head>
+
+# Programování 1 &ndash; 6. cvičení
+
+## Přehled základních knihoven v Pythonu
+
+Přehled všech standardních knihoven je [v dokumentaci Pythonu](https://docs.python.org/3/library/index.html). My si ukážeme jen několik z nich:
+
+* `sys`
+  * Přístup k interpretu Pythonu (např. čtení argumentů z příkazové řádky, vypisování na chybový výstup).
+  * [dokumentace](https://docs.python.org/3/library/sys.html)
+  * [příklad použití](../sys_.py)
+* `enum`
+  * Definice výčtových datových typů &ndash; když máme nějakou předem známou množinu možných hodnot.
+  * [dokumentace](https://docs.python.org/3/library/enum.html)
+  * [příklad použití](../enum_.py)
+* `logging`
+  * Informační a ladící výpisy.
+  * [dokumentace](https://docs.python.org/3/library/logging.html)
+  * [příklad použití](../logging_.py)
+* `argparse`
+  * Zpracování argumentů z příkazové řádky.
+  * [dokumentace](https://docs.python.org/3/library/argparse.html)
+  * [příklad použití](../argparse_.py)
+* `os`
+  * Rozhraní k operačnímu systému (např. vytváření složek, přesouvání souborů, spouštění příkazů).
+  * [dokumentace](https://docs.python.org/3/library/os.html)
+  * [příklad použití](../os_.py)
+* `pathlib`
+  * Reprezentace cest k souborům a složkám a práce s nimi.
+  * [dokumentace](https://docs.python.org/3/library/pathlib.html)
+  * [příklad použití](../pathlib_.py)
+* `random`
+  * Generování náhodných čísel.
+  * [dokumentace](https://docs.python.org/3/library/random.html)
+  * [příklad použití](../random_.py)
+* `csv`
+  * Čtení a zápis formátu [CSV](https://cs.wikipedia.org/wiki/CSV) (comma-separated values).
+  * [dokumentace](https://docs.python.org/3/library/csv.html)
+  * [příklad čtení](../csvread.py) (stáhněte si taky [`sample.csv`](../sample.csv))
+  * [příklad zápisu](../csvwrite.py)
+* `json`
+  * Čtení a zápis formátu [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation).
+  * [dokumentace](https://docs.python.org/3/library/json.html)
+  * [příklad čtení](../jsonread.py) (stáhněte si taky [`sample.json`](../sample.json))
+  * [příklad zápisu](../jsonwrite.py)
+
+## Cvičení na použití knihoven
+
+### Ladění pomocí logování
+
+Program [`average_grade.py`](average_grade.py) by měl počítat průměrnou známku několika studentů zaokrouhlenou na dvě desetinná místa. Bohužel, v programu je několik chyb. Vaším úkolem je chyby najít a odstranit. Využijte při tom záznamy z logování &ndash; když program spustíte, uloží se logy do souboru `average_grade.log`. Pak můžete logy v souboru projít a najít v nich chyby, které při běhu programu nastaly.
+
+### Existence souboru
+
+Pomocí knihoven [`argparse`](https://docs.python.org/3/library/argparse.html) a [`pathlib`](https://docs.python.org/3/library/pathlib.html) vytvořte program, který bude ověřovat existenci souboru.
+
+Program dostane cestu k souboru jako svůj poziční argument na příkazové řádce. Výstupem by mělo být `True` nebo `False` podle toho, jestli daný soubor existuje.
+
+#### Příklady
+
+Předpokládejme, že váš program se jmenuje `file_exists.py` a že existuje soubor jménem `soubor`.
+
+* Při spuštění příkazu `python file_exists.py soubor` by program měl vypsat `True` (soubor existuje).
+* Při spuštění příkazu `python file_exists.py neexistujici_soubor` by program měl vypsat `False` (soubor neexistuje).
+* Při spuštění příkazu `python file_exists.py` by program měl vypsat chybovou hlášku, že nebyla specifikována cesta k souboru (to `argparse` udělá za vás).
+
+#### 🦉 *Bonus:* Soubory a složky
+
+Doplňte do programu další dva volitelné argumenty (options). Pokud je nastaven option `-f`, program ověřuje, že zadaná cesta existuje a je to soubor (ne složka). Pokud je nastaven option `-d`, program ověřuje, že zadaná cesta existuje a je to složka (ne soubor). Pokud jsou nastaveny oba optiony, program vypíše chybu, že nejde použít oba optiony najednou.
+
+Předpokládejme, že váš program se jmenuje `file_exists.py` a že existuje soubor jménem `soubor` a složka jménem `slozka`.
+
+* Při spuštění příkazu `python file_exists.py soubor` by program měl vypsat `True` (soubor existuje).
+* Při spuštění příkazu `python file_exists.py -f soubor` by program měl vypsat `True` (soubor existuje).
+* Při spuštění příkazu `python file_exists.py soubor -f` by program měl vypsat `True` (na pořadí argumentů nezáleží &ndash; to za vás řeší `argparse`).
+* Při spuštění příkazu `python file_exists.py -d soubor` by program měl vypsat `False` (soubor není složka).
+* Při spuštění příkazu `python file_exists.py -d slozka` by program měl vypsat `True` (složka existuje).
+* Při spuštění příkazu `python file_exists.py -f -d slozka` by program měl vypsat chybu (nejde použít oba optiony současně).
+
+### Načtení seznamu osob z CSV
+
+V souboru `lide.csv` je seznam jmen, e-mailů a telefonů několika lidí ve formátu CSV. Pomocí knihovny [`csv`](https://docs.python.org/3/library/csv.html) načtěte data ze souboru a vypište je v následujícím formátu:
+
+```txt
+Osoba: <name> <surname>
+  E-mail: <email>
+  Telefon: <phone>
+```
+
+Například pro soubor `lide.csv`:
+
+```txt
+name,surname,email,phone
+Michal,Töpfer,topfer@d3s.mff.cuni.cz,123456789
+Tomáš,Holan,holan@ksvi.mff.cuni.cz,111222333
+```
+
+vypište
+
+```txt
+Osoba: Michal Töpfer
+  E-mail: topfer@d3s.mff.cuni.cz
+  Telefon: 123456789
+Osoba: Tomáš Holan
+  E-mail: holan@ksvi.mff.cuni.cz
+  Telefon: 111222333
+```
+
+### Caesarova šifra
+
+Doplňte řešení úlohy [Caesarova šifra textu – soubor](https://recodex.mff.cuni.cz/app/assignment/e4cf6fd2-c071-4e43-ae8d-034f441767ca) o načítání argumentů z příkazové řádky (pomocí knihovny [`argparse`](https://docs.python.org/3/library/argparse.html)):
+
+* `-f` – vstupní soubor,
+* `-o` – výstupní soubor,
+* `-k` – hodnota klíče (posunu).
+
+Program se pak spustí třeba takto: `python caesar.py -f in.txt -o out.txt -k 3`.
+
+### Generování náhodných CSV souborů podle JSON konfigurace
+
+Na základě konfigurace uložené v JSON souboru `config.json` vygenerujte CSV soubor `random.csvý` s náhodnými hodnotami. Použijte knihovny [`json`](https://docs.python.org/3/library/json.html), [`csv`](https://docs.python.org/3/library/csv.html) a [`random`](https://docs.python.org/3/library/random.html).
+
+Konfigurace obsahuje položky `"rows"` a `"columns"`. Položka `"rows"` je celé číslo udávající, kolik řádků máte vygenerovat. Položka `"columns"` obsahuje seznam konfigurací sloupců. Každý sloupec má jméno (`"name"`) a typ (`"type"`). Pokud je typ `"number"`, obsahuje konfigurace sloupce navíc hodnoty `"low"` a `"high"` a vaším cílem je generovat náhodné číslo z tohoto rozsahu. Pokud je typ `"choices"`, obsahuje definice sloupce navíc seznam `"choices"` a vaším cílem je generovat náhodnou položku ze seznamu.
+
+*Příklad konfigurace:*
+
+```json
+{
+  "rows": 5,
+  "columns": [{
+    "name": "kostka",
+    "type": "number",
+    "low": 1,
+    "high": 6
+  },{
+    "name": "mince",
+    "type": "choices",
+    "choices": ["panna", "orel"]
+  }]
+}
+```
+
+Vaším cílem je vygenerovat CSV soubor o daném počtu řádků, přičemž hodnota buňky je vždy náhodně vygenerovaná podle konfigurace daného sloupce. Nezapomeňte do CSV souboru napsat jména sloupců jako hlavičku.
+
+Například pro konfiguraci výše (`config.json`) je možný výstup (`random.csv`) následovný:
+
+```csv
+kostka,mince
+3,orel
+1,orel
+3,panna
+5,orel
+6,panna
+```
