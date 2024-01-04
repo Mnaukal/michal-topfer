@@ -1,0 +1,19 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG062 – Algoritmizace – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace &ndash; 5. cvičení
+
+## Rychlejší Eratosthenovo síto
+
+Vylepšete implementaci algoritmu [Eratosthenova síta](../eratosthenes.py) tak, aby seznam `is_prime` neevidoval sudá čísla.
+
+Funkčnost řešení si můžete ověřit na úloze [Eratosthenovo síto](https://recodex.mff.cuni.cz/app/assignment/c489cce8-8ec7-4dc3-8201-d129f53dc41f). Kdyby vás zajímalo časové srovnání, moje původní řešení běželo na testu 3 v ReCodExu 41 % časového limitu (127 ms), vylepšené pak 29 % časového limitu (88 ms).
+
+## Číselné soustavy
+
+Zobecněte funkce `bin2int` a `int2bin` z přednášky (můžete využít [moji implementaci](../soustavy_bin.py), kde se jmenují `from_base2` a `to_base2`) tak, aby prováděly konverzi z a do libovolné číselné soustavy o základu $b$, kde $2 \le b \le 16$. Pro $b > 10$ chybějící cifry reprezentujte písmeny `A`, `B`, ..., `F`.
+
+Až to budete mít, můžete váš kód využít pro řešení úlohy [Soustavy](https://recodex.mff.cuni.cz/app/assignment/c7c4e811-5c67-4ec0-a05d-a719388d7d48)

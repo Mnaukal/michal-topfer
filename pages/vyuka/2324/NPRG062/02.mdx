@@ -1,0 +1,31 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG062 – Algoritmizace – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace &ndash; 2. cvičení
+
+## Nejtěžší mince
+
+Mějme $N$ různě těžkých mincí. K dispozici máme rovnoramenné váhy, na kterých můžeme porovnat dvě mince a zjistit, která z nich je těžší.
+
+1. Navrhněte algoritmus, který na co nejméně vážení najde **nejtěžší** minci. Kolik vážení na to potřebujeme? Zdůvodněte, že na méně vážení to nejde.
+2. Navrhněte algoritmus, který na co nejméně vážení najde **nejtěžší** i **nejlehčí** minci. Kolik vážení na to potřebujeme?
+3. 🦉 *Bonus:* Navrhněte algoritmus, který na co nejméně vážení najde **druhou nejtěžší** minci. Kolik vážení na to potřebujeme?
+
+
+## Cesty věží na šachovnici
+
+Máme šachovnici $8 \times 8$ a jedno startovní políčko. Hledáme cestu věží ze startovního políčka, která projde všemi políčky šachovnice právě jednou a je uzavřená (skončí na sousedním políčku startovního políčka).
+
+Až cestu najdeme, tak zkusíme určit, jestli cesta existuje i když odebereme jedno rohové políčko šachovnice (např. černé).
+
+
+## Vážení kuliček
+
+Máme 7 stejně vypadajících zlatých koulí, ale jedna z nich je vadná. Je totiž vyrobená z kočičího zlata a tedy je lehčí než ty ostatní. Naším úkolem je tuto vadnou kouli najít.
+
+Máme k dispozici rovnoramenné váhy, kde na každou misku můžeme dát několik koulí najednou a váhy nám řeknou, která miska je lehčí. Pokud jsou obě misky stejně těžké, váhy zůstanou stát.
+
+Jelikož nechceme váhy zbytečně opotřebit, tak **hledáme způsob jak najít vadnou kouli na co nejmenší počet vážení**.

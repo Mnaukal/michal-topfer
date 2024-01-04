@@ -1,0 +1,29 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG062 – Algoritmizace – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace &ndash; 3. cvičení
+
+## Složitost ($\mathcal{O}$)
+
+### Definice
+
+Nechť $f, g: \mathbb{N} \to \mathbb{R}^+$.
+
+* $f \in \mathcal{O}(g) \iff \exists c > 0, \exists n_0 \in \mathbb{N}: \forall n > n_0: f(n) \leq c \cdot g(n)$.
+* $f \in \mathcal{\Omega}(g) \iff \exists d > 0, \exists m_0 \in \mathbb{N}: \forall m > m_0: f(m) \geq d \cdot g(m)$.
+* $f \in \mathcal{\Theta}(g) \iff f \in \mathcal{O}(g) \wedge f \in \mathcal{\Omega}(g)$.
+
+### Úlohy
+
+Nechť $f, g: \mathbb{N} \to \mathbb{R}^+$. Dokažte nebo vyvraťte tato tvrzení:
+
+1. $n^2 \in \mathcal{O}(n^3)$,
+2. $n^3 \in \mathcal{O}(n^2)$,
+3. $f \in \mathcal{O}(g) \implies g \in \mathcal{O}(f)$,
+4. $f \in \mathcal{O}(g) \implies g \in \mathcal{\Omega}(f)$,
+5. $f \in \mathcal{O}(g) \vee g \in \mathcal{O}(f)$.
+
+[Vzorová řešení](../slozitost.pdf)
