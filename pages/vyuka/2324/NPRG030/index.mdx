@@ -74,17 +74,13 @@ export const labs = [
 
 ## Obsah stránky
 
-<ul className="text-secondary">
-    <li>
-    <Link href="#co-bylo" scroll={false}>Co jsme dělali</Link>
-    <ul><li>
-        {labs.map(LabLink)}
-    </li></ul>
-    </li>
-    <li><Link href="#prednaska">Přednáška</Link></li>
-    <li><Link href="#zapocet">Podmínky na zápočet</Link></li>
-    <li><Link href="#uzitecne-info">Užitečné informace</Link></li>
-</ul>
+* [Co jsme dělali](#co-bylo)
+  * {labs.map(LabLink)}
+* [Přednáška](#prednaska)
+* [Podmínky na zápočet](#zapocet)
+  * [domácí úkoly](#ukoly), [zápočtový test](#test), [zápočtový program](#zapoctak)
+* [Užitečné informace](#uzitecne-info)
+  * [konzultace](#konzultace), [v čem budeme programovat](#instalace), [ReCodEx](#recodex), [procvičování](#procvicovani), [přístup k souborům na školních počítačích](#soubory), [cvičení pro pokročilé](#mj)
 
 ## Co jsme dělali \{#co-bylo}
 
@@ -139,10 +135,10 @@ Zápočtový program je větší kus software, který budete programovat doma b�
 <CardBorderPrimary cardText={false}>
     <h4 className='mt-0'>Shrnutí požadavků</h4>
     <ul className='mb-0'>
-    <li>Specifikaci (téma) mi pošlete mailem do 12. 1. 2024.</li>
-    <li>Program se odevzdává přes [MFF GitLab](https://gitlab.mff.cuni.cz/) do 18. 2. 2024.</li>
-    <li>Součástí programu je dokumentace, ukázky použití a `README.md`.</li>
-    <li>Vytvořte rozumnou strukturu projektu (složky pro zdrojové kódy a dokumentaci).</li>
+        <li>Specifikaci (téma) mi pošlete mailem do 12. 1. 2024.</li>
+        <li>Program se odevzdává přes [MFF GitLab](https://gitlab.mff.cuni.cz/) do 18. 2. 2024.</li>
+        <li>Součástí programu je dokumentace, ukázky použití a `README.md`.</li>
+        <li>Vytvořte rozumnou strukturu projektu (složky pro zdrojové kódy a dokumentaci).</li>
     </ul>
 </CardBorderPrimary>
 
@@ -196,7 +192,7 @@ Spoustu užitečných informací o zápočťácích už sepsali jiní, tak nemá
 
 ## Užitečné informace \{#uzitecne-info}
 
-### Dotazy a konzultace
+### Dotazy a konzultace \{#konzultace}
 
 Pokud vám něco, co říkám, nebude jasné, ptejte se. Ideálně hned, dokud je to aktuální. Je velmi pravděpodobné, že v učebně sedí několik dalších lidí s úplně stejným dotazem, ale bojí se zeptat. Nebojte se. Cvičení je pro vás. Cílem je, abyste látku pochopili, ne abych ji já jen zbytečně odvykládal.
 
@@ -210,7 +206,7 @@ Pokud by někdo chtěl něco dovysvětlit nebo se mu nedařilo a chtěl by probr
 Kanál pro tohle cvičení: [#alg-prg-cv-mtopfer](https://discord.com/channels/625428723302137876/893480125016981514). Není povinné tam být, ale je to další místo, kde se můžete ptát na otázky a bavit se se mnou i se spolužáky.
 {/**/}
 
-### V čem budeme programovat a jak to nainstaluju
+### V čem budeme programovat a jak to nainstaluju \{#instalace}
 
 Na první přednášce bude ukázka použití interpretu Pythonu z příkazové řádky, potom jednoduché prostředí IDLE, které se instaluje společně s Pythonem a nakonec [Visual Studio](https://visualstudio.microsoft.com/vs/), ve kterém bude probíhat zbytek přednášek. **Já budu na cvičení používat [Visual Studio Code](https://code.visualstudio.com/)**, což je textový editor inspirovaný Visual Studiem, ale podstatně menší a hlavně běží i na Linuxu a macOS. Taky si nejspíš ukážeme [PyCharm](https://www.jetbrains.com/pycharm/) od JetBrains, který můžete jako studenti [používat zdarma](https://www.jetbrains.com/community/education/#students). **Pokud už máte nainstalovaný nebo oblíbený jiný editor (Atom, Sublime, ...), problém s tím nemám.**
 
@@ -235,16 +231,29 @@ Jak rozchodit ReCodEx:
 * Přihlaste se pomocí Centrální Autentizační Služby (CAS CUNI). Jméno a heslo jsou stejné jako do SISu.
 * V menu vlevo dole je položka *SIS Integrace*. Tam se přidejte do skupin *Algoritmizace* a *Programování 1* (programování má dvě skupiny &ndash; jednu na domácí úkoly a jednu na práci na cvičeních).
 
-### Řešil(a) jsem KSPčko
-
-Pokud jste už zdatnější a myslíte si, že by vás cvičení nebavilo, můžete se zapsat na [cvičení Martina Mareše pro pokročilé](https://mj.ucw.cz/vyuka/2324/p1x/). Můžete také chodit i na obě cvičení současně (v takovém případě si v SISu nechte zapsané moje cvičení).
-
-### Chci se procvičovat doma a nevím jak
+### Chci se procvičovat doma a nevím jak \{#procvicovani}
 
 Středoškolská soutěž [Kasiopea](https://kasiopea.matfyz.cz/) má archiv domácích kol, kde se obtížnost úloh stupňuje od velmi lehkých k velmi náročným.
 
 [Korespondenční seminář z programování](https://ksp.mff.cuni.cz/) má online k dispozici nejen úlohy, ale i kuchařky vysvětlující nejrůznější oblasti algoritmizace, diskrétní matematiky a spousty dalších užitečných oblastí. Lehčí úlohy najdete v [začátečnické kategorii](https://ksp.mff.cuni.cz/z/).
 
 [Průvodce labyrintem algoritmů](https://pruvodce.ucw.cz/) je kniha (dostupná online) shrnující látku předmětů Algoritmizace, Algoritmy a datové struktury I a Algoritmy a datové struktury II. Její úvodní kapitoly rozebírají paměťovou a časovou složitost, binární vyhledávání, Euklidův algoritmus, třídění, haldy apod.
+
+### Přístup k souborům na školních počítačích \{#soubory}
+
+Pokud pracujete na školních počítačích a chtěli byste k vytvořeným souborům mít přístup i z domova, jde to poměrně snadno &ndash; stačí je uložit na AFS:
+
+* na Windows ukládejte soubory na disk `Z:` (měl by se připojit automaticky po přihlášení; pokud ho nevidíte, spusťte skript `sshfs login`, který je na ploše),
+* na Linuxu do svého domovského adresáře.
+
+Z domova pak k AFS můžete přistupovat pomocí vzdáleného přístupu k počítačům v laboratoři Rotunda (co dalšího s nimi můžete dělat se dozvíte [zde](https://wiki.ms.mff.cuni.cz/wiki/laborato%C5%99_UNIX)):
+
+* na Windows třeba pomocí [WinSCP](https://winscp.net/)
+  * vytvořte si *Nové spojení* (*New Connection*), *protokol*: SFTP, *hostitel* (*host*): `u-plXX.ms.mff.cuni.cz` (místo `XX` zadejte číslo z rozsahu 0–11), jméno a heslo jako do SISu
+* na Linuxu se můžete připojit pomocí SSH: `ssh LOGIN@u-plXX.ms.mff.cuni.cz` (místo `LOGIN` dejte vaše přihlašovací jméno, místo `XX` číslo z rozsahu 0–11), kopírovat soubory můžete třeba pomocí SCP.
+
+### Cvičení pro pokročilé \{#mj}
+
+Pokud jste už zdatnější a myslíte si, že by vás cvičení nebavilo (například pokud jste řešili KSPčko), můžete se zapsat na [cvičení Martina Mareše pro pokročilé](https://mj.ucw.cz/vyuka/2324/p1x/). Můžete také chodit i na obě cvičení současně (v takovém případě si v SISu nechte zapsané moje cvičení).
 
 <p className="text-muted mt-3"><small>Část textu na této stránce jsem opsal od [Jirky Mayera](https://github.com/Jirka-Mayer/NPRG030-062/). Díky, Jirko!</small></p>
