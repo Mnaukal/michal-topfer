@@ -1,0 +1,41 @@
+import Head from 'next/head'
+import { InlineMath } from "react-katex";
+
+
+<Head>
+  <title>Cvičení NPRG031 – Programování 2 – Michal Töpfer</title>
+</Head>
+
+# Programování 2 &ndash; 7. cvičení
+
+Úlohy k procvičení. U všech úloh doporučuji začít tím, že si rozmyslíte signaturu funkce (parametry, jejich typy, jejich typové parametry, návratovou hodnotu).
+
+1. Napište funkci `Count`, která spočítá, kolik prvků sekvence splňuje zadaný predikát. Funkci můžete otestovat třeba tak, že ze seznamu vyberete pouze sudá čísla. Zkuste si predikát napsat jako lambdu.
+2. Napište funkci `First`, která vrátí první prvek sekvence splňující zadaný predikát.
+3. Napište funkci `Any`, která ověří, že alespoň jeden prvek sekvence splňuje zadaný predikát.
+4. Napište funkci `All`, která ověří, že všechny prvky sekvence splňují zadaný predikát.
+5. Napište funkci `Compose`, která složí dvě funkce. Parametry jsou funkce $f: A \to B$ a $g: B \to C$ a výsledek je funkce $(g \circ f)(x) = g(f(x))$.
+6. Napište funkci `Zip`, která vezme dvě sekvence a vyrobí sekvenci dvojic. Například kód:
+    ```cs
+    var numbers = new[] { 1, 2, 3 };
+    var letters = new[] { "a", "b", "c" };
+    foreach ((int number, string letter) in Zip(numbers, letters))
+        Console.WriteLine($"{number}: {letter}");`}</pre>
+    ```
+    má vypsat:
+    ```txt
+    1: a
+    2: b
+    3: C
+    ```
+    Hint: <span className="hint">Podívejte se, jak funguje metoda <a href="https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1.GetEnumerator?#remarks" style={{fontFamily: "var(--bs-font-monospace)", color: "inherit"}}>GetEnumerator()</a>.</span>
+7. Ze seznamu vět vyrobte seznam dvojic (věta, počet mezer v dané větě). Například pro seznam
+   ```cs
+   ["Hello, how are you?", "The quick brown fox jumps over a lazy dog."]
+   ```
+   je řešením
+   ```cs
+   [("Hello, how are you?", 3), ("The quick brown fox jumps over a lazy dog.", 8)]
+   ```
+
+<img src="../functions_inside.jpg" alt="Functions inside functions meme"/>

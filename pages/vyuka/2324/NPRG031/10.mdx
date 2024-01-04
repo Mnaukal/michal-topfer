@@ -1,0 +1,20 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG031 – Programování 2 – Michal Töpfer</title>
+</Head>
+
+# Programování 2 &ndash; 10. cvičení
+
+## Jak založit projekt s testy
+
+Místo `MyList` používejte jméno projektu, který chcete vytvořit.
+
+1. Vytvořit solution: `dotnet new sln`
+2. Vytvořit projekt s implementací: `dotnet new classlib -o MyList`
+3. Přidat implementaci do solution: `dotnet sln add MyList/MyList.csproj`
+4. Vytvořit projekt s testy: `dotnet new xunit -o MyList.Tests`
+5. Přidat testy do solution: `dotnet sln add MyList.Tests/MyList.Tests.csproj`
+6. Přidat implementaci jako reference k testům: `dotnet add MyList.Tests/MyList.Tests.csproj reference MyList/MyList.csproj`
+7. Přidat `using MyList;` do testů
+8. Spustit testy: `dotnet test`
