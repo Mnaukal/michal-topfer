@@ -1,0 +1,36 @@
+import Head from 'next/head'
+
+<Head>
+  <title>Cvičení NPRG062 – Algoritmizace – Michal Töpfer</title>
+</Head>
+
+# Algoritmizace – 12. cvičení
+
+## Cesta králem na šachovnici (délka)
+
+Řešte úlohu [Cesta králem na šachovnici (délka)](https://recodex.mff.cuni.cz/app/assignment/2473363f-9efa-4023-82b2-16bb19a9b741) v ReCodExu. Program bude hledat nejkratší cestu šachovým králem na šachovnici 8x8, kde na některá políčka nelze vstoupit.
+
+Můžete použít [šablonu](../cesta_kralem.py), která za vás vyřeší načítání vstupu. Do šablony stačí doplnit procházení možných tahů krále (metoda `get_neigbors`) a dokončit předpřipravený kód pro `bfs`.
+
+
+## Nejkratší cesta v ohodnoceném grafu
+
+Problém nejkratší cesty lze zobecnit na grafy s nezáporným ohodnocením hran, kde je délka cesty měřena součtem ohodnocení hran.
+
+Nalezne algoritmus BFS nejkratší cestu i v tomto případě? Pokud ano, vysvětlete proč, pokud ne, sestrojte protipříklad.
+
+
+## Bipartitní grafy
+
+Graf je *bipartitní*, pokud lze jeho vrcholy obarvit dvěma barvami tak, že sousední vrcholy jsou obarveny různě. Navrhněte efektivní algoritmus, který zjistí, zdali je zadaný graf bipartitní.
+
+Vaše řešení můžete vyzkoušet na úloze [Bipartitní graf](https://recodex.mff.cuni.cz/app/assignment/583f4541-9a81-4aaf-be98-ac247e139e88) v ReCodExu.
+
+### Nápověda
+
+Použijte BFS nebo DFS.
+
+
+## Kružítka a pravítka
+
+Řešte lehkou verzi úlohy [Kružítka a pravítka](https://kasiopea.matfyz.cz/archiv/2020/doma/D/) ze soutěže [Kasiopea](https://kasiopea.matfyz.cz/). Lehká verze jde vyřešit pomocí BFS nebo DFS.
