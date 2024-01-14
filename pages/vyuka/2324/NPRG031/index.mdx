@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from "next/link";
 import { InlineMath } from 'react-katex';
-import { CardBorderDanger, CardBorderPrimary, CardDark } from "@/components/cards";
+import { CardBorderDanger, CardBorderPrimary, CardDark, CardBorderWarning } from "@/components/cards";
 import Lab from "@/components/vyuka/Lab";
 import LabLink from "@/components/vyuka/LabLink";
 import LabPrograms from "@/components/vyuka/LabPrograms";
@@ -122,7 +122,7 @@ U domácích úkolů se bude hodnotit jak **funkčnost** (jestli program dělá 
 Na každý úkol budete mít **dva týdny** a v&nbsp;tomto čase ho můžete odevzdat víckrát.
 Pokud stihnete úkol odevzdat během **prvního týdne** od zadání, dám vám zpětnou vazbu ohledně kvality kódu a vy budete mít šanci váš program během druhého týdne vylepšit a odevzdat znovu.
 Pokud úkol v prvním týdnu odevzdat nestihnete, ničemu to nevadí, akorát se tím připravíte o moji zpětnou vazbu a možnost kvalitu kódu vylepšit.
-Pro odevzdávání budeme používat systém [ReCodEx](#recodex).
+Pro odevzdávání budeme používat systém [ReCodEx](#recodex). **Doporučuji prostudovat [vytvoření nového C# projektu](#csharp_project), kde jsou i poznámky o tom, jak projekt vytvořit, aby v ReCodExu fungoval.**
 
 Jako řešení domácích úkolů odevzdávejte pouze vaše výtvory, nikoli kód napsaný někým jiným (opsaný od spolužáka/spolužačky, zkopírovaný z internetu, vygenerovaný pomocí ChatGPT, &hellip;). Rozhodně není zakázáno hledat na internetu nebo konzultovat se spolužáky, jak se naprogramuje nějaká dílčí část úkolu, ale je zakázáno kopírovat řešení celé úlohy. Podobně pro LLMs (ChatGPT a další) &ndash; můžete se ptát, jak se udělá nějaká konkrétní věc v Pythonu, ale nevydávejte vygenerovaný kód za své řešení (v tomto kontextu bych zmínil [Stanovisko MFF UK k využívání umělé inteligence ve výuce](https://www.mff.cuni.cz/cs/verejnost/aktuality/stanovisko-mff-uk-k-vyuzivani-umele-inteligence-ve-vyuce), zejména bod *Buďte transparentní*).
 
@@ -228,19 +228,26 @@ Stejné pokyny v angličtině najdete taky v [dokumentaci](https://code.visualst
 
 #### Vytvoření nového projektu \{#csharp_project}
 
-Ve Visual Studiu je to snadné, stačí kliknout na *File* &rarr; *New* &rarr; *Project...* a vybrat *Console App*. Pak už se jen nastaví jméno a umístění projektu a je to. Pro naše projekty doporučuji zaškrtnout *Place solution and project in the same directory*, protože budeme pracovat vždy jen s jedním projektem současně, takže nepotřebujeme vytvářet pro projekt podsložku. Existuje také rozšíření [Recodex Template](https://marketplace.visualstudio.com/items?itemName=FilipKliber.RecodexTemplate), které vám dovolí místo *Console App* vybrat *Recodex*, čímž se automaticky nastaví některé vlastnosti zmíněné dále v textu, aby se řešení u vás chovalo stejně jako v ReCodExu.
+Ve Visual Studiu je to snadné, stačí kliknout na *File* &rarr; *New* &rarr; *Project...* a vybrat *Console App*. Pak se nastaví jméno a umístění projektu. Pro naše projekty doporučuji zaškrtnout *Place solution and project in the same directory*, protože budeme pracovat vždy jen s jedním projektem současně, takže nepotřebujeme vytvářet pro projekt podsložku. **Pokud chcete program odevzdávat do ReCodExu, věnujte pozornost [rámečku níže](#csharp_recodex).** Existuje také rozšíření [Recodex Template](https://marketplace.visualstudio.com/items?itemName=FilipKliber.RecodexTemplate), které vám dovolí místo *Console App* vybrat *Recodex*, čímž by se věci zmíněné v rámečku měly nastavit automaticky.
 
 Ve **VS Code** ovšem tlačítko pro vytvoření nového projektu není. Pomůžeme si příkazem `dotnet` na příkazové řádce.
 
 1. Vytvořte složku, ve které chcete projekt mít a přejděte do ní v terminálu.
-2. Spusťte `dotnet new console`. To vám vyrobí `Program.cs`, který můžete editovat a spustit. **Pokud chcete program odevzdávat do ReCodExu věnujte pozornost následujícím poznámkám** (platí pro .NET 6 a novější):
-   * Příkaz výše vyrobí program s tzv. top-level statements (tedy bez `Main` metody), což **nebude fungovat v ReCodExu**. Aby program v ReCodExu fungoval, musíte založit projekt s `Main` metodou pomocí `dotnet new console --use-program-main` (více [zde](https://docs.microsoft.com/en-us/dotnet/core/tutorials/top-level-templates#use-the-old-program-style)).
-   * Nově vytvořený projekt používá implicitní importy (takže na začátku programu nemusíte mít napsané `using System;` a některé další), které jsou v ReCodExu vypnuté. **Může se vám stát, že vám kód lokálně půjde zkompilovat, ale v ReCodExu neprojde.** Řešení je vypnout si implicitní importy i u sebe: z `.csproj` souboru odstraňte řádek `<ImplicitUsings>enable</ImplicitUsings>`.
+2. Spusťte `dotnet new console`. To vám vyrobí `Program.cs`, který můžete editovat a spustit. **Pokud chcete program odevzdávat do ReCodExu, věnujte pozornost [rámečku níže](#csharp_recodex).**
 3. Hodí se mít VS Code otevřený ve složce projektu, to se udělá snadno spuštěním `code .` (včetně tečky), což otevře VS Code v aktuální složce.
-4. Když je VS Code otevřený přímo ve složce projektu, umí sám vygenerovat soubory potřebné pro spuštění projektu. Stačí na kartě *Run and Debug* kliknout na *.NET: Generate Assets for Build and Debug*.
-5. Aby ve VS Code správně **fungovalo čtení vstupu**, je potřeba ve vygenerovaném souboru `.vscode/launch.json` změnit řádek *console* na `"console": "integratedTerminal",`.
+4. Když je VS Code otevřený přímo ve složce projektu, umí sám vygenerovat soubory potřebné pro spuštění projektu. Stačí na kartě *Run and Debug* kliknout na *Generate C# Assets for Build and Debug*.
+5. Spustit program pak můžete z karty *Run and Debug* kliknutím na zelenou šipku nahoře (klávesová zkratka F5).
+   * Pokud vám nefunguje nebo nevyhovuje **čtení vstupu** přes okno *Debug Console*, můžete VS Code nastavit, aby četl vstup z terminálu (jako to bylo v Pythonu v ZS). Ke potřeba ve vygenerovaném souboru `.vscode/launch.json` změnit řádek `"console": "internalConsole",` na `"console": "integratedTerminal",`.
 
 Z příkazové řádky se projekt dá spustit pomocí `dotnet run`.
+
+<CardBorderWarning textColor="primary" cardText={false}>
+    <h4 className='mt-0' id="csharp_recodex">ReCodEx a C#</h4>
+    <ul className='mb-0'>
+        <li>V ReCodExu nefungují *top-level statements* (program bez `Main` metody). Aby program v ReCodExu fungoval, musíte založit projekt s `Main` metodou pomocí příkazu `dotnet new console --use-program-main` (v kroku 2 výše). Pokud používáte Visual Studio, zaškrtněte při vytváření projektu možnost *Do not use top-level statements*.</li>
+        <li>Nově vytvořený projekt používá implicitní importy (takže na začátku programu nemusíte mít napsané `using System;` a některé další), které jsou v ReCodExu vypnuté. **Může se vám stát, že vám kód lokálně půjde zkompilovat, ale v ReCodExu neprojde.** Řešení je vypnout si implicitní importy i u sebe: z `.csproj` souboru odstraňte řádek `<ImplicitUsings>enable</ImplicitUsings>`. Na začátek vašeho souboru s programem (`.cs`) pak budete muset doplnit řádek `using System;` (a možná taky `using System.Collections.Generic;` a nějaké další).</li>
+    </ul>
+</CardBorderWarning>
 
 ### ReCodEx \{#recodex}
 
