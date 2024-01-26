@@ -158,7 +158,10 @@ Program se odevzdává prostřednictvím **[MFF GitLabu](https://gitlab.mff.cuni
 
 Součástí odevzdání je i **osobní předvedení** programu. Až budete mít program hotový (včetně dokumentace), pošlete mi mailem odkaz na repozitář a domluvíme se na termínu předvedení. Předvedení programu bude spočívat v tom, že mi ukážete, že program jde spustit a že dělá to, na čem jsme se domluvili ve specifikaci. Kromě toho od vás budu chtít shrnutí návrhu programu &ndash; high-level rozdělení do tříd/funkcí a jejich účet, prostě takové rychlé shrnutí toho, co dělá která část zdrojového kódu.
 
-V repozitáři si vytvořte vhodnou strukturu projektu &ndash; minimálně vytvořte složky pro zdrojové kódy programu (zdrojové kódy nepatří do kořenového adresáře projektu) a pro dokumentaci. Taky upravte soubor `README.md`, aby obsahoval základní informace o vašem programu a odkaz na dokumentaci.
+V repozitáři si vytvořte vhodnou **strukturu projektu** &ndash; minimálně vytvořte složky pro zdrojové kódy programu a pro dokumentaci.
+Je lepší, když zdrojové kódy nejsou přímo v kořenovém adresáři projektu, ale jsou ve vlastní složce (aby se nemíchaly s testy, dokumentací, konfiguračními soubory, ...).
+V C# bývá zvykem pojmenovat složku se zdrojovými soubory podle názvu vašeho programu (v jiných jazycích dost často uvidíte složku pojmenovanou `src`).
+Taky **upravte soubor `README.md`**, aby obsahoval základní informace o vašem programu a odkaz na dokumentaci.
 
 Odevzdávaný program by měl být rozumně odladěný. Především by měl jít spustit bez chyb. Když program budu normálně používat, tak by neměl spadnout. Pokud například program očekává vstup v souboru, tak by neměl spadnout, pokud soubor neexistuje. Měl by místo toho vypsat rozumnou chybovou hlášku pro uživatele.
 
