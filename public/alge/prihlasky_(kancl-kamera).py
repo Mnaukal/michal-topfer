@@ -91,6 +91,7 @@ for f in files:
     except Exception as e:
         print(f"CHYBA při zpracování souboru '{f}'.")
         print(" ", e)
+        print(" ", repr(e))
 
 print()
 input("Stiskněte Enter pro ukončení programu...")

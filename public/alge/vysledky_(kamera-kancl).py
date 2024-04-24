@@ -14,6 +14,9 @@ from pathlib import Path
 import xml.etree.ElementTree as etree
 import csv
 
+GENERATE_CSV = False
+WIND_WARNING = True
+
 
 def try_parse_int(s):
     try:
@@ -22,11 +25,25 @@ def try_parse_int(s):
         return 999999
 
 
-def process_competitor(competitor):
+def attempt_to_find_missing_lane(competitor, f):
+    filename = "p" + f.stem + ".txt"
+    with open(f.parent / filename) as p_file:
+        reader = csv.reader(p_file, delimiter='\t', dialect=csv.excel)
+        for row in reader:
+            if row[3] == competitor["Firstname"] and row[4] == competitor["Lastname"]:
+                return row[2]
+    return None
+
+
+def process_competitor(competitor, f):
     c = competitor.attrib
 
     if "Lane" not in c and "Bib" not in c:
-        raise Exception("V souboru není určena dráha ani Bib závodníka/závodníků.")
+        lane = attempt_to_find_missing_lane(c, f)
+        if lane is not None:
+            c["Lane"] = lane
+        else:
+            raise Exception(f"V souboru není určena dráha ani Bib závodníka/závodníků ({c.get('Firstname', '')} {c.get('Lastname', '')}).")
 
     result = [
         c.get("Rank", ""),
@@ -94,31 +111,44 @@ def process_competitor_csv(competitor):
 def process_heatresult(f):
     heat_result = etree.parse(f).getroot()
     results = heat_result[0]
-    heat_number = heat_result.attrib["Nr"]
+    heat_number = heat_result.attrib["Nr"] if "Nr" in heat_result.attrib else heat_result.attrib["Id"]
     filename = f.parent / (heat_number + ".txt")
     try:
         with open(filename, "w", newline="") as out_file:
             writer = csv.writer(out_file, delimiter="\t")
             for competitor in results:
-                writer.writerow(process_competitor(competitor))
+                writer.writerow(process_competitor(competitor, f))
 
-        filename = f.parent / (heat_number + ".csv")
-        with open(filename, "w", newline="") as out_file:
-            writer = csv.writer(out_file, delimiter=";")
-            writer.writerow(["Track", "BestResult"])
-            for competitor in results:
-                writer.writerow(process_competitor_csv(competitor))
-        print(f"#{heat_number} úspěšně zpracováno ({heat_result.attrib['Name']})")
+        if GENERATE_CSV:
+            filename = f.parent / (heat_number + ".csv")
+            with open(filename, "w", newline="") as out_file:
+                writer = csv.writer(out_file, delimiter=";")
+                writer.writerow(["Track", "BestResult"])
+                for competitor in results:
+                    writer.writerow(process_competitor_csv(competitor))
+
         if "Wind" in heat_result.attrib:
-            print(f"  vítr: {heat_result.attrib['Wind']} m/s")
+            wind = float(heat_result.attrib['Wind'])
+            # print(f"  vítr: {wind} m/s")
+            filename = f.parent / (heat_number + ".sav")
+            with open(filename, "w", newline="") as out_file:
+                print(f"[RaceInfo]\nWind={wind:+.1f} m/s\n", file=out_file)
+        elif WIND_WARNING:
+            distance = int(heat_result.attrib.get("DistanceMeters", '0'))
+            if distance <= 200:
+                print(f"VAROVÁNÍ: chybí měření větru pro #{heat_number} ({heat_result.attrib['Name']})")
+
+        print(f"#{heat_number} úspěšně zpracováno ({heat_result.attrib['Name']})")
+
     except Exception as e:
-        print(f"CHYBA: #{heat_number} ({heat_result.attrib['Name']})")
+        print(f"CHYBA: {f.stem} ({heat_result.attrib['Name']})")
         print(" ", e)
+        print(" ", repr(e))
 
 
 path = Path(".")
 if len(sys.argv) == 2:
-    path = Path("./" + sys.argv[1])
+    path = Path("./" + sys.argv[1])  # used mainly for debug purposes
 
 files = path.glob("*.heatresultxml")
 files = sorted(files, key=lambda x: try_parse_int(x.stem))
@@ -126,8 +156,10 @@ files = sorted(files, key=lambda x: try_parse_int(x.stem))
 for f in files:
     try:
         process_heatresult(f)
-    except:
+    except Exception as e:
         print(f"CHYBA při zpracování souboru '{f}'. Soubor je pravděpodobně poškozen.")
+        print(" ", e)
+        print(" ", repr(e))
 
 print()
 input("Stiskněte Enter pro ukončení programu...")
