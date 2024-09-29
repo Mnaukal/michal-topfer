@@ -27,6 +27,21 @@ export default function Index() {
     <section className="mt-4">
       <h2>Projekty, na kterých jsem pracoval</h2>
 
+      <h3>2024</h3>
+      <ul>
+        <li>
+        <a href="https://d3s.mff.cuni.cz/projects/extremexp/">ExtremeXP</a> &ndash; EXPerimentation driven and user eXPerience oriented analytics for eXtremely Precise outcomes and decisions
+        </li>
+        <li>
+          <Badge type={BadgeType.Paper}/>
+          <a href="https://d3s.mff.cuni.cz/publications/michaltopfer/" /* TODO: link */>M. Töpfer, D. Khalyeyev, T. Bureš, P. Hnětynka, F. Plášil: How Well Do LLMs Understand DEECo Ensemble-based Component Architectures</a>
+        </li>
+        <li>
+          <Badge type={BadgeType.Paper}/>
+          <a href="https://d3s.mff.cuni.cz/publications/michaltopfer/" /* TODO: link */>M. Abdullah, M. Töpfer, T. Bureš: Robin: A Systematic Literature Mapping Management Tool</a>
+        </li>
+      </ul>
+
       <h3>2023</h3>
       <ul>
         <li>
