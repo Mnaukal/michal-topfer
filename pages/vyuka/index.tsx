@@ -37,6 +37,9 @@ export default function Teaching({
   years.sort().reverse();
   return (<>
     <h1>Výuka</h1>
+
+    <p>Informace pro akutální semestr najdete na <a href="https://d3s.mff.cuni.cz/people/michaltopfer/">https://d3s.mff.cuni.cz/people/michaltopfer/</a></p>
+
     {years.map(year => Year(year, courses[year]))}
   </>);
 }

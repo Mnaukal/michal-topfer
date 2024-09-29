@@ -12,14 +12,17 @@ const pages: MenuItem[] = [{
   "label": "Výuka",
   "subpages": [{
     "label": "NPRG062 – Algoritmizace",
-    "href": getLatestUrl("NPRG062"),
+    // "href": getLatestUrl("NPRG062"),
+    "href": "https://d3s.mff.cuni.cz/cz/teaching/nprg062/",
   }, {
     "label": "NPRG030 – Programování 1",
-    "href": getLatestUrl("NPRG030"),
+    // "href": getLatestUrl("NPRG030"),
+    "href": "https://d3s.mff.cuni.cz/cz/teaching/nprg030/",
   }, {
   }, {
     "label": "NPRG031 – Programování 2",
-    "href": getLatestUrl("NPRG031"),
+    // "href": getLatestUrl("NPRG031"),
+    "href": "https://d3s.mff.cuni.cz/cz/teaching/nprg031/",
   }, {
   }, {
     "label": "Archiv",
