@@ -34,7 +34,7 @@ export default function Navigation() {
     <Navbar expand="lg" variant="dark" bg="dark" aria-label="Main navigation">
       <Container fluid="xl">
         <Link href="/" passHref legacyBehavior>
-          <Navbar.Brand>Mgr. Michal Töpfer</Navbar.Brand>
+          <Navbar.Brand>RNDr. Michal Töpfer</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="navbar-main" />
 
