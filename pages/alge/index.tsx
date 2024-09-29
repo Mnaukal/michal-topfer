@@ -27,6 +27,9 @@ export default function Alge() {
       <p>
         <Link href="/alge/vysledky_(kamera-kancl).py">vysledky_(kamera-kancl).py</Link>
       </p>
+      <p>
+        <i>(poslední změna: 24. 4. 2024)</i>
+      </p>
 
       <h2>Instalace</h2>
 
